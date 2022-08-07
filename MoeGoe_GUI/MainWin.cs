@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-using System.Diagnostics;
-using System.Threading;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace MoeGoe_GUI
 {
@@ -150,7 +141,7 @@ namespace MoeGoe_GUI
             {
                 MatchCollection matches = Regex.Matches(match.Groups[1].Value,
                     "\"((?:(?:\\\\.)|[^\\\\\"])*)\"");
-                if(matches.Count > 0)
+                if (matches.Count > 0)
                 {
                     for (int i = 0; i < matches.Count; i++)
                     {
@@ -171,7 +162,7 @@ namespace MoeGoe_GUI
         {
             cmd = new CommandLine();
             cmd.OutputHandler += Cmd_OutputHandler;
-            cmd.Write(EXEPATH);
+            cmd.Write("\"" + EXEPATH + "\"");
             cmd.Write(MODELPATH);
             cmd.Write(CONFIGPATH);
             modeControl.Enabled = true;
@@ -180,7 +171,7 @@ namespace MoeGoe_GUI
 
         private void Cmd_OutputHandler(CommandLine sender, string e)
         {
-            Invoke(new Action(()=> consoleBox.Text += e));
+            Invoke(new Action(() => consoleBox.Text += e));
         }
 
         private void OpenOrigin_Click(object sender, EventArgs e)
@@ -208,7 +199,7 @@ namespace MoeGoe_GUI
         {
             if (modeControl.SelectedIndex == 0)
             {
-                if(textBox.Text.Length == 0)
+                if (textBox.Text.Length == 0)
                 {
                     MessageBox.Show("请输入文本！", "",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -230,7 +221,7 @@ namespace MoeGoe_GUI
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
-                if(originBox.SelectedIndex == -1)
+                if (originBox.SelectedIndex == -1)
                 {
                     MessageBox.Show("请选择原说话人！", "",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);

@@ -45,7 +45,6 @@
             this.textBox = new System.Windows.Forms.TextBox();
             this.VCPage = new System.Windows.Forms.TabPage();
             this.openOrigin = new System.Windows.Forms.Button();
-            this.requirement = new System.Windows.Forms.Label();
             this.originPath = new System.Windows.Forms.TextBox();
             this.originBox = new System.Windows.Forms.ComboBox();
             this.originLabel = new System.Windows.Forms.Label();
@@ -203,11 +202,11 @@
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(344, 93);
             this.textBox.TabIndex = 1;
+            this.textBox.DoubleClick += new System.EventHandler(this.TextBox_DoubleClick);
             // 
             // VCPage
             // 
             this.VCPage.Controls.Add(this.openOrigin);
-            this.VCPage.Controls.Add(this.requirement);
             this.VCPage.Controls.Add(this.originPath);
             this.VCPage.Controls.Add(this.originBox);
             this.VCPage.Controls.Add(this.originLabel);
@@ -230,15 +229,6 @@
             this.openOrigin.Text = "打开原音频";
             this.openOrigin.UseVisualStyleBackColor = true;
             this.openOrigin.Click += new System.EventHandler(this.OpenOrigin_Click);
-            // 
-            // requirement
-            // 
-            this.requirement.AutoSize = true;
-            this.requirement.Location = new System.Drawing.Point(133, 44);
-            this.requirement.Name = "requirement";
-            this.requirement.Size = new System.Drawing.Size(335, 24);
-            this.requirement.TabIndex = 13;
-            this.requirement.Text = "（要求：22050 Hz 16 bits 1 channel）";
             // 
             // originPath
             // 
@@ -329,8 +319,8 @@
             // 
             // MainWin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(964, 534);
             this.Controls.Add(this.consoleBox);
             this.Controls.Add(this.savePanel);
@@ -378,7 +368,6 @@
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.ComboBox speakerBox;
         private System.Windows.Forms.Label speakerLabel;
-        private System.Windows.Forms.Label requirement;
         private System.Windows.Forms.TextBox originPath;
         private System.Windows.Forms.ComboBox originBox;
         private System.Windows.Forms.Label originLabel;

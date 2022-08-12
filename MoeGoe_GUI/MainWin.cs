@@ -178,7 +178,7 @@ namespace MoeGoe_GUI
         {
             OpenFileDialog ofd = new OpenFileDialog
             {
-                Filter = "音频文件|*.wav"
+                Filter = "音频文件|*.wav;*.mp3;*.ogg;*.opus"
             };
             if (ofd.ShowDialog() == DialogResult.OK)
                 ORIGINPATH = originPath.Text = ofd.FileName;
@@ -272,6 +272,15 @@ namespace MoeGoe_GUI
             cmd.Write(ORIGINPATH);
             cmd.Write(originBox.SelectedIndex.ToString());
             cmd.Write(targetBox.SelectedIndex.ToString());
+        }
+
+        private void TextBox_DoubleClick(object sender, EventArgs e)
+        {
+            AdvancedWin win = new AdvancedWin(textBox,cmd);
+            cmd.OutputHandler -= Cmd_OutputHandler;
+            win.ShowDialog();
+            cmd.OutputHandler += Cmd_OutputHandler;
+            win.Dispose();
         }
     }
 }

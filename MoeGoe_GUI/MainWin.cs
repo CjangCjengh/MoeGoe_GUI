@@ -162,6 +162,7 @@ namespace MoeGoe_GUI
         {
             cmd = new CommandLine();
             cmd.OutputHandler += Cmd_OutputHandler;
+            cmd.Write("chcp 65001");
             cmd.Write("\"" + EXEPATH + "\"");
             cmd.Write(MODELPATH);
             cmd.Write(CONFIGPATH);

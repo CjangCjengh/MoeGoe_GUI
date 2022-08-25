@@ -162,7 +162,6 @@ namespace MoeGoe_GUI
         {
             cmd = new CommandLine();
             cmd.OutputHandler += Cmd_OutputHandler;
-            cmd.Write("chcp 65001");
             cmd.Write("\"" + EXEPATH + "\"");
             cmd.Write(MODELPATH);
             cmd.Write(CONFIGPATH);
@@ -275,12 +274,19 @@ namespace MoeGoe_GUI
             cmd.Write(targetBox.SelectedIndex.ToString());
         }
 
-        private void TextBox_DoubleClick(object sender, EventArgs e)
+        private void CleanButton_Click(object sender, EventArgs e)
         {
-            AdvancedWin win = new AdvancedWin(textBox,cmd);
+            AdvancedWin win = new AdvancedWin(textBox, cmd);
             cmd.OutputHandler -= Cmd_OutputHandler;
             win.ShowDialog();
             cmd.OutputHandler += Cmd_OutputHandler;
+            win.Dispose();
+        }
+
+        private void LengthButton_Click(object sender, EventArgs e)
+        {
+            LengthWin win = new LengthWin(textBox);
+            win.ShowDialog();
             win.Dispose();
         }
     }

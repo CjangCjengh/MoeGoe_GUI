@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWin));
             this.EXEPanel = new System.Windows.Forms.GroupBox();
             this.EXEPath = new System.Windows.Forms.TextBox();
@@ -43,6 +44,9 @@
             this.speakerLabel = new System.Windows.Forms.Label();
             this.textLabel = new System.Windows.Forms.Label();
             this.textBox = new System.Windows.Forms.TextBox();
+            this.menuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cleanButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.lengthButton = new System.Windows.Forms.ToolStripMenuItem();
             this.VCPage = new System.Windows.Forms.TabPage();
             this.openOrigin = new System.Windows.Forms.Button();
             this.originPath = new System.Windows.Forms.TextBox();
@@ -58,6 +62,7 @@
             this.modelPanel.SuspendLayout();
             this.modeControl.SuspendLayout();
             this.TTSPage.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.VCPage.SuspendLayout();
             this.savePanel.SuspendLayout();
             this.SuspendLayout();
@@ -196,13 +201,36 @@
             // 
             // textBox
             // 
+            this.textBox.ContextMenuStrip = this.menuStrip;
             this.textBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.textBox.Location = new System.Drawing.Point(129, 10);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(344, 93);
             this.textBox.TabIndex = 1;
-            this.textBox.DoubleClick += new System.EventHandler(this.TextBox_DoubleClick);
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cleanButton,
+            this.lengthButton});
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(153, 64);
+            // 
+            // cleanButton
+            // 
+            this.cleanButton.Name = "cleanButton";
+            this.cleanButton.Size = new System.Drawing.Size(152, 30);
+            this.cleanButton.Text = "清理文本";
+            this.cleanButton.Click += new System.EventHandler(this.CleanButton_Click);
+            // 
+            // lengthButton
+            // 
+            this.lengthButton.Name = "lengthButton";
+            this.lengthButton.Size = new System.Drawing.Size(152, 30);
+            this.lengthButton.Text = "调整时长";
+            this.lengthButton.Click += new System.EventHandler(this.LengthButton_Click);
             // 
             // VCPage
             // 
@@ -342,6 +370,7 @@
             this.modeControl.ResumeLayout(false);
             this.TTSPage.ResumeLayout(false);
             this.TTSPage.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
             this.VCPage.ResumeLayout(false);
             this.VCPage.PerformLayout();
             this.savePanel.ResumeLayout(false);
@@ -378,6 +407,9 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.TextBox consoleBox;
         private System.Windows.Forms.Button openOrigin;
+        private System.Windows.Forms.ContextMenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem cleanButton;
+        private System.Windows.Forms.ToolStripMenuItem lengthButton;
     }
 }
 

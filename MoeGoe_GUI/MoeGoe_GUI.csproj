@@ -73,6 +73,12 @@
     <Compile Include="AdvancedWin.Designer.cs">
       <DependentUpon>AdvancedWin.cs</DependentUpon>
     </Compile>
+    <Compile Include="LengthWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LengthWin.Designer.cs">
+      <DependentUpon>LengthWin.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AdvancedWin.resx">
       <DependentUpon>AdvancedWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LengthWin.resx">
+      <DependentUpon>LengthWin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWin.resx">
       <DependentUpon>MainWin.cs</DependentUpon>

@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MoeGoe_GUI
 {
     public partial class AdvancedWin : Form
     {
-        public AdvancedWin(TextBox box,CommandLine cmd)
+        public AdvancedWin(TextBox box, CommandLine cmd)
         {
             InitializeComponent();
             parentBox = box;
@@ -31,7 +24,7 @@ namespace MoeGoe_GUI
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            parentBox.Text = "[CLEANED]"+cleanedBox.Text;
+            parentBox.Text = "[CLEANED]" + cleanedBox.Text;
             Close();
         }
 

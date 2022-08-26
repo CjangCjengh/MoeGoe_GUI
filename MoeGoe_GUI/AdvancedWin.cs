@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace MoeGoe_GUI
@@ -10,12 +11,22 @@ namespace MoeGoe_GUI
             InitializeComponent();
             parentBox = box;
             this.cmd = cmd;
-            textBox.Text = box.Text;
+            Regex regexLength = new Regex(@"\[LENGTH=.+?\]");
+            Regex regexCleaned = new Regex(@"\[CLEANED\]");
+            Match match = regexLength.Match(box.Text);
+            if (match.Success)
+            {
+                lengthScale = match.Value;
+                textBox.Text = regexCleaned.Replace(regexLength.Replace(box.Text, ""), "");
+            }
+            else
+                textBox.Text = regexCleaned.Replace(box.Text, "");
             cmd.OutputHandler += Cmd_OutputHandler;
         }
 
         private readonly TextBox parentBox;
         private readonly CommandLine cmd;
+        private readonly string lengthScale;
 
         private void Cmd_OutputHandler(CommandLine sender, string e)
         {
@@ -24,7 +35,10 @@ namespace MoeGoe_GUI
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            parentBox.Text = "[CLEANED]" + cleanedBox.Text;
+            if (lengthScale == null)
+                parentBox.Text = "[CLEANED]" + cleanedBox.Text;
+            else
+                parentBox.Text = lengthScale + "[CLEANED]" + cleanedBox.Text;
             Close();
         }
 

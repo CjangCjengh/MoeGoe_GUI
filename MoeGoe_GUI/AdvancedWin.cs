@@ -9,24 +9,19 @@ namespace MoeGoe_GUI
         public AdvancedWin(TextBox box, CommandLine cmd)
         {
             InitializeComponent();
-            parentBox = box;
+            returnBox = box;
             this.cmd = cmd;
-            Regex regexLength = new Regex(@"\[LENGTH=.+?\]");
             Regex regexCleaned = new Regex(@"\[CLEANED\]");
-            Match match = regexLength.Match(box.Text);
+            Match match = Regex.Match(box.Text,@"\[CLEANED\]");
             if (match.Success)
-            {
-                lengthScale = match.Value;
-                textBox.Text = regexCleaned.Replace(regexLength.Replace(box.Text, ""), "");
-            }
+                textBox.Text = "";
             else
-                textBox.Text = regexCleaned.Replace(box.Text, "");
+                textBox.Text = box.Text;
             cmd.OutputHandler += Cmd_OutputHandler;
         }
 
-        private readonly TextBox parentBox;
+        private readonly TextBox returnBox;
         private readonly CommandLine cmd;
-        private readonly string lengthScale;
 
         private void Cmd_OutputHandler(CommandLine sender, string e)
         {
@@ -35,10 +30,7 @@ namespace MoeGoe_GUI
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            if (lengthScale == null)
-                parentBox.Text = "[CLEANED]" + cleanedBox.Text;
-            else
-                parentBox.Text = lengthScale + "[CLEANED]" + cleanedBox.Text;
+            returnBox.Text = "[CLEANED]" + cleanedBox.Text;
             Close();
         }
 

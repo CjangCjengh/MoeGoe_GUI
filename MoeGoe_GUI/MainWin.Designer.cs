@@ -58,6 +58,22 @@
             this.savePath = new System.Windows.Forms.TextBox();
             this.saveButton = new System.Windows.Forms.Button();
             this.consoleBox = new System.Windows.Forms.TextBox();
+            this.modelControl = new System.Windows.Forms.TabControl();
+            this.vitsPage = new System.Windows.Forms.TabPage();
+            this.hubertPage = new System.Windows.Forms.TabPage();
+            this.HVCPanel = new System.Windows.Forms.GroupBox();
+            this.HLengthControl = new System.Windows.Forms.Button();
+            this.HOpenOrigin = new System.Windows.Forms.Button();
+            this.HOriginPath = new System.Windows.Forms.TextBox();
+            this.HTargetBox = new System.Windows.Forms.ComboBox();
+            this.HTargetLabel = new System.Windows.Forms.Label();
+            this.HModelPanel = new System.Windows.Forms.GroupBox();
+            this.hubertPath = new System.Windows.Forms.TextBox();
+            this.HOpenHubert = new System.Windows.Forms.Button();
+            this.HConfigPath = new System.Windows.Forms.TextBox();
+            this.HOpenConfig = new System.Windows.Forms.Button();
+            this.HModelPath = new System.Windows.Forms.TextBox();
+            this.HOpenModel = new System.Windows.Forms.Button();
             this.EXEPanel.SuspendLayout();
             this.modelPanel.SuspendLayout();
             this.modeControl.SuspendLayout();
@@ -65,6 +81,11 @@
             this.menuStrip.SuspendLayout();
             this.VCPage.SuspendLayout();
             this.savePanel.SuspendLayout();
+            this.modelControl.SuspendLayout();
+            this.vitsPage.SuspendLayout();
+            this.hubertPage.SuspendLayout();
+            this.HVCPanel.SuspendLayout();
+            this.HModelPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // EXEPanel
@@ -73,7 +94,7 @@
             this.EXEPanel.Controls.Add(this.openEXE);
             this.EXEPanel.Location = new System.Drawing.Point(12, 12);
             this.EXEPanel.Name = "EXEPanel";
-            this.EXEPanel.Size = new System.Drawing.Size(485, 85);
+            this.EXEPanel.Size = new System.Drawing.Size(501, 85);
             this.EXEPanel.TabIndex = 0;
             this.EXEPanel.TabStop = false;
             this.EXEPanel.Text = "MoeGoe.exe";
@@ -82,7 +103,7 @@
             // 
             this.EXEPath.Location = new System.Drawing.Point(132, 32);
             this.EXEPath.Name = "EXEPath";
-            this.EXEPath.Size = new System.Drawing.Size(347, 31);
+            this.EXEPath.Size = new System.Drawing.Size(363, 31);
             this.EXEPath.TabIndex = 1;
             this.EXEPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EXEPath_KeyPress);
             // 
@@ -102,8 +123,7 @@
             this.modelPanel.Controls.Add(this.openConfig);
             this.modelPanel.Controls.Add(this.modelPath);
             this.modelPanel.Controls.Add(this.openModel);
-            this.modelPanel.Enabled = false;
-            this.modelPanel.Location = new System.Drawing.Point(12, 103);
+            this.modelPanel.Location = new System.Drawing.Point(6, 6);
             this.modelPanel.Name = "modelPanel";
             this.modelPanel.Size = new System.Drawing.Size(485, 125);
             this.modelPanel.TabIndex = 1;
@@ -151,7 +171,7 @@
             this.modeControl.Controls.Add(this.TTSPage);
             this.modeControl.Controls.Add(this.VCPage);
             this.modeControl.Enabled = false;
-            this.modeControl.Location = new System.Drawing.Point(12, 234);
+            this.modeControl.Location = new System.Drawing.Point(6, 137);
             this.modeControl.Name = "modeControl";
             this.modeControl.SelectedIndex = 0;
             this.modeControl.Size = new System.Drawing.Size(487, 189);
@@ -309,9 +329,9 @@
             this.savePanel.Controls.Add(this.savePath);
             this.savePanel.Controls.Add(this.saveButton);
             this.savePanel.Enabled = false;
-            this.savePanel.Location = new System.Drawing.Point(12, 429);
+            this.savePanel.Location = new System.Drawing.Point(12, 486);
             this.savePanel.Name = "savePanel";
-            this.savePanel.Size = new System.Drawing.Size(485, 85);
+            this.savePanel.Size = new System.Drawing.Size(501, 85);
             this.savePanel.TabIndex = 3;
             this.savePanel.TabStop = false;
             this.savePanel.Text = "保存文件";
@@ -321,7 +341,7 @@
             this.savePath.Location = new System.Drawing.Point(132, 32);
             this.savePath.Name = "savePath";
             this.savePath.ReadOnly = true;
-            this.savePath.Size = new System.Drawing.Size(347, 31);
+            this.savePath.Size = new System.Drawing.Size(363, 31);
             this.savePath.TabIndex = 1;
             // 
             // saveButton
@@ -337,23 +357,189 @@
             // consoleBox
             // 
             this.consoleBox.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.consoleBox.Location = new System.Drawing.Point(514, 24);
+            this.consoleBox.Location = new System.Drawing.Point(528, 24);
             this.consoleBox.Multiline = true;
             this.consoleBox.Name = "consoleBox";
             this.consoleBox.ReadOnly = true;
             this.consoleBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.consoleBox.Size = new System.Drawing.Size(436, 490);
+            this.consoleBox.Size = new System.Drawing.Size(436, 547);
             this.consoleBox.TabIndex = 4;
+            // 
+            // modelControl
+            // 
+            this.modelControl.Controls.Add(this.vitsPage);
+            this.modelControl.Controls.Add(this.hubertPage);
+            this.modelControl.Enabled = false;
+            this.modelControl.Location = new System.Drawing.Point(12, 103);
+            this.modelControl.Name = "modelControl";
+            this.modelControl.SelectedIndex = 0;
+            this.modelControl.Size = new System.Drawing.Size(505, 377);
+            this.modelControl.TabIndex = 5;
+            this.modelControl.SelectedIndexChanged += new System.EventHandler(this.ModelControl_SelectedIndexChanged);
+            // 
+            // vitsPage
+            // 
+            this.vitsPage.Controls.Add(this.modelPanel);
+            this.vitsPage.Controls.Add(this.modeControl);
+            this.vitsPage.Location = new System.Drawing.Point(4, 33);
+            this.vitsPage.Name = "vitsPage";
+            this.vitsPage.Padding = new System.Windows.Forms.Padding(3);
+            this.vitsPage.Size = new System.Drawing.Size(497, 340);
+            this.vitsPage.TabIndex = 0;
+            this.vitsPage.Text = "VITS";
+            this.vitsPage.UseVisualStyleBackColor = true;
+            // 
+            // hubertPage
+            // 
+            this.hubertPage.Controls.Add(this.HVCPanel);
+            this.hubertPage.Controls.Add(this.HModelPanel);
+            this.hubertPage.Location = new System.Drawing.Point(4, 33);
+            this.hubertPage.Name = "hubertPage";
+            this.hubertPage.Padding = new System.Windows.Forms.Padding(3);
+            this.hubertPage.Size = new System.Drawing.Size(497, 340);
+            this.hubertPage.TabIndex = 1;
+            this.hubertPage.Text = "HuBERT-VITS";
+            this.hubertPage.UseVisualStyleBackColor = true;
+            // 
+            // HVCPanel
+            // 
+            this.HVCPanel.Controls.Add(this.HLengthControl);
+            this.HVCPanel.Controls.Add(this.HOpenOrigin);
+            this.HVCPanel.Controls.Add(this.HOriginPath);
+            this.HVCPanel.Controls.Add(this.HTargetBox);
+            this.HVCPanel.Controls.Add(this.HTargetLabel);
+            this.HVCPanel.Enabled = false;
+            this.HVCPanel.Location = new System.Drawing.Point(6, 179);
+            this.HVCPanel.Name = "HVCPanel";
+            this.HVCPanel.Size = new System.Drawing.Size(485, 145);
+            this.HVCPanel.TabIndex = 3;
+            this.HVCPanel.TabStop = false;
+            this.HVCPanel.Text = "语音转换";
+            // 
+            // HLengthControl
+            // 
+            this.HLengthControl.Location = new System.Drawing.Point(370, 91);
+            this.HLengthControl.Name = "HLengthControl";
+            this.HLengthControl.Size = new System.Drawing.Size(109, 35);
+            this.HLengthControl.TabIndex = 17;
+            this.HLengthControl.Text = "调整时长";
+            this.HLengthControl.UseVisualStyleBackColor = true;
+            // 
+            // HOpenOrigin
+            // 
+            this.HOpenOrigin.Location = new System.Drawing.Point(6, 30);
+            this.HOpenOrigin.Name = "HOpenOrigin";
+            this.HOpenOrigin.Size = new System.Drawing.Size(120, 35);
+            this.HOpenOrigin.TabIndex = 13;
+            this.HOpenOrigin.Text = "打开原音频";
+            this.HOpenOrigin.UseVisualStyleBackColor = true;
+            this.HOpenOrigin.Click += new System.EventHandler(this.HOpenOrigin_Click);
+            // 
+            // HOriginPath
+            // 
+            this.HOriginPath.Location = new System.Drawing.Point(132, 32);
+            this.HOriginPath.Name = "HOriginPath";
+            this.HOriginPath.Size = new System.Drawing.Size(347, 31);
+            this.HOriginPath.TabIndex = 16;
+            this.HOriginPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HOriginPath_KeyPress);
+            // 
+            // HTargetBox
+            // 
+            this.HTargetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.HTargetBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.HTargetBox.FormattingEnabled = true;
+            this.HTargetBox.Location = new System.Drawing.Point(132, 92);
+            this.HTargetBox.Name = "HTargetBox";
+            this.HTargetBox.Size = new System.Drawing.Size(232, 33);
+            this.HTargetBox.TabIndex = 15;
+            // 
+            // HTargetLabel
+            // 
+            this.HTargetLabel.AutoSize = true;
+            this.HTargetLabel.Location = new System.Drawing.Point(16, 96);
+            this.HTargetLabel.Name = "HTargetLabel";
+            this.HTargetLabel.Size = new System.Drawing.Size(100, 24);
+            this.HTargetLabel.TabIndex = 14;
+            this.HTargetLabel.Text = "目标说话人";
+            // 
+            // HModelPanel
+            // 
+            this.HModelPanel.Controls.Add(this.hubertPath);
+            this.HModelPanel.Controls.Add(this.HOpenHubert);
+            this.HModelPanel.Controls.Add(this.HConfigPath);
+            this.HModelPanel.Controls.Add(this.HOpenConfig);
+            this.HModelPanel.Controls.Add(this.HModelPath);
+            this.HModelPanel.Controls.Add(this.HOpenModel);
+            this.HModelPanel.Location = new System.Drawing.Point(6, 6);
+            this.HModelPanel.Name = "HModelPanel";
+            this.HModelPanel.Size = new System.Drawing.Size(485, 167);
+            this.HModelPanel.TabIndex = 2;
+            this.HModelPanel.TabStop = false;
+            this.HModelPanel.Text = "模型文件";
+            // 
+            // hubertPath
+            // 
+            this.hubertPath.Location = new System.Drawing.Point(132, 114);
+            this.hubertPath.Name = "hubertPath";
+            this.hubertPath.Size = new System.Drawing.Size(347, 31);
+            this.hubertPath.TabIndex = 5;
+            this.hubertPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HubertPath_KeyPress);
+            // 
+            // HOpenHubert
+            // 
+            this.HOpenHubert.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.HOpenHubert.Location = new System.Drawing.Point(6, 112);
+            this.HOpenHubert.Name = "HOpenHubert";
+            this.HOpenHubert.Size = new System.Drawing.Size(120, 35);
+            this.HOpenHubert.TabIndex = 4;
+            this.HOpenHubert.Text = "HuBERT模型";
+            this.HOpenHubert.UseVisualStyleBackColor = true;
+            this.HOpenHubert.Click += new System.EventHandler(this.HOpenHubert_Click);
+            // 
+            // HConfigPath
+            // 
+            this.HConfigPath.Location = new System.Drawing.Point(132, 73);
+            this.HConfigPath.Name = "HConfigPath";
+            this.HConfigPath.Size = new System.Drawing.Size(347, 31);
+            this.HConfigPath.TabIndex = 3;
+            this.HConfigPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HConfigPath_KeyPress);
+            // 
+            // HOpenConfig
+            // 
+            this.HOpenConfig.Location = new System.Drawing.Point(6, 71);
+            this.HOpenConfig.Name = "HOpenConfig";
+            this.HOpenConfig.Size = new System.Drawing.Size(120, 35);
+            this.HOpenConfig.TabIndex = 2;
+            this.HOpenConfig.Text = "VITS配置";
+            this.HOpenConfig.UseVisualStyleBackColor = true;
+            this.HOpenConfig.Click += new System.EventHandler(this.HOpenConfig_Click);
+            // 
+            // HModelPath
+            // 
+            this.HModelPath.Location = new System.Drawing.Point(132, 32);
+            this.HModelPath.Name = "HModelPath";
+            this.HModelPath.Size = new System.Drawing.Size(347, 31);
+            this.HModelPath.TabIndex = 1;
+            this.HModelPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HModelPath_KeyPress);
+            // 
+            // HOpenModel
+            // 
+            this.HOpenModel.Location = new System.Drawing.Point(6, 30);
+            this.HOpenModel.Name = "HOpenModel";
+            this.HOpenModel.Size = new System.Drawing.Size(120, 35);
+            this.HOpenModel.TabIndex = 0;
+            this.HOpenModel.Text = "VITS模型";
+            this.HOpenModel.UseVisualStyleBackColor = true;
+            this.HOpenModel.Click += new System.EventHandler(this.HOpenModel_Click);
             // 
             // MainWin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(964, 534);
+            this.ClientSize = new System.Drawing.Size(977, 594);
+            this.Controls.Add(this.modelControl);
             this.Controls.Add(this.consoleBox);
             this.Controls.Add(this.savePanel);
-            this.Controls.Add(this.modeControl);
-            this.Controls.Add(this.modelPanel);
             this.Controls.Add(this.EXEPanel);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -375,6 +561,13 @@
             this.VCPage.PerformLayout();
             this.savePanel.ResumeLayout(false);
             this.savePanel.PerformLayout();
+            this.modelControl.ResumeLayout(false);
+            this.vitsPage.ResumeLayout(false);
+            this.hubertPage.ResumeLayout(false);
+            this.HVCPanel.ResumeLayout(false);
+            this.HVCPanel.PerformLayout();
+            this.HModelPanel.ResumeLayout(false);
+            this.HModelPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,6 +603,22 @@
         private System.Windows.Forms.ContextMenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem cleanButton;
         private System.Windows.Forms.ToolStripMenuItem lengthButton;
+        private System.Windows.Forms.TabControl modelControl;
+        private System.Windows.Forms.TabPage vitsPage;
+        private System.Windows.Forms.TabPage hubertPage;
+        private System.Windows.Forms.GroupBox HVCPanel;
+        private System.Windows.Forms.GroupBox HModelPanel;
+        private System.Windows.Forms.TextBox hubertPath;
+        private System.Windows.Forms.Button HOpenHubert;
+        private System.Windows.Forms.TextBox HConfigPath;
+        private System.Windows.Forms.Button HOpenConfig;
+        private System.Windows.Forms.TextBox HModelPath;
+        private System.Windows.Forms.Button HOpenModel;
+        private System.Windows.Forms.Button HOpenOrigin;
+        private System.Windows.Forms.TextBox HOriginPath;
+        private System.Windows.Forms.ComboBox HTargetBox;
+        private System.Windows.Forms.Label HTargetLabel;
+        private System.Windows.Forms.Button HLengthControl;
     }
 }
 

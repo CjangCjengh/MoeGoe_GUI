@@ -10,6 +10,19 @@ namespace MoeGoe_GUI
         public MainWin()
         {
             InitializeComponent();
+            LENGTHSCALE = 1;
+            string p1 = Environment.CurrentDirectory + @"\MoeGoe.exe";
+            string p2 = Environment.CurrentDirectory + @"\MoeGoe\MoeGoe.exe";
+            if (File.Exists(p1))
+            {
+                EXEPATH = EXEPath.Text = p1;
+                modelControl.Enabled = true;
+            }
+            else if (File.Exists(p2))
+            {
+                EXEPATH = EXEPath.Text = p2;
+                modelControl.Enabled = true;
+            }
         }
 
         private CommandLine cmd;
@@ -17,15 +30,25 @@ namespace MoeGoe_GUI
         private string EXEPATH;
         private string MODELPATH;
         private string CONFIGPATH;
+        private string HUBERTPATH;
         private string SAVEPATH;
 
         private string ORIGINPATH;
 
+        private decimal LENGTHSCALE;
+
         private void ClearAll()
         {
+            ClearVITS();
+            ClearHubertVITS();
+        }
+
+        private void ClearVITS()
+        {
             modelPath.Clear();
+            MODELPATH = null;
             configPath.Clear();
-            modelPanel.Enabled = false;
+            CONFIGPATH=null;
             ClearMode();
         }
 
@@ -33,11 +56,34 @@ namespace MoeGoe_GUI
         {
             textBox.Clear();
             speakerBox.Items.Clear();
+            LENGTHSCALE = 1;
             originPath.Clear();
             ORIGINPATH = null;
             originBox.Items.Clear();
             targetBox.Items.Clear();
             modeControl.Enabled = false;
+            savePath.Clear();
+            savePanel.Enabled = false;
+        }
+
+        private void ClearHubertVITS()
+        {
+            HModelPath.Clear();
+            MODELPATH = null;
+            HConfigPath.Clear();
+            CONFIGPATH = null;
+            hubertPath.Clear();
+            HUBERTPATH = null;
+            ClearHubertVC();
+        }
+
+        private void ClearHubertVC()
+        {
+            HOriginPath.Clear();
+            ORIGINPATH = null;
+            HTargetBox.Items.Clear();
+            LENGTHSCALE = 1;
+            HVCPanel.Enabled = false;
             savePath.Clear();
             savePanel.Enabled = false;
         }
@@ -52,7 +98,7 @@ namespace MoeGoe_GUI
             {
                 ClearAll();
                 EXEPATH = EXEPath.Text = ofd.FileName;
-                modelPanel.Enabled = true;
+                modelControl.Enabled = true;
             }
             ofd.Dispose();
         }
@@ -67,7 +113,7 @@ namespace MoeGoe_GUI
                 {
                     ClearAll();
                     EXEPATH = EXEPath.Text;
-                    modelPanel.Enabled = true;
+                    modelControl.Enabled = true;
                 }
         }
 
@@ -129,10 +175,10 @@ namespace MoeGoe_GUI
         {
             ClearMode();
             if (MODELPATH != null && CONFIGPATH != null)
-                Initialize_mode();
+                InitializeSpeakers();
         }
 
-        private void Initialize_mode()
+        private void InitializeSpeakers()
         {
             string json = File.ReadAllText(CONFIGPATH);
             Match match = Regex.Match(json,
@@ -146,16 +192,36 @@ namespace MoeGoe_GUI
                     for (int i = 0; i < matches.Count; i++)
                     {
                         string speaker = Regex.Unescape(matches[i].Groups[1].Value);
-                        speakerBox.Items.Add(speaker);
-                        originBox.Items.Add(speaker);
-                        targetBox.Items.Add(speaker);
+                        AddSpeaker(speaker);
                     }
-                    GetStart();
-                    return;
                 }
             }
-            MessageBox.Show("读取失败！", "",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                match = Regex.Match(json,
+                "\"n_speakers\"\\s*:\\s*(\\d+)");
+                int nspeakers = 0;
+                if (match.Success)
+                    nspeakers = int.Parse(match.Groups[1].Value);
+                if (nspeakers == 0)
+                    AddSpeaker("0");
+                else
+                    for (int i = 0; i < nspeakers; i++)
+                        AddSpeaker(i.ToString());
+            }
+            GetStart();
+        }
+
+        private void AddSpeaker(string speaker)
+        {
+            if (modelControl.SelectedIndex == 0)
+            {
+                speakerBox.Items.Add(speaker);
+                originBox.Items.Add(speaker);
+                targetBox.Items.Add(speaker);
+            }
+            else if (modelControl.SelectedIndex == 1)
+                HTargetBox.Items.Add(speaker);
         }
 
         private void GetStart()
@@ -165,7 +231,13 @@ namespace MoeGoe_GUI
             cmd.Write("\"" + EXEPATH + "\"");
             cmd.Write(MODELPATH);
             cmd.Write(CONFIGPATH);
-            modeControl.Enabled = true;
+            if (modelControl.SelectedIndex == 0)
+                modeControl.Enabled = true;
+            else if (modelControl.SelectedIndex == 1)
+            {
+                cmd.Write(HUBERTPATH);
+                HVCPanel.Enabled = true;
+            }
             savePanel.Enabled = true;
         }
 
@@ -197,23 +269,48 @@ namespace MoeGoe_GUI
 
         private bool IsFilled()
         {
-            if (modeControl.SelectedIndex == 0)
+            if (modelControl.SelectedIndex == 0)
             {
-                if (textBox.Text.Length == 0)
+                if (modeControl.SelectedIndex == 0)
                 {
-                    MessageBox.Show("请输入文本！", "",
-                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
+                    if (textBox.Text.Length == 0)
+                    {
+                        MessageBox.Show("请输入文本！", "",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
+                    if (speakerBox.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("请选择说话人！", "",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
+                    return true;
                 }
-                if (speakerBox.SelectedIndex == -1)
+                else if (modeControl.SelectedIndex == 1)
                 {
-                    MessageBox.Show("请选择说话人！", "",
-                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
+                    if (ORIGINPATH == null)
+                    {
+                        MessageBox.Show("请指定原音频！", "",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
+                    if (originBox.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("请选择原说话人！", "",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
+                    if (targetBox.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("请选择目标说话人！", "",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
+                    return true;
                 }
-                return true;
             }
-            else if (modeControl.SelectedIndex == 1)
+            else if (modelControl.SelectedIndex == 1)
             {
                 if (ORIGINPATH == null)
                 {
@@ -221,13 +318,7 @@ namespace MoeGoe_GUI
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
-                if (originBox.SelectedIndex == -1)
-                {
-                    MessageBox.Show("请选择原说话人！", "",
-                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
-                }
-                if (targetBox.SelectedIndex == -1)
+                if (HTargetBox.SelectedIndex == -1)
                 {
                     MessageBox.Show("请选择目标说话人！", "",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -249,11 +340,20 @@ namespace MoeGoe_GUI
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 SAVEPATH = savePath.Text = sfd.FileName;
-                if (modeControl.SelectedIndex == 0)
-                    TTS();
-                else if (modeControl.SelectedIndex == 1)
-                    VC();
-                cmd.Write(SAVEPATH);
+                if(modelControl.SelectedIndex == 0)
+                {
+                    if (modeControl.SelectedIndex == 0)
+                        TTS();
+                    else if (modeControl.SelectedIndex == 1)
+                        VC();
+                    cmd.Write(SAVEPATH);
+                }
+                else if (modelControl.SelectedIndex == 1)
+                {
+                    cmd.Write(ORIGINPATH);
+                    cmd.Write(HTargetBox.SelectedIndex.ToString());
+                    cmd.Write($"[LENGTH={LENGTHSCALE}]{SAVEPATH}");
+                }
                 cmd.Write("y");
             }
             sfd.Dispose();
@@ -262,7 +362,7 @@ namespace MoeGoe_GUI
         private void TTS()
         {
             cmd.Write("t");
-            cmd.Write(Regex.Replace(textBox.Text, @"\r?\n", " "));
+            cmd.Write($"[LENGTH={LENGTHSCALE}]{Regex.Replace(textBox.Text, @"\r?\n", " ")}");
             cmd.Write(speakerBox.SelectedIndex.ToString());
         }
 
@@ -283,11 +383,138 @@ namespace MoeGoe_GUI
             win.Dispose();
         }
 
+        private void SetLengthScale(decimal lengthScale)
+        {
+            LENGTHSCALE = lengthScale;
+        }
+
         private void LengthButton_Click(object sender, EventArgs e)
         {
-            LengthWin win = new LengthWin(textBox);
+            LengthWin win = new LengthWin(LENGTHSCALE, SetLengthScale);
             win.ShowDialog();
             win.Dispose();
+        }
+
+        private void ModelControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (modelControl.SelectedIndex)
+            {
+                case 0:
+                    ClearVITS();
+                    break;
+                case 1:
+                    ClearHubertVITS();
+                    break;
+            }
+        }
+
+        private void CheckModelHubert()
+        {
+            ClearHubertVC();
+            if (MODELPATH != null && CONFIGPATH != null && HUBERTPATH != null)
+                InitializeSpeakers();
+        }
+
+        private void HOpenModel_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog
+            {
+                Filter = "模型文件|*.pth|所有文件|*.*"
+            };
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                MODELPATH = HModelPath.Text = ofd.FileName;
+                CheckModelHubert();
+            }
+            ofd.Dispose();
+        }
+
+        private void HModelPath_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+                if (!File.Exists(HModelPath.Text))
+                    MessageBox.Show("文件不存在！", "",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                {
+                    MODELPATH = HModelPath.Text;
+                    CheckModelHubert();
+                }
+        }
+
+        private void HOpenConfig_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog
+            {
+                Filter = "配置文件|*.json"
+            };
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                CONFIGPATH = HConfigPath.Text = ofd.FileName;
+                CheckModelHubert();
+            }
+            ofd.Dispose();
+        }
+
+        private void HConfigPath_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+                if (!File.Exists(HConfigPath.Text))
+                    MessageBox.Show("文件不存在！", "",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                {
+                    CONFIGPATH = HConfigPath.Text;
+                    CheckModelHubert();
+                }
+        }
+
+        private void HOpenHubert_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog
+            {
+                Filter = "模型文件|*.pt|所有文件|*.*"
+            };
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                HUBERTPATH = hubertPath.Text = ofd.FileName;
+                CheckModelHubert();
+            }
+            ofd.Dispose();
+        }
+
+        private void HubertPath_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+                if (!File.Exists(HConfigPath.Text))
+                    MessageBox.Show("文件不存在！", "",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                {
+                    HUBERTPATH = hubertPath.Text;
+                    CheckModelHubert();
+                }
+        }
+
+        private void HOpenOrigin_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog
+            {
+                Filter = "音频文件|*.wav;*.mp3;*.ogg;*.opus"
+            };
+            if (ofd.ShowDialog() == DialogResult.OK)
+                ORIGINPATH = HOriginPath.Text = ofd.FileName;
+            ofd.Dispose();
+        }
+
+        private void HOriginPath_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+                if (!File.Exists(HOriginPath.Text))
+                    MessageBox.Show("文件不存在！", "",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                    ORIGINPATH = HOriginPath.Text;
         }
     }
 }

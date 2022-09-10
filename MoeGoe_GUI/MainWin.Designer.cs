@@ -424,6 +424,7 @@
             this.HLengthControl.TabIndex = 17;
             this.HLengthControl.Text = "调整时长";
             this.HLengthControl.UseVisualStyleBackColor = true;
+            this.HLengthControl.Click += new System.EventHandler(this.HLengthControl_Click);
             // 
             // HOpenOrigin
             // 

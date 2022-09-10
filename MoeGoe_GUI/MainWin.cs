@@ -516,5 +516,12 @@ namespace MoeGoe_GUI
                 else
                     ORIGINPATH = HOriginPath.Text;
         }
+
+        private void HLengthControl_Click(object sender, EventArgs e)
+        {
+            LengthWin win = new LengthWin(LENGTHSCALE, SetLengthScale);
+            win.ShowDialog();
+            win.Dispose();
+        }
     }
 }

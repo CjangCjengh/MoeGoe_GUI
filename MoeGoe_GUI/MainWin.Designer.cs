@@ -46,7 +46,7 @@
             this.textBox = new System.Windows.Forms.TextBox();
             this.menuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cleanButton = new System.Windows.Forms.ToolStripMenuItem();
-            this.lengthButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.paramsButton = new System.Windows.Forms.ToolStripMenuItem();
             this.VCPage = new System.Windows.Forms.TabPage();
             this.openOrigin = new System.Windows.Forms.Button();
             this.originPath = new System.Windows.Forms.TextBox();
@@ -62,7 +62,7 @@
             this.vitsPage = new System.Windows.Forms.TabPage();
             this.hubertPage = new System.Windows.Forms.TabPage();
             this.HVCPanel = new System.Windows.Forms.GroupBox();
-            this.HLengthControl = new System.Windows.Forms.Button();
+            this.HAdvancedControl = new System.Windows.Forms.Button();
             this.HOpenOrigin = new System.Windows.Forms.Button();
             this.HOriginPath = new System.Windows.Forms.TextBox();
             this.HTargetBox = new System.Windows.Forms.ComboBox();
@@ -234,7 +234,7 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cleanButton,
-            this.lengthButton});
+            this.paramsButton});
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(153, 64);
             // 
@@ -245,12 +245,12 @@
             this.cleanButton.Text = "清理文本";
             this.cleanButton.Click += new System.EventHandler(this.CleanButton_Click);
             // 
-            // lengthButton
+            // paramsButton
             // 
-            this.lengthButton.Name = "lengthButton";
-            this.lengthButton.Size = new System.Drawing.Size(152, 30);
-            this.lengthButton.Text = "调整时长";
-            this.lengthButton.Click += new System.EventHandler(this.LengthButton_Click);
+            this.paramsButton.Name = "paramsButton";
+            this.paramsButton.Size = new System.Drawing.Size(152, 30);
+            this.paramsButton.Text = "参数设置";
+            this.paramsButton.Click += new System.EventHandler(this.AdvancedButton_Click);
             // 
             // VCPage
             // 
@@ -403,7 +403,7 @@
             // 
             // HVCPanel
             // 
-            this.HVCPanel.Controls.Add(this.HLengthControl);
+            this.HVCPanel.Controls.Add(this.HAdvancedControl);
             this.HVCPanel.Controls.Add(this.HOpenOrigin);
             this.HVCPanel.Controls.Add(this.HOriginPath);
             this.HVCPanel.Controls.Add(this.HTargetBox);
@@ -416,15 +416,15 @@
             this.HVCPanel.TabStop = false;
             this.HVCPanel.Text = "语音转换";
             // 
-            // HLengthControl
+            // HAdvancedControl
             // 
-            this.HLengthControl.Location = new System.Drawing.Point(370, 91);
-            this.HLengthControl.Name = "HLengthControl";
-            this.HLengthControl.Size = new System.Drawing.Size(109, 35);
-            this.HLengthControl.TabIndex = 17;
-            this.HLengthControl.Text = "调整时长";
-            this.HLengthControl.UseVisualStyleBackColor = true;
-            this.HLengthControl.Click += new System.EventHandler(this.HLengthControl_Click);
+            this.HAdvancedControl.Location = new System.Drawing.Point(370, 91);
+            this.HAdvancedControl.Name = "HAdvancedControl";
+            this.HAdvancedControl.Size = new System.Drawing.Size(109, 35);
+            this.HAdvancedControl.TabIndex = 17;
+            this.HAdvancedControl.Text = "高级设置";
+            this.HAdvancedControl.UseVisualStyleBackColor = true;
+            this.HAdvancedControl.Click += new System.EventHandler(this.HAdvancedControl_Click);
             // 
             // HOpenOrigin
             // 
@@ -603,7 +603,7 @@
         private System.Windows.Forms.Button openOrigin;
         private System.Windows.Forms.ContextMenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem cleanButton;
-        private System.Windows.Forms.ToolStripMenuItem lengthButton;
+        private System.Windows.Forms.ToolStripMenuItem paramsButton;
         private System.Windows.Forms.TabControl modelControl;
         private System.Windows.Forms.TabPage vitsPage;
         private System.Windows.Forms.TabPage hubertPage;
@@ -619,7 +619,7 @@
         private System.Windows.Forms.TextBox HOriginPath;
         private System.Windows.Forms.ComboBox HTargetBox;
         private System.Windows.Forms.Label HTargetLabel;
-        private System.Windows.Forms.Button HLengthControl;
+        private System.Windows.Forms.Button HAdvancedControl;
     }
 }
 

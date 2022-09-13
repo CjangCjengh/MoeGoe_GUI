@@ -67,17 +67,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HAdvancedWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HAdvancedWin.Designer.cs">
+      <DependentUpon>HAdvancedWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CleanWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CleanWin.Designer.cs">
+      <DependentUpon>CleanWin.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdvancedWin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdvancedWin.Designer.cs">
       <DependentUpon>AdvancedWin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LengthWin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LengthWin.Designer.cs">
-      <DependentUpon>LengthWin.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWin.cs">
       <SubType>Form</SubType>
@@ -87,11 +93,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HAdvancedWin.resx">
+      <DependentUpon>HAdvancedWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CleanWin.resx">
+      <DependentUpon>CleanWin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdvancedWin.resx">
       <DependentUpon>AdvancedWin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LengthWin.resx">
-      <DependentUpon>LengthWin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWin.resx">
       <DependentUpon>MainWin.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace MoeGoe_GUI
 {
-    partial class AdvancedWin
+    partial class HAdvancedWin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdvancedWin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HAdvancedWin));
             this.lengthBox = new System.Windows.Forms.NumericUpDown();
             this.confirmButton = new System.Windows.Forms.Button();
             this.lengthLabel = new System.Windows.Forms.Label();
@@ -36,9 +36,12 @@
             this.noiseBox = new System.Windows.Forms.NumericUpDown();
             this.noisewLabel = new System.Windows.Forms.Label();
             this.noisewBox = new System.Windows.Forms.NumericUpDown();
+            this.f0Label = new System.Windows.Forms.Label();
+            this.f0Box = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.lengthBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noiseBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noisewBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.f0Box)).BeginInit();
             this.SuspendLayout();
             // 
             // lengthBox
@@ -71,7 +74,7 @@
             // 
             // confirmButton
             // 
-            this.confirmButton.Location = new System.Drawing.Point(73, 152);
+            this.confirmButton.Location = new System.Drawing.Point(73, 190);
             this.confirmButton.Name = "confirmButton";
             this.confirmButton.Size = new System.Drawing.Size(120, 35);
             this.confirmButton.TabIndex = 6;
@@ -162,11 +165,52 @@
             0,
             65536});
             // 
-            // AdvancedWin
+            // f0Label
+            // 
+            this.f0Label.AutoSize = true;
+            this.f0Label.Enabled = false;
+            this.f0Label.Location = new System.Drawing.Point(38, 139);
+            this.f0Label.Name = "f0Label";
+            this.f0Label.Size = new System.Drawing.Size(82, 24);
+            this.f0Label.TabIndex = 7;
+            this.f0Label.Text = "基频比例";
+            // 
+            // f0Box
+            // 
+            this.f0Box.DecimalPlaces = 2;
+            this.f0Box.Enabled = false;
+            this.f0Box.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.f0Box.Location = new System.Drawing.Point(136, 136);
+            this.f0Box.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.f0Box.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.f0Box.Name = "f0Box";
+            this.f0Box.Size = new System.Drawing.Size(86, 31);
+            this.f0Box.TabIndex = 8;
+            this.f0Box.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // HAdvancedWin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(267, 209);
+            this.ClientSize = new System.Drawing.Size(267, 248);
+            this.Controls.Add(this.f0Label);
+            this.Controls.Add(this.f0Box);
             this.Controls.Add(this.noisewLabel);
             this.Controls.Add(this.noisewBox);
             this.Controls.Add(this.noiseLabel);
@@ -180,12 +224,13 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AdvancedWin";
+            this.Name = "HAdvancedWin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "参数设置";
             ((System.ComponentModel.ISupportInitialize)(this.lengthBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noiseBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noisewBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.f0Box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +245,7 @@
         private System.Windows.Forms.NumericUpDown noiseBox;
         private System.Windows.Forms.Label noisewLabel;
         private System.Windows.Forms.NumericUpDown noisewBox;
+        private System.Windows.Forms.Label f0Label;
+        private System.Windows.Forms.NumericUpDown f0Box;
     }
 }

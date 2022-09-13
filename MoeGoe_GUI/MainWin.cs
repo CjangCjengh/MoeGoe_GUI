@@ -11,6 +11,9 @@ namespace MoeGoe_GUI
         {
             InitializeComponent();
             LENGTHSCALE = 1;
+            NOISESCALE = 0.667M;
+            NOISESCALEW = 0.8M;
+            F0SCALE = 1;
             string p1 = Environment.CurrentDirectory + @"\MoeGoe.exe";
             string p2 = Environment.CurrentDirectory + @"\MoeGoe\MoeGoe.exe";
             if (File.Exists(p1))
@@ -36,6 +39,11 @@ namespace MoeGoe_GUI
         private string ORIGINPATH;
 
         private decimal LENGTHSCALE;
+        private decimal NOISESCALE;
+        private decimal NOISESCALEW;
+        private decimal F0SCALE;
+
+        private bool USEF0;
 
         private void ClearAll()
         {
@@ -48,7 +56,7 @@ namespace MoeGoe_GUI
             modelPath.Clear();
             MODELPATH = null;
             configPath.Clear();
-            CONFIGPATH=null;
+            CONFIGPATH = null;
             ClearMode();
         }
 
@@ -57,6 +65,8 @@ namespace MoeGoe_GUI
             textBox.Clear();
             speakerBox.Items.Clear();
             LENGTHSCALE = 1;
+            NOISESCALE = 0.667M;
+            NOISESCALEW = 0.8M;
             originPath.Clear();
             ORIGINPATH = null;
             originBox.Items.Clear();
@@ -83,6 +93,9 @@ namespace MoeGoe_GUI
             ORIGINPATH = null;
             HTargetBox.Items.Clear();
             LENGTHSCALE = 1;
+            NOISESCALE = 0.1M;
+            NOISESCALEW = 0.1M;
+            F0SCALE = 1;
             HVCPanel.Enabled = false;
             savePath.Clear();
             savePanel.Enabled = false;
@@ -181,6 +194,11 @@ namespace MoeGoe_GUI
         private void InitializeSpeakers()
         {
             string json = File.ReadAllText(CONFIGPATH);
+            Match useF0 = Regex.Match(json, "\"use_f0\"\\s*:\\s*([A-Za-z]+)");
+            if (useF0.Success)
+                USEF0 = bool.Parse(useF0.Groups[1].Value);
+            else
+                USEF0 = false;
             Match match = Regex.Match(json,
                 "\"speakers\"\\s*:\\s*\\[((?:\\s*\"(?:(?:\\\\.)|[^\\\\\"])*\"\\s*,?\\s*)*)\\]");
             if (match.Success)
@@ -340,7 +358,7 @@ namespace MoeGoe_GUI
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 SAVEPATH = savePath.Text = sfd.FileName;
-                if(modelControl.SelectedIndex == 0)
+                if (modelControl.SelectedIndex == 0)
                 {
                     if (modeControl.SelectedIndex == 0)
                         TTS();
@@ -352,7 +370,10 @@ namespace MoeGoe_GUI
                 {
                     cmd.Write(ORIGINPATH);
                     cmd.Write(HTargetBox.SelectedIndex.ToString());
-                    cmd.Write($"[LENGTH={LENGTHSCALE}]{SAVEPATH}");
+                    if (USEF0)
+                        cmd.Write($"[LENGTH={LENGTHSCALE}][NOISE={NOISESCALE}][NOISEW={NOISESCALEW}][F0={F0SCALE}]{SAVEPATH}");
+                    else
+                        cmd.Write($"[LENGTH={LENGTHSCALE}][NOISE={NOISESCALE}][NOISEW={NOISESCALEW}]{SAVEPATH}");
                 }
                 cmd.Write("y");
             }
@@ -362,7 +383,7 @@ namespace MoeGoe_GUI
         private void TTS()
         {
             cmd.Write("t");
-            cmd.Write($"[LENGTH={LENGTHSCALE}]{Regex.Replace(textBox.Text, @"\r?\n", " ")}");
+            cmd.Write($"[LENGTH={LENGTHSCALE}][NOISE={NOISESCALE}][NOISEW={NOISESCALEW}]{Regex.Replace(textBox.Text, @"\r?\n", " ")}");
             cmd.Write(speakerBox.SelectedIndex.ToString());
         }
 
@@ -376,21 +397,36 @@ namespace MoeGoe_GUI
 
         private void CleanButton_Click(object sender, EventArgs e)
         {
-            AdvancedWin win = new AdvancedWin(textBox, cmd);
+            CleanWin win = new CleanWin(textBox, cmd);
             cmd.OutputHandler -= Cmd_OutputHandler;
             win.ShowDialog();
             cmd.OutputHandler += Cmd_OutputHandler;
             win.Dispose();
         }
 
-        private void SetLengthScale(decimal lengthScale)
+        private decimal[] GetParameters()
         {
-            LENGTHSCALE = lengthScale;
+            return new decimal[] { LENGTHSCALE, NOISESCALE, NOISESCALEW, F0SCALE };
         }
 
-        private void LengthButton_Click(object sender, EventArgs e)
+        private void SetParameters(decimal lengthScale, decimal noiseScale, decimal noiseScaleW)
         {
-            LengthWin win = new LengthWin(LENGTHSCALE, SetLengthScale);
+            LENGTHSCALE = lengthScale;
+            NOISESCALE = noiseScale;
+            NOISESCALEW = noiseScaleW;
+        }
+
+        private void SetParameters(decimal lengthScale, decimal noiseScale, decimal noiseScaleW, decimal f0Scale)
+        {
+            LENGTHSCALE = lengthScale;
+            NOISESCALE = noiseScale;
+            NOISESCALEW = noiseScaleW;
+            F0SCALE = f0Scale;
+        }
+
+        private void AdvancedButton_Click(object sender, EventArgs e)
+        {
+            AdvancedWin win = new AdvancedWin(GetParameters, SetParameters);
             win.ShowDialog();
             win.Dispose();
         }
@@ -517,9 +553,9 @@ namespace MoeGoe_GUI
                     ORIGINPATH = HOriginPath.Text;
         }
 
-        private void HLengthControl_Click(object sender, EventArgs e)
+        private void HAdvancedControl_Click(object sender, EventArgs e)
         {
-            LengthWin win = new LengthWin(LENGTHSCALE, SetLengthScale);
+            HAdvancedWin win = new HAdvancedWin(GetParameters, SetParameters, USEF0);
             win.ShowDialog();
             win.Dispose();
         }

@@ -1,49 +1,27 @@
 ﻿using System;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace MoeGoe_GUI
 {
     public partial class AdvancedWin : Form
     {
-        public AdvancedWin(TextBox box, CommandLine cmd)
+        public AdvancedWin(Func<decimal[]> GetParameters,
+            Action<decimal, decimal, decimal> SetParameters)
         {
             InitializeComponent();
-            returnBox = box;
-            this.cmd = cmd;
-            Regex regexCleaned = new Regex(@"\[CLEANED\]");
-            Match match = Regex.Match(box.Text,@"\[CLEANED\]");
-            if (match.Success)
-                textBox.Text = "";
-            else
-                textBox.Text = box.Text;
-            cmd.OutputHandler += Cmd_OutputHandler;
+            decimal[] parameters = GetParameters();
+            lengthBox.Value = parameters[0];
+            noiseBox.Value = parameters[1];
+            noisewBox.Value = parameters[2];
+            this.SetParameters = SetParameters;
         }
 
-        private readonly TextBox returnBox;
-        private readonly CommandLine cmd;
-
-        private void Cmd_OutputHandler(CommandLine sender, string e)
-        {
-            Invoke(new Action(() => cleanedBox.Text = e));
-        }
+        private readonly Action<decimal, decimal, decimal> SetParameters;
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            returnBox.Text = "[CLEANED]" + cleanedBox.Text;
+            SetParameters(lengthBox.Value, noiseBox.Value, noisewBox.Value);
             Close();
-        }
-
-        private void CleanButton_Click(object sender, EventArgs e)
-        {
-            cmd.Write("t");
-            cmd.Write("[ADVANCED]");
-            cmd.Write(textBox.Text);
-        }
-
-        private void AdvancedWin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            cmd.OutputHandler -= Cmd_OutputHandler;
         }
     }
 }

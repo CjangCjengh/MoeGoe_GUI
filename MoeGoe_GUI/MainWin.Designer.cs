@@ -105,6 +105,7 @@
             this.EXEPath.Name = "EXEPath";
             this.EXEPath.Size = new System.Drawing.Size(363, 31);
             this.EXEPath.TabIndex = 1;
+            this.EXEPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EXEPath_KeyDown);
             this.EXEPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EXEPath_KeyPress);
             // 
             // openEXE
@@ -136,6 +137,7 @@
             this.configPath.Name = "configPath";
             this.configPath.Size = new System.Drawing.Size(347, 31);
             this.configPath.TabIndex = 3;
+            this.configPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ConfigPath_KeyDown);
             this.configPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ConfigPath_KeyPress);
             // 
             // openConfig
@@ -154,6 +156,7 @@
             this.modelPath.Name = "modelPath";
             this.modelPath.Size = new System.Drawing.Size(347, 31);
             this.modelPath.TabIndex = 1;
+            this.modelPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ModelPath_KeyDown);
             this.modelPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ModelPath_KeyPress);
             // 
             // openModel
@@ -228,6 +231,7 @@
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(344, 93);
             this.textBox.TabIndex = 1;
+            this.textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox_KeyDown);
             // 
             // menuStrip
             // 
@@ -484,6 +488,7 @@
             this.hubertPath.Name = "hubertPath";
             this.hubertPath.Size = new System.Drawing.Size(347, 31);
             this.hubertPath.TabIndex = 5;
+            this.hubertPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HubertPath_KeyDown);
             this.hubertPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HubertPath_KeyPress);
             // 
             // HOpenHubert
@@ -503,6 +508,7 @@
             this.HConfigPath.Name = "HConfigPath";
             this.HConfigPath.Size = new System.Drawing.Size(347, 31);
             this.HConfigPath.TabIndex = 3;
+            this.HConfigPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HConfigPath_KeyDown);
             this.HConfigPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HConfigPath_KeyPress);
             // 
             // HOpenConfig
@@ -521,6 +527,7 @@
             this.HModelPath.Name = "HModelPath";
             this.HModelPath.Size = new System.Drawing.Size(347, 31);
             this.HModelPath.TabIndex = 1;
+            this.HModelPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HModelPath_KeyDown);
             this.HModelPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HModelPath_KeyPress);
             // 
             // HOpenModel
@@ -550,6 +557,7 @@
             this.Name = "MainWin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MoeGoe";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainWin_FormClosed);
             this.EXEPanel.ResumeLayout(false);
             this.EXEPanel.PerformLayout();
             this.modelPanel.ResumeLayout(false);

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -10,25 +11,38 @@ namespace MoeGoe_GUI
         public MainWin()
         {
             InitializeComponent();
+
+            DEFAULTS = new ExDictionary<string, ExList<string>>(() => { return new ExList<string>(5); });
+
+            if (File.Exists("MoeGoe_GUI.config"))
+            {
+                foreach (string line in File.ReadLines("MoeGoe_GUI.config"))
+                {
+                    string[] split = line.Split('>');
+                    DEFAULTS.Add(split[0], new ExList<string>(split[1].Split('|'), 5));
+                }
+            }
+
+            if (!DEFAULTS.ContainsKey("D1"))
+                DEFAULTS["D1"].Add("[ZH][ZH]");
+            if (!DEFAULTS.ContainsKey("D2"))
+                DEFAULTS["D2"].Add("[JA][JA]");
+            if (!DEFAULTS.ContainsKey("D3"))
+                DEFAULTS["D3"].Add("[KO][KO]");
+            if (!DEFAULTS.ContainsKey("D4"))
+                DEFAULTS["D4"].Add("[SA][SA]");
+            if (!DEFAULTS.ContainsKey("D5"))
+                DEFAULTS["D5"].Add("[EN][EN]");
+
             LENGTHSCALE = 1;
             NOISESCALE = 0.667M;
             NOISESCALEW = 0.8M;
             F0SCALE = 1;
-            string p1 = Environment.CurrentDirectory + @"\MoeGoe.exe";
-            string p2 = Environment.CurrentDirectory + @"\MoeGoe\MoeGoe.exe";
-            if (File.Exists(p1))
-            {
-                EXEPATH = EXEPath.Text = p1;
-                modelControl.Enabled = true;
-            }
-            else if (File.Exists(p2))
-            {
-                EXEPATH = EXEPath.Text = p2;
-                modelControl.Enabled = true;
-            }
         }
 
         private CommandLine cmd;
+
+        private readonly ExDictionary<string, ExList<string>> DEFAULTS;
 
         private string EXEPATH;
         private string MODELPATH;
@@ -110,7 +124,7 @@ namespace MoeGoe_GUI
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 ClearAll();
-                EXEPATH = EXEPath.Text = ofd.FileName;
+                DEFAULTS["EXEPATHS"].Add(EXEPATH = EXEPath.Text = ofd.FileName);
                 modelControl.Enabled = true;
             }
             ofd.Dispose();
@@ -125,7 +139,7 @@ namespace MoeGoe_GUI
                 else
                 {
                     ClearAll();
-                    EXEPATH = EXEPath.Text;
+                    DEFAULTS["EXEPATHS"].Add(EXEPATH = EXEPath.Text);
                     modelControl.Enabled = true;
                 }
         }
@@ -138,7 +152,7 @@ namespace MoeGoe_GUI
             };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                MODELPATH = modelPath.Text = ofd.FileName;
+                DEFAULTS["MODELPATHS"].Add(MODELPATH = modelPath.Text = ofd.FileName);
                 CheckModel();
             }
             ofd.Dispose();
@@ -152,7 +166,7 @@ namespace MoeGoe_GUI
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {
-                    MODELPATH = modelPath.Text;
+                    DEFAULTS["MODELPATHS"].Add(MODELPATH = modelPath.Text);
                     CheckModel();
                 }
         }
@@ -165,7 +179,7 @@ namespace MoeGoe_GUI
             };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                CONFIGPATH = configPath.Text = ofd.FileName;
+                DEFAULTS["CONFIGPATHS"].Add(CONFIGPATH = configPath.Text = ofd.FileName);
                 CheckModel();
             }
             ofd.Dispose();
@@ -179,7 +193,7 @@ namespace MoeGoe_GUI
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {
-                    CONFIGPATH = configPath.Text;
+                    DEFAULTS["CONFIGPATHS"].Add(CONFIGPATH = configPath.Text);
                     CheckModel();
                 }
         }
@@ -459,7 +473,7 @@ namespace MoeGoe_GUI
             };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                MODELPATH = HModelPath.Text = ofd.FileName;
+                DEFAULTS["HMODELPATHS"].Add(MODELPATH = HModelPath.Text = ofd.FileName);
                 CheckModelHubert();
             }
             ofd.Dispose();
@@ -473,7 +487,7 @@ namespace MoeGoe_GUI
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {
-                    MODELPATH = HModelPath.Text;
+                    DEFAULTS["HMODELPATHS"].Add(MODELPATH = HModelPath.Text);
                     CheckModelHubert();
                 }
         }
@@ -486,7 +500,7 @@ namespace MoeGoe_GUI
             };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                CONFIGPATH = HConfigPath.Text = ofd.FileName;
+                DEFAULTS["HCONFIGPATHS"].Add(CONFIGPATH = HConfigPath.Text = ofd.FileName);
                 CheckModelHubert();
             }
             ofd.Dispose();
@@ -500,7 +514,7 @@ namespace MoeGoe_GUI
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {
-                    CONFIGPATH = HConfigPath.Text;
+                    DEFAULTS["HCONFIGPATHS"].Add(CONFIGPATH = HConfigPath.Text);
                     CheckModelHubert();
                 }
         }
@@ -513,7 +527,7 @@ namespace MoeGoe_GUI
             };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                HUBERTPATH = hubertPath.Text = ofd.FileName;
+                DEFAULTS["HUBERTPATHS"].Add(HUBERTPATH = hubertPath.Text = ofd.FileName);
                 CheckModelHubert();
             }
             ofd.Dispose();
@@ -527,7 +541,7 @@ namespace MoeGoe_GUI
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {
-                    HUBERTPATH = hubertPath.Text;
+                    DEFAULTS["HUBERTPATHS"].Add(HUBERTPATH = hubertPath.Text);
                     CheckModelHubert();
                 }
         }
@@ -558,6 +572,160 @@ namespace MoeGoe_GUI
             HAdvancedWin win = new HAdvancedWin(GetParameters, SetParameters, USEF0);
             win.ShowDialog();
             win.Dispose();
+        }
+
+        private void MainWin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            using (StreamWriter sw = new StreamWriter("MoeGoe_GUI.config"))
+                foreach (KeyValuePair<string, ExList<string>> pair in DEFAULTS)
+                    sw.WriteLine(pair.Key + ">" + pair.Value);
+        }
+
+        private void GetHistory(TextBox box, string key, KeyEventArgs e)
+        {
+            if (!DEFAULTS.TryGetValue(key, out ExList<string> list))
+                return;
+            if (e.KeyCode == Keys.Up)
+                box.Text = list.Next();
+            else if (e.KeyCode == Keys.Down)
+                box.Text = list.Previous();
+        }
+
+        private void EXEPath_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetHistory(EXEPath, "EXEPATHS", e);
+        }
+
+        private void ModelPath_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetHistory(modelPath, "MODELPATHS", e);
+        }
+
+        private void ConfigPath_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetHistory(configPath, "CONFIGPATHS", e);
+        }
+
+        private void HModelPath_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetHistory(HModelPath, "HMODELPATHS", e);
+        }
+
+        private void HConfigPath_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetHistory(HConfigPath, "HCONFIGPATHS", e);
+        }
+
+        private void HubertPath_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetHistory(hubertPath, "HCONFIGPATHS", e);
+        }
+
+        private void TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!e.Control)
+                return;
+            switch (e.KeyCode)
+            {
+                case Keys.D1:
+                    textBox.Paste(DEFAULTS["D1"].Next());
+                    textBox.SelectionStart -= 4;
+                    break;
+                case Keys.D2:
+                    textBox.Paste(DEFAULTS["D2"].Next());
+                    textBox.SelectionStart -= 4;
+                    break;
+                case Keys.D3:
+                    textBox.Paste(DEFAULTS["D3"].Next());
+                    textBox.SelectionStart -= 4;
+                    break;
+                case Keys.D4:
+                    textBox.Paste(DEFAULTS["D4"].Next());
+                    textBox.SelectionStart -= 4;
+                    break;
+                case Keys.D5:
+                    textBox.Paste(DEFAULTS["D5"].Next());
+                    textBox.SelectionStart -= 4;
+                    break;
+            }
+        }
+    }
+
+    public class ExList<T>
+    {
+        private int index;
+        private int range;
+        private List<T> list;
+
+        public int Index
+        {
+            get { return index; }
+            set
+            {
+                int limit = range < list.Count ? range : list.Count;
+                if (value < 0)
+                    index = limit - 1;
+                else if (value >= limit)
+                    index = 0;
+                else
+                    index = value;
+            }
+        }
+
+        public ExList(int range)
+        {
+            index = 0;
+            this.range = range;
+            list = new List<T>();
+        }
+
+        public ExList(IEnumerable<T> collection, int range)
+        {
+            index = 0;
+            this.range = range;
+            list = new List<T>(collection);
+        }
+
+        public void Add(T item)
+        {
+            list.Remove(item);
+            list.Insert(0, item);
+        }
+
+        public T Next()
+        {
+            return list[Index++];
+        }
+
+        public T Previous()
+        {
+            return list[Index--];
+        }
+
+        public override string ToString()
+        {
+            int limit = range < list.Count ? range : list.Count;
+            return string.Join("|", list.GetRange(0, limit));
+        }
+    }
+
+    public class ExDictionary<TKey, TValue> : Dictionary<TKey, TValue>
+    {
+        private readonly Func<TValue> generator;
+
+        public ExDictionary(Func<TValue> generator)
+        {
+            this.generator = generator;
+        }
+
+        public new TValue this[TKey key]
+        {
+            get
+            {
+                if (!ContainsKey(key))
+                    Add(key, generator());
+                return base[key];
+            }
         }
     }
 }

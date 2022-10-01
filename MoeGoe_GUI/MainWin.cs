@@ -252,6 +252,7 @@ namespace MoeGoe_GUI
                     for (int i = 0; i < nspeakers; i++)
                         AddSpeaker(i.ToString());
             }
+            SYMBOLS.Clear();
             LoadJsonList(json, "symbols", SYMBOLS.Add);
             GetStart();
         }
@@ -672,8 +673,8 @@ namespace MoeGoe_GUI
     public class ExList<T>
     {
         private int index;
-        private int range;
-        private List<T> list;
+        private readonly int range;
+        private readonly List<T> list;
 
         public int Index
         {

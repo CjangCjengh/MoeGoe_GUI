@@ -47,6 +47,7 @@
             this.menuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cleanButton = new System.Windows.Forms.ToolStripMenuItem();
             this.paramsButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.symbolsButton = new System.Windows.Forms.ToolStripMenuItem();
             this.VCPage = new System.Windows.Forms.TabPage();
             this.openOrigin = new System.Windows.Forms.Button();
             this.originPath = new System.Windows.Forms.TextBox();
@@ -238,23 +239,31 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cleanButton,
-            this.paramsButton});
+            this.paramsButton,
+            this.symbolsButton});
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(153, 64);
+            this.menuStrip.Size = new System.Drawing.Size(241, 127);
             // 
             // cleanButton
             // 
             this.cleanButton.Name = "cleanButton";
-            this.cleanButton.Size = new System.Drawing.Size(152, 30);
+            this.cleanButton.Size = new System.Drawing.Size(240, 30);
             this.cleanButton.Text = "清理文本";
             this.cleanButton.Click += new System.EventHandler(this.CleanButton_Click);
             // 
             // paramsButton
             // 
             this.paramsButton.Name = "paramsButton";
-            this.paramsButton.Size = new System.Drawing.Size(152, 30);
+            this.paramsButton.Size = new System.Drawing.Size(240, 30);
             this.paramsButton.Text = "参数设置";
             this.paramsButton.Click += new System.EventHandler(this.AdvancedButton_Click);
+            // 
+            // symbolsButton
+            // 
+            this.symbolsButton.Name = "symbolsButton";
+            this.symbolsButton.Size = new System.Drawing.Size(240, 30);
+            this.symbolsButton.Text = "符号输入";
+            this.symbolsButton.Click += new System.EventHandler(this.SymbolsButton_Click);
             // 
             // VCPage
             // 
@@ -628,6 +637,7 @@
         private System.Windows.Forms.ComboBox HTargetBox;
         private System.Windows.Forms.Label HTargetLabel;
         private System.Windows.Forms.Button HAdvancedControl;
+        private System.Windows.Forms.ToolStripMenuItem symbolsButton;
     }
 }
 

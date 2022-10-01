@@ -38,6 +38,8 @@ namespace MoeGoe_GUI
             NOISESCALE = 0.667M;
             NOISESCALEW = 0.8M;
             F0SCALE = 1;
+
+            SYMBOLS = new List<string>();
         }
 
         private CommandLine cmd;
@@ -57,6 +59,7 @@ namespace MoeGoe_GUI
         private decimal NOISESCALEW;
         private decimal F0SCALE;
 
+        private List<string> SYMBOLS;
         private bool USEF0;
 
         private void ClearAll()
@@ -205,6 +208,27 @@ namespace MoeGoe_GUI
                 InitializeSpeakers();
         }
 
+        private bool LoadJsonList(string json, string key, Action<string> action)
+        {
+            Match match = Regex.Match(json,
+                $"\"{key}\"\\s*:\\s*\\[((?:\\s*\"(?:(?:\\\\.)|[^\\\\\"])*\"\\s*,?\\s*)*)\\]");
+            if (match.Success)
+            {
+                MatchCollection matches = Regex.Matches(match.Groups[1].Value,
+                    "\"((?:(?:\\\\.)|[^\\\\\"])*)\"");
+                if (matches.Count > 0)
+                {
+                    for (int i = 0; i < matches.Count; i++)
+                    {
+                        string speaker = Regex.Unescape(matches[i].Groups[1].Value);
+                        action(speaker);
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+
         private void InitializeSpeakers()
         {
             string json = File.ReadAllText(CONFIGPATH);
@@ -215,20 +239,7 @@ namespace MoeGoe_GUI
                 USEF0 = false;
             Match match = Regex.Match(json,
                 "\"speakers\"\\s*:\\s*\\[((?:\\s*\"(?:(?:\\\\.)|[^\\\\\"])*\"\\s*,?\\s*)*)\\]");
-            if (match.Success)
-            {
-                MatchCollection matches = Regex.Matches(match.Groups[1].Value,
-                    "\"((?:(?:\\\\.)|[^\\\\\"])*)\"");
-                if (matches.Count > 0)
-                {
-                    for (int i = 0; i < matches.Count; i++)
-                    {
-                        string speaker = Regex.Unescape(matches[i].Groups[1].Value);
-                        AddSpeaker(speaker);
-                    }
-                }
-            }
-            else
+            if (!LoadJsonList(json, "speakers", AddSpeaker))
             {
                 match = Regex.Match(json,
                 "\"n_speakers\"\\s*:\\s*(\\d+)");
@@ -241,6 +252,7 @@ namespace MoeGoe_GUI
                     for (int i = 0; i < nspeakers; i++)
                         AddSpeaker(i.ToString());
             }
+            LoadJsonList(json, "symbols", SYMBOLS.Add);
             GetStart();
         }
 
@@ -648,6 +660,12 @@ namespace MoeGoe_GUI
                     textBox.SelectionStart -= 4;
                     break;
             }
+        }
+
+        private void SymbolsButton_Click(object sender, EventArgs e)
+        {
+            SymbolsWin win = new SymbolsWin(SYMBOLS, textBox);
+            win.Show();
         }
     }
 

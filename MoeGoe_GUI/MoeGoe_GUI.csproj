@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SymbolsWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SymbolsWin.Designer.cs">
+      <DependentUpon>SymbolsWin.cs</DependentUpon>
+    </Compile>
     <Compile Include="HAdvancedWin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SymbolsWin.resx">
+      <DependentUpon>SymbolsWin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HAdvancedWin.resx">
       <DependentUpon>HAdvancedWin.cs</DependentUpon>
     </EmbeddedResource>

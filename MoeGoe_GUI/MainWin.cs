@@ -40,6 +40,7 @@ namespace MoeGoe_GUI
             F0SCALE = 1;
 
             SYMBOLS = new List<string>();
+            SHOWLOG = true;
         }
 
         private CommandLine cmd;
@@ -61,6 +62,7 @@ namespace MoeGoe_GUI
 
         private List<string> SYMBOLS;
         private bool USEF0;
+        private bool SHOWLOG;
 
         private void ClearAll()
         {
@@ -252,6 +254,8 @@ namespace MoeGoe_GUI
                     for (int i = 0; i < nspeakers; i++)
                         AddSpeaker(i.ToString());
             }
+            if (speakerBox.Items.Count > 100)
+                SHOWLOG = false;
             SYMBOLS.Clear();
             LoadJsonList(json, "symbols", SYMBOLS.Add);
             GetStart();
@@ -272,8 +276,9 @@ namespace MoeGoe_GUI
         private void GetStart()
         {
             cmd = new CommandLine();
-            cmd.OutputHandler += Cmd_OutputHandler;
-            cmd.Write("\"" + EXEPATH + "\"");
+            if (SHOWLOG)
+                cmd.OutputHandler += Cmd_OutputHandler;
+            cmd.Write($"\"{EXEPATH}\" --escape");
             cmd.Write(MODELPATH);
             cmd.Write(CONFIGPATH);
             if (modelControl.SelectedIndex == 0)
@@ -288,7 +293,10 @@ namespace MoeGoe_GUI
 
         private void Cmd_OutputHandler(CommandLine sender, string e)
         {
-            Invoke(new Action(() => consoleBox.Text += e));
+            Invoke(new Action(() =>
+            {
+                try { consoleBox.Text += Regex.Unescape(e); } catch { consoleBox.Text += e; }
+            }));
         }
 
         private void OpenOrigin_Click(object sender, EventArgs e)
@@ -427,7 +435,8 @@ namespace MoeGoe_GUI
             CleanWin win = new CleanWin(textBox, cmd);
             cmd.OutputHandler -= Cmd_OutputHandler;
             win.ShowDialog();
-            cmd.OutputHandler += Cmd_OutputHandler;
+            if (SHOWLOG)
+                cmd.OutputHandler += Cmd_OutputHandler;
             win.Dispose();
         }
 

@@ -25,7 +25,10 @@ namespace MoeGoe_GUI
 
         private void Cmd_OutputHandler(CommandLine sender, string e)
         {
-            Invoke(new Action(() => cleanedBox.Text = e));
+            Invoke(new Action(() =>
+            {
+                try { cleanedBox.Text = Regex.Unescape(e); } catch { cleanedBox.Text = e; }
+            }));
         }
 
         private void ConfirmButton_Click(object sender, EventArgs e)

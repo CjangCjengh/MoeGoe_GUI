@@ -56,6 +56,8 @@
             this.targetBox = new System.Windows.Forms.ComboBox();
             this.targetLabel = new System.Windows.Forms.Label();
             this.savePanel = new System.Windows.Forms.GroupBox();
+            this.resaveButton = new System.Windows.Forms.Button();
+            this.playButton = new System.Windows.Forms.Button();
             this.savePath = new System.Windows.Forms.TextBox();
             this.saveButton = new System.Windows.Forms.Button();
             this.consoleBox = new System.Windows.Forms.TextBox();
@@ -75,6 +77,7 @@
             this.HOpenConfig = new System.Windows.Forms.Button();
             this.HModelPath = new System.Windows.Forms.TextBox();
             this.HOpenModel = new System.Windows.Forms.Button();
+            this.stopButton = new System.Windows.Forms.Button();
             this.EXEPanel.SuspendLayout();
             this.modelPanel.SuspendLayout();
             this.modeControl.SuspendLayout();
@@ -242,26 +245,26 @@
             this.paramsButton,
             this.symbolsButton});
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(241, 127);
+            this.menuStrip.Size = new System.Drawing.Size(153, 94);
             // 
             // cleanButton
             // 
             this.cleanButton.Name = "cleanButton";
-            this.cleanButton.Size = new System.Drawing.Size(240, 30);
+            this.cleanButton.Size = new System.Drawing.Size(152, 30);
             this.cleanButton.Text = "清理文本";
             this.cleanButton.Click += new System.EventHandler(this.CleanButton_Click);
             // 
             // paramsButton
             // 
             this.paramsButton.Name = "paramsButton";
-            this.paramsButton.Size = new System.Drawing.Size(240, 30);
+            this.paramsButton.Size = new System.Drawing.Size(152, 30);
             this.paramsButton.Text = "参数设置";
             this.paramsButton.Click += new System.EventHandler(this.AdvancedButton_Click);
             // 
             // symbolsButton
             // 
             this.symbolsButton.Name = "symbolsButton";
-            this.symbolsButton.Size = new System.Drawing.Size(240, 30);
+            this.symbolsButton.Size = new System.Drawing.Size(152, 30);
             this.symbolsButton.Text = "符号输入";
             this.symbolsButton.Click += new System.EventHandler(this.SymbolsButton_Click);
             // 
@@ -297,6 +300,7 @@
             this.originPath.Name = "originPath";
             this.originPath.Size = new System.Drawing.Size(344, 31);
             this.originPath.TabIndex = 12;
+            this.originPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OriginPath_KeyDown);
             this.originPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OriginPath_KeyPress);
             // 
             // originBox
@@ -339,23 +343,49 @@
             // 
             // savePanel
             // 
+            this.savePanel.Controls.Add(this.stopButton);
+            this.savePanel.Controls.Add(this.resaveButton);
+            this.savePanel.Controls.Add(this.playButton);
             this.savePanel.Controls.Add(this.savePath);
             this.savePanel.Controls.Add(this.saveButton);
             this.savePanel.Enabled = false;
             this.savePanel.Location = new System.Drawing.Point(12, 486);
             this.savePanel.Name = "savePanel";
-            this.savePanel.Size = new System.Drawing.Size(501, 85);
+            this.savePanel.Size = new System.Drawing.Size(501, 125);
             this.savePanel.TabIndex = 3;
             this.savePanel.TabStop = false;
             this.savePanel.Text = "保存文件";
+            // 
+            // resaveButton
+            // 
+            this.resaveButton.Enabled = false;
+            this.resaveButton.Location = new System.Drawing.Point(6, 71);
+            this.resaveButton.Name = "resaveButton";
+            this.resaveButton.Size = new System.Drawing.Size(120, 35);
+            this.resaveButton.TabIndex = 2;
+            this.resaveButton.Text = "重新合成";
+            this.resaveButton.UseVisualStyleBackColor = true;
+            this.resaveButton.Click += new System.EventHandler(this.ResaveButton_Click);
+            // 
+            // playButton
+            // 
+            this.playButton.Enabled = false;
+            this.playButton.Location = new System.Drawing.Point(249, 71);
+            this.playButton.Name = "playButton";
+            this.playButton.Size = new System.Drawing.Size(120, 35);
+            this.playButton.TabIndex = 4;
+            this.playButton.Text = "播放";
+            this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Click += new System.EventHandler(this.PlayButton_Click);
             // 
             // savePath
             // 
             this.savePath.Location = new System.Drawing.Point(132, 32);
             this.savePath.Name = "savePath";
-            this.savePath.ReadOnly = true;
             this.savePath.Size = new System.Drawing.Size(363, 31);
             this.savePath.TabIndex = 1;
+            this.savePath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SavePath_KeyDown);
+            this.savePath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SavePath_KeyPress);
             // 
             // saveButton
             // 
@@ -363,7 +393,7 @@
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(120, 35);
             this.saveButton.TabIndex = 0;
-            this.saveButton.Text = "保存结果";
+            this.saveButton.Text = "保存";
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
@@ -375,7 +405,7 @@
             this.consoleBox.Name = "consoleBox";
             this.consoleBox.ReadOnly = true;
             this.consoleBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.consoleBox.Size = new System.Drawing.Size(436, 547);
+            this.consoleBox.Size = new System.Drawing.Size(436, 587);
             this.consoleBox.TabIndex = 4;
             // 
             // modelControl
@@ -455,6 +485,7 @@
             this.HOriginPath.Name = "HOriginPath";
             this.HOriginPath.Size = new System.Drawing.Size(347, 31);
             this.HOriginPath.TabIndex = 16;
+            this.HOriginPath.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HOriginPath_KeyDown);
             this.HOriginPath.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HOriginPath_KeyPress);
             // 
             // HTargetBox
@@ -549,11 +580,22 @@
             this.HOpenModel.UseVisualStyleBackColor = true;
             this.HOpenModel.Click += new System.EventHandler(this.HOpenModel_Click);
             // 
+            // stopButton
+            // 
+            this.stopButton.Enabled = false;
+            this.stopButton.Location = new System.Drawing.Point(375, 71);
+            this.stopButton.Name = "stopButton";
+            this.stopButton.Size = new System.Drawing.Size(120, 35);
+            this.stopButton.TabIndex = 6;
+            this.stopButton.Text = "停止";
+            this.stopButton.UseVisualStyleBackColor = true;
+            this.stopButton.Click += new System.EventHandler(this.StopButton_Click);
+            // 
             // MainWin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(977, 594);
+            this.ClientSize = new System.Drawing.Size(977, 633);
             this.Controls.Add(this.modelControl);
             this.Controls.Add(this.consoleBox);
             this.Controls.Add(this.savePanel);
@@ -638,6 +680,9 @@
         private System.Windows.Forms.Label HTargetLabel;
         private System.Windows.Forms.Button HAdvancedControl;
         private System.Windows.Forms.ToolStripMenuItem symbolsButton;
+        private System.Windows.Forms.Button playButton;
+        private System.Windows.Forms.Button resaveButton;
+        private System.Windows.Forms.Button stopButton;
     }
 }
 

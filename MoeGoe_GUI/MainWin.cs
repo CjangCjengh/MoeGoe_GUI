@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Media;
 using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MoeGoe_GUI
@@ -41,6 +44,7 @@ namespace MoeGoe_GUI
 
             SYMBOLS = new List<string>();
             SHOWLOG = true;
+            isSeeking = false;
         }
 
         private CommandLine cmd;
@@ -60,9 +64,12 @@ namespace MoeGoe_GUI
         private decimal NOISESCALEW;
         private decimal F0SCALE;
 
-        private List<string> SYMBOLS;
+        private readonly List<string> SYMBOLS;
         private bool USEF0;
         private bool SHOWLOG;
+
+        private bool isSeeking;
+        private SoundPlayer player;
 
         private void ClearAll()
         {
@@ -91,8 +98,7 @@ namespace MoeGoe_GUI
             originBox.Items.Clear();
             targetBox.Items.Clear();
             modeControl.Enabled = false;
-            savePath.Clear();
-            savePanel.Enabled = false;
+            ClearSavePanel();
         }
 
         private void ClearHubertVITS()
@@ -116,8 +122,19 @@ namespace MoeGoe_GUI
             NOISESCALEW = 0.1M;
             F0SCALE = 1;
             HVCPanel.Enabled = false;
+            ClearSavePanel();
+        }
+
+        private void ClearSavePanel()
+        {
             savePath.Clear();
+            SAVEPATH = null;
             savePanel.Enabled = false;
+            resaveButton.Enabled = false;
+            isSeeking = false;
+            player = null;
+            playButton.Enabled = false;
+            stopButton.Enabled = false;
         }
 
         private void OpenEXE_Click(object sender, EventArgs e)
@@ -306,7 +323,7 @@ namespace MoeGoe_GUI
                 Filter = "音频文件|*.wav;*.mp3;*.ogg;*.opus"
             };
             if (ofd.ShowDialog() == DialogResult.OK)
-                ORIGINPATH = originPath.Text = ofd.FileName;
+                DEFAULTS["AUDIOPATHS"].Add(ORIGINPATH = originPath.Text = ofd.FileName);
             ofd.Dispose();
         }
 
@@ -317,7 +334,7 @@ namespace MoeGoe_GUI
                     MessageBox.Show("文件不存在！", "",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
-                    ORIGINPATH = originPath.Text;
+                    DEFAULTS["AUDIOPATHS"].Add(ORIGINPATH = originPath.Text);
         }
 
         private bool IsFilled()
@@ -384,35 +401,66 @@ namespace MoeGoe_GUI
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            if (!IsFilled())
-                return;
             SaveFileDialog sfd = new SaveFileDialog
             {
                 Filter = "音频文件|*.wav"
             };
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                SAVEPATH = savePath.Text = sfd.FileName;
-                if (modelControl.SelectedIndex == 0)
-                {
-                    if (modeControl.SelectedIndex == 0)
-                        TTS();
-                    else if (modeControl.SelectedIndex == 1)
-                        VC();
-                    cmd.Write(SAVEPATH);
-                }
-                else if (modelControl.SelectedIndex == 1)
-                {
-                    cmd.Write(ORIGINPATH);
-                    cmd.Write(HTargetBox.SelectedIndex.ToString());
-                    if (USEF0)
-                        cmd.Write($"[LENGTH={LENGTHSCALE}][NOISE={NOISESCALE}][NOISEW={NOISESCALEW}][F0={F0SCALE}]{SAVEPATH}");
-                    else
-                        cmd.Write($"[LENGTH={LENGTHSCALE}][NOISE={NOISESCALE}][NOISEW={NOISESCALEW}]{SAVEPATH}");
-                }
-                cmd.Write("y");
+                DEFAULTS["SAVEPATHS"].Add(SAVEPATH = savePath.Text = sfd.FileName);
+                SaveAudio();
             }
             sfd.Dispose();
+        }
+
+        private void SaveAudio()
+        {
+            if (!IsFilled())
+                return;
+            string directory = Path.GetDirectoryName(SAVEPATH);
+            if (!Directory.Exists(directory))
+                Directory.CreateDirectory(directory);
+            playButton.Enabled = false;
+            stopButton.Enabled = false;
+            if (modelControl.SelectedIndex == 0)
+            {
+                if (modeControl.SelectedIndex == 0)
+                    TTS();
+                else if (modeControl.SelectedIndex == 1)
+                    VC();
+                cmd.Write(SAVEPATH);
+            }
+            else if (modelControl.SelectedIndex == 1)
+            {
+                cmd.Write(ORIGINPATH);
+                cmd.Write(HTargetBox.SelectedIndex.ToString());
+                if (USEF0)
+                    cmd.Write($"[LENGTH={LENGTHSCALE}][NOISE={NOISESCALE}][NOISEW={NOISESCALEW}][F0={F0SCALE}]{SAVEPATH}");
+                else
+                    cmd.Write($"[LENGTH={LENGTHSCALE}][NOISE={NOISESCALE}][NOISEW={NOISESCALEW}]{SAVEPATH}");
+            }
+            cmd.Write("y");
+            resaveButton.Enabled = true;
+            isSeeking = true;
+            Task.Run(() =>
+            {
+                while (true)
+                {
+                    if (!isSeeking)
+                        return;
+                    if (File.Exists(SAVEPATH))
+                    {
+                        Invoke(new Action(() =>
+                        {
+                            playButton.Enabled = true;
+                            stopButton.Enabled = true;
+                            isSeeking = false;
+                        }));
+                        return;
+                    }
+                    Thread.Sleep(500);
+                }
+            });
         }
 
         private void TTS()
@@ -575,7 +623,7 @@ namespace MoeGoe_GUI
                 Filter = "音频文件|*.wav;*.mp3;*.ogg;*.opus"
             };
             if (ofd.ShowDialog() == DialogResult.OK)
-                ORIGINPATH = HOriginPath.Text = ofd.FileName;
+                DEFAULTS["AUDIOPATHS"].Add(ORIGINPATH = HOriginPath.Text = ofd.FileName);
             ofd.Dispose();
         }
 
@@ -586,7 +634,7 @@ namespace MoeGoe_GUI
                     MessageBox.Show("文件不存在！", "",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
-                    ORIGINPATH = HOriginPath.Text;
+                    DEFAULTS["AUDIOPATHS"].Add(ORIGINPATH = HOriginPath.Text);
         }
 
         private void HAdvancedControl_Click(object sender, EventArgs e)
@@ -676,6 +724,55 @@ namespace MoeGoe_GUI
         {
             SymbolsWin win = new SymbolsWin(SYMBOLS, textBox);
             win.Show();
+        }
+
+        private void PlayButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                player = new SoundPlayer(SAVEPATH);
+                player.Play();
+            }
+            catch
+            {
+                MessageBox.Show("文件不存在！", "",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
+
+        private void ResaveButton_Click(object sender, EventArgs e)
+        {
+            SaveAudio();
+        }
+
+        private void SavePath_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+            {
+                DEFAULTS["SAVEPATHS"].Add(SAVEPATH = savePath.Text);
+                SaveAudio();
+            }
+        }
+
+        private void SavePath_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetHistory(savePath, "SAVEPATHS", e);
+        }
+
+        private void OriginPath_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetHistory(originPath, "AUDIOPATHS", e);
+        }
+
+        private void HOriginPath_KeyDown(object sender, KeyEventArgs e)
+        {
+            GetHistory(HOriginPath, "AUDIOPATHS", e);
+        }
+
+        private void StopButton_Click(object sender, EventArgs e)
+        {
+            player.Stop();
         }
     }
 

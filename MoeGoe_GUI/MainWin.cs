@@ -688,7 +688,7 @@ namespace MoeGoe_GUI
 
         private void HubertPath_KeyDown(object sender, KeyEventArgs e)
         {
-            GetHistory(hubertPath, "HCONFIGPATHS", e);
+            GetHistory(hubertPath, "HUBERTPATHS", e);
         }
 
         private void TextBox_KeyDown(object sender, KeyEventArgs e)

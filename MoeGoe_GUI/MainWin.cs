@@ -427,7 +427,7 @@ namespace MoeGoe_GUI
                     HVCControl.Enabled = true;
                     break;
                 case 2:
-                    cmd.Write(W2V2PATH);
+                    cmd.Write(Path.GetDirectoryName(W2V2PATH));
                     WModeControl.Enabled = true;
                     break;
             }
@@ -994,13 +994,16 @@ namespace MoeGoe_GUI
 
         private void W2V2Model_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog fbd = new FolderBrowserDialog();
-            if (fbd.ShowDialog() == DialogResult.OK)
+            OpenFileDialog ofd = new OpenFileDialog
             {
-                DEFAULTS["W2V2PATHS"].Add(W2V2PATH = W2V2Path.Text = fbd.SelectedPath);
+                Filter = "模型文件|model.onnx"
+            };
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                DEFAULTS["W2V2PATHS"].Add(W2V2PATH = W2V2Path.Text = ofd.FileName);
                 CheckModelW2V2();
             }
-            fbd.Dispose();
+            ofd.Dispose();
         }
 
         private void W2V2Path_KeyPress(object sender, KeyPressEventArgs e)

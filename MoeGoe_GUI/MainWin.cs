@@ -427,7 +427,7 @@ namespace MoeGoe_GUI
                     HVCControl.Enabled = true;
                     break;
                 case 2:
-                    cmd.Write(Path.GetDirectoryName(W2V2PATH));
+                    cmd.Write(W2V2PATH);
                     WModeControl.Enabled = true;
                     break;
             }

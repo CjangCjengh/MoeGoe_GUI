@@ -1009,8 +1009,8 @@ namespace MoeGoe_GUI
         private void W2V2Path_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == '\r')
-                if (!Directory.Exists(W2V2Path.Text))
-                    MessageBox.Show("文件夹不存在！", "",
+                if (!File.Exists(W2V2Path.Text))
+                    MessageBox.Show("文件不存在！", "",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {

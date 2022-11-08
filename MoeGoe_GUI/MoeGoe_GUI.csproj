@@ -99,6 +99,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainWin.ja-JP.resx">
+      <DependentUpon>MainWin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SymbolsWin.resx">
       <DependentUpon>SymbolsWin.cs</DependentUpon>
     </EmbeddedResource>

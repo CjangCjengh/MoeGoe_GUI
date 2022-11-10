@@ -119,254 +119,617 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="EXEPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 21</value>
+    <value>144, 32</value>
   </data>
   <data name="EXEPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 23</value>
+    <value>350, 31</value>
+  </data>
+  <data name="openEXE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
   </data>
   <data name="openEXE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 23</value>
+    <value>132, 34</value>
   </data>
   <data name="openEXE.Text" xml:space="preserve">
     <value>ファイルを開く...</value>
   </data>
-  <data name="modelPanel.Text" xml:space="preserve">
-    <value>モデルファイル</value>
+  <data name="EXEPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="EXEPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>501, 86</value>
+  </data>
+  <data name="configPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 74</value>
+  </data>
+  <data name="configPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 31</value>
+  </data>
+  <data name="openConfig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 70</value>
+  </data>
+  <data name="openConfig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
   </data>
   <data name="openConfig.Text" xml:space="preserve">
     <value>設定を開く...</value>
   </data>
+  <data name="modelPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 32</value>
+  </data>
+  <data name="modelPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 31</value>
+  </data>
+  <data name="openModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="openModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
   <data name="openModel.Text" xml:space="preserve">
     <value>モデルを開く...</value>
   </data>
-  <data name="TTSPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+  <data name="modelPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
   </data>
-  <data name="TTSPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>317, 150</value>
+  <data name="modelPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 124</value>
   </data>
-  <data name="TTSPage.Text" xml:space="preserve">
-    <value>音声合成</value>
+  <data name="modelPanel.Text" xml:space="preserve">
+    <value>モデルファイル</value>
+  </data>
+  <data name="cleanButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 138</value>
+  </data>
+  <data name="cleanButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 34</value>
   </data>
   <data name="cleanButton2.Text" xml:space="preserve">
     <value>清理文本...</value>
   </data>
+  <data name="symbolsButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 138</value>
+  </data>
+  <data name="symbolsButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 34</value>
+  </data>
   <data name="symbolsButton2.Text" xml:space="preserve">
     <value>符号入力...</value>
+  </data>
+  <data name="paramsButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 138</value>
+  </data>
+  <data name="paramsButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 34</value>
   </data>
   <data name="paramsButton2.Text" xml:space="preserve">
     <value>パラメータ...</value>
   </data>
+  <data name="speakerBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="speakerBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 178</value>
+  </data>
+  <data name="speakerBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 33</value>
+  </data>
+  <data name="speakerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 183</value>
+  </data>
   <data name="speakerLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>61, 25</value>
   </data>
   <data name="speakerLabel.Text" xml:space="preserve">
     <value>話し手</value>
   </data>
   <data name="textLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 42</value>
+    <value>26, 63</value>
   </data>
   <data name="textLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 15</value>
+    <value>66, 25</value>
   </data>
   <data name="textLabel.Text" xml:space="preserve">
     <value>テキスト</value>
   </data>
-  <data name="VCPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+  <data name="cleanButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 30</value>
   </data>
-  <data name="VCPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>317, 150</value>
+  <data name="paramsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 30</value>
   </data>
-  <data name="VCPage.Text" xml:space="preserve">
-    <value>音声変換</value>
+  <data name="symbolsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 30</value>
+  </data>
+  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 94</value>
+  </data>
+  <data name="textBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 18</value>
+  </data>
+  <data name="textBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 114</value>
+  </data>
+  <data name="TTSPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TTSPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="TTSPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 229</value>
+  </data>
+  <data name="TTSPage.Text" xml:space="preserve">
+    <value>音声合成</value>
+  </data>
+  <data name="openOrigin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 39</value>
   </data>
   <data name="openOrigin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 23</value>
+    <value>128, 34</value>
   </data>
   <data name="openOrigin.Text" xml:space="preserve">
     <value>変換元を開く...</value>
   </data>
   <data name="originPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 27</value>
+    <value>146, 40</value>
   </data>
   <data name="originPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 23</value>
+    <value>326, 31</value>
+  </data>
+  <data name="originBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
   </data>
   <data name="originBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 71</value>
+    <value>146, 106</value>
   </data>
   <data name="originBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 23</value>
+    <value>514, 33</value>
   </data>
   <data name="originLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 74</value>
+    <value>12, 111</value>
   </data>
   <data name="originLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 15</value>
+    <value>130, 25</value>
   </data>
   <data name="originLabel.Text" xml:space="preserve">
     <value>変換元の話し手</value>
   </data>
+  <data name="targetBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
   <data name="targetBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 104</value>
+    <value>146, 156</value>
   </data>
   <data name="targetBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 23</value>
+    <value>514, 33</value>
   </data>
   <data name="targetLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 107</value>
+    <value>12, 160</value>
   </data>
   <data name="targetLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 15</value>
+    <value>130, 25</value>
   </data>
   <data name="targetLabel.Text" xml:space="preserve">
     <value>変換先の話し手</value>
   </data>
-  <data name="savePanel.Text" xml:space="preserve">
-    <value>ファイルを保存</value>
+  <data name="VCPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="VCPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="VCPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 229</value>
+  </data>
+  <data name="VCPage.Text" xml:space="preserve">
+    <value>音声変換</value>
+  </data>
+  <data name="modeControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 136</value>
+  </data>
+  <data name="modeControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 267</value>
+  </data>
+  <data name="deleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 70</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 34</value>
   </data>
   <data name="deleteButton.Text" xml:space="preserve">
     <value>削除</value>
   </data>
+  <data name="stopButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 70</value>
+  </data>
+  <data name="stopButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 34</value>
+  </data>
+  <data name="resaveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 70</value>
+  </data>
+  <data name="resaveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
   <data name="resaveButton.Text" xml:space="preserve">
     <value>再合成</value>
+  </data>
+  <data name="playButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 70</value>
+  </data>
+  <data name="playButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 34</value>
   </data>
   <data name="playButton.Text" xml:space="preserve">
     <value>再生</value>
   </data>
+  <data name="savePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 32</value>
+  </data>
+  <data name="savePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 31</value>
+  </data>
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
   <data name="saveButton.Text" xml:space="preserve">
     <value>保存...</value>
   </data>
+  <data name="savePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 556</value>
+  </data>
+  <data name="savePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>501, 124</value>
+  </data>
+  <data name="savePanel.Text" xml:space="preserve">
+    <value>ファイルを保存</value>
+  </data>
+  <data name="consoleBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>528, 24</value>
+  </data>
+  <data name="consoleBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>436, 656</value>
+  </data>
   <data name="vitsPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>4, 34</value>
+  </data>
+  <data name="vitsPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="vitsPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 270</value>
+    <value>498, 409</value>
   </data>
-  <data name="hubertPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="hubertPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 270</value>
+  <data name="HOpenOrigin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 189</value>
   </data>
   <data name="HOpenOrigin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 23</value>
+    <value>142, 34</value>
   </data>
-  <data name="HVCPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+  <data name="HAdvancedControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 46</value>
   </data>
-  <data name="HVCPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 81</value>
-  </data>
-  <data name="HVCPage1.Text" xml:space="preserve">
-    <value>言語切替（モード1）</value>
+  <data name="HAdvancedControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 34</value>
   </data>
   <data name="HAdvancedControl.Text" xml:space="preserve">
     <value>詳細設定</value>
   </data>
+  <data name="HTargetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 52</value>
+  </data>
   <data name="HTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 15</value>
+    <value>130, 25</value>
   </data>
   <data name="HTargetLabel.Text" xml:space="preserve">
     <value>変換先の話し手</value>
   </data>
+  <data name="HTargetBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
   <data name="HTargetBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 32</value>
+    <value>147, 48</value>
   </data>
   <data name="HTargetBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 23</value>
+    <value>340, 33</value>
+  </data>
+  <data name="HVCPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="HVCPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="HVCPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>476, 126</value>
+  </data>
+  <data name="HVCPage1.Text" xml:space="preserve">
+    <value>言語切替（モード1）</value>
+  </data>
+  <data name="HOriginLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 32</value>
+  </data>
+  <data name="HOriginLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 25</value>
+  </data>
+  <data name="HOriginBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="HOriginBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 28</value>
+  </data>
+  <data name="HOriginBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 33</value>
+  </data>
+  <data name="HOriginLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 70</value>
+  </data>
+  <data name="HOriginLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 25</value>
+  </data>
+  <data name="HTargetBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="HTargetBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 68</value>
+  </data>
+  <data name="HTargetBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 33</value>
   </data>
   <data name="HVCPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>4, 34</value>
+  </data>
+  <data name="HVCPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="HVCPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 81</value>
+    <value>476, 126</value>
   </data>
   <data name="HVCPage2.Text" xml:space="preserve">
     <value>言語切替（モード2）</value>
   </data>
-  <data name="HOriginLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 15</value>
+  <data name="HVCControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 242</value>
   </data>
-  <data name="HOriginLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 15</value>
+  <data name="HVCControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 164</value>
   </data>
   <data name="hubertPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 76</value>
+    <value>153, 114</value>
   </data>
   <data name="hubertPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 23</value>
+    <value>326, 31</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="HOpenHubert.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="HOpenHubert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 112</value>
+  </data>
   <data name="HOpenHubert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 23</value>
+    <value>141, 34</value>
   </data>
   <data name="HOpenHubert.Text" xml:space="preserve">
     <value>HuBERTモデル...</value>
   </data>
   <data name="HConfigPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 49</value>
+    <value>153, 74</value>
   </data>
   <data name="HConfigPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 23</value>
+    <value>326, 31</value>
+  </data>
+  <data name="HOpenConfig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 70</value>
   </data>
   <data name="HOpenConfig.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 23</value>
+    <value>141, 34</value>
   </data>
   <data name="HOpenConfig.Text" xml:space="preserve">
     <value>VITS設定...</value>
   </data>
   <data name="HModelPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 21</value>
+    <value>153, 32</value>
   </data>
   <data name="HModelPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 23</value>
+    <value>326, 31</value>
+  </data>
+  <data name="HOpenModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
   </data>
   <data name="HOpenModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 23</value>
+    <value>141, 34</value>
   </data>
   <data name="HOpenModel.Text" xml:space="preserve">
     <value>VITSモデル...</value>
   </data>
+  <data name="HModelPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="HModelPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 166</value>
+  </data>
   <data name="HOriginPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 127</value>
+    <value>159, 190</value>
   </data>
   <data name="HOriginPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 23</value>
+    <value>328, 31</value>
   </data>
-  <data name="w2v2Page.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+  <data name="hubertPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
   </data>
-  <data name="w2v2Page.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 270</value>
+  <data name="hubertPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+  <data name="hubertPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 409</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>317, 122</value>
+  <data name="emotionButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="emotionButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 34</value>
+  </data>
+  <data name="emotionPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 8</value>
+  </data>
+  <data name="emotionPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 31</value>
+  </data>
+  <data name="WSpeakerBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="WSpeakerBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 146</value>
+  </data>
+  <data name="WSpeakerBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 33</value>
+  </data>
+  <data name="WSpeakerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 150</value>
   </data>
   <data name="WSpeakerLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 15</value>
+    <value>70, 25</value>
+  </data>
+  <data name="WTextLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 81</value>
   </data>
   <data name="WTextLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 15</value>
+    <value>48, 25</value>
   </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+  <data name="WTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 46</value>
   </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>317, 122</value>
+  <data name="WTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 92</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 187</value>
+  </data>
+  <data name="WOpenOrigin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="WOpenOrigin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 34</value>
+  </data>
+  <data name="WOriginPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 30</value>
+  </data>
+  <data name="WOriginPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 31</value>
+  </data>
+  <data name="WOriginBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="WOriginBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 88</value>
+  </data>
+  <data name="WOriginBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 33</value>
+  </data>
+  <data name="WOriginLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 93</value>
   </data>
   <data name="WOriginLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 15</value>
+    <value>88, 25</value>
+  </data>
+  <data name="WTargetBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="WTargetBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 128</value>
+  </data>
+  <data name="WTargetBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 33</value>
+  </data>
+  <data name="WTargetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 132</value>
   </data>
   <data name="WTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 15</value>
+    <value>108, 25</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 187</value>
+  </data>
+  <data name="WModeControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 178</value>
+  </data>
+  <data name="WModeControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 225</value>
+  </data>
+  <data name="W2V2Path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 114</value>
+  </data>
+  <data name="W2V2Path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 31</value>
+  </data>
+  <data name="W2V2Model.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 112</value>
+  </data>
+  <data name="W2V2Model.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="WConfigPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 74</value>
+  </data>
+  <data name="WConfigPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 31</value>
+  </data>
+  <data name="WOpenConfig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 70</value>
+  </data>
+  <data name="WOpenConfig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="WModelPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 32</value>
+  </data>
+  <data name="WModelPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 31</value>
+  </data>
+  <data name="WOpenModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="WOpenModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="WModelPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="WModelPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 166</value>
+  </data>
+  <data name="w2v2Page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="w2v2Page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 409</value>
+  </data>
+  <data name="modelControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 104</value>
+  </data>
+  <data name="modelControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 447</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>144, 144</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>976, 700</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Yu Gothic UI, 9pt</value>
@@ -407,5 +770,8 @@
         n3svn5cnViwsLos1zfeDSkiRkJQ5ef67I9/+9Onhjo7+sgDs3PzqYxtWbn+t1oiKiUZ3wbgfWTFc+evX
         658f/HA/cBIYFlUVEVEgBPLczwPyP0UU24q1G5UbY0DyD3v09pgP+K7BAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
 </root>

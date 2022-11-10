@@ -236,13 +236,9 @@
             // 
             // speakerBox
             // 
-            this.speakerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.speakerBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.speakerBox.FormattingEnabled = true;
             resources.ApplyResources(this.speakerBox, "speakerBox");
+            this.speakerBox.FormattingEnabled = true;
             this.speakerBox.Name = "speakerBox";
-            this.speakerBox.Size = new System.Drawing.Size(344, 33);
-            this.speakerBox.TabIndex = 3;
             this.speakerBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchSpeakers);
             // 
             // speakerLabel
@@ -318,13 +314,9 @@
             // 
             // originBox
             // 
-            this.originBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.originBox, "originBox");
-            this.originBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.originBox.FormattingEnabled = true;
             this.originBox.Name = "originBox";
-            this.originBox.Size = new System.Drawing.Size(344, 33);
-            this.originBox.TabIndex = 10;
             this.originBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchSpeakers);
             // 
             // originLabel
@@ -334,13 +326,9 @@
             // 
             // targetBox
             // 
-            this.targetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.targetBox, "targetBox");
-            this.targetBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.targetBox.FormattingEnabled = true;
             this.targetBox.Name = "targetBox";
-            this.targetBox.Size = new System.Drawing.Size(344, 33);
-            this.targetBox.TabIndex = 8;
             this.targetBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchSpeakers);
             // 
             // targetLabel
@@ -474,13 +462,9 @@
             // 
             // HTargetBox
             // 
-            this.HTargetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.HTargetBox, "HTargetBox");
-            this.HTargetBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.HTargetBox.FormattingEnabled = true;
             this.HTargetBox.Name = "HTargetBox";
-            this.HTargetBox.Size = new System.Drawing.Size(228, 33);
-            this.HTargetBox.TabIndex = 15;
             this.HTargetBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchSpeakers);
             // 
             // HVCPage2
@@ -500,13 +484,9 @@
             // 
             // HOriginBox
             // 
-            this.HOriginBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.HOriginBox, "HOriginBox");
-            this.HOriginBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.HOriginBox.FormattingEnabled = true;
             this.HOriginBox.Name = "HOriginBox";
-            this.HOriginBox.Size = new System.Drawing.Size(343, 33);
-            this.HOriginBox.TabIndex = 22;
             this.HOriginBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchSpeakers);
             // 
             // HOriginLabel2
@@ -516,13 +496,9 @@
             // 
             // HTargetBox2
             // 
-            this.HTargetBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.HTargetBox2, "HTargetBox2");
-            this.HTargetBox2.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.HTargetBox2.FormattingEnabled = true;
             this.HTargetBox2.Name = "HTargetBox2";
-            this.HTargetBox2.Size = new System.Drawing.Size(343, 33);
-            this.HTargetBox2.TabIndex = 19;
             this.HTargetBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchSpeakers);
             // 
             // HModelPanel
@@ -630,13 +606,9 @@
             // 
             // WSpeakerBox
             // 
-            this.WSpeakerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.WSpeakerBox, "WSpeakerBox");
-            this.WSpeakerBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.WSpeakerBox.FormattingEnabled = true;
             this.WSpeakerBox.Name = "WSpeakerBox";
-            this.WSpeakerBox.Size = new System.Drawing.Size(344, 33);
-            this.WSpeakerBox.TabIndex = 3;
             this.WSpeakerBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchSpeakers);
             // 
             // WSpeakerLabel
@@ -684,13 +656,9 @@
             // 
             // WOriginBox
             // 
-            this.WOriginBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.WOriginBox, "WOriginBox");
-            this.WOriginBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.WOriginBox.FormattingEnabled = true;
             this.WOriginBox.Name = "WOriginBox";
-            this.WOriginBox.Size = new System.Drawing.Size(344, 33);
-            this.WOriginBox.TabIndex = 10;
             this.WOriginBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchSpeakers);
             // 
             // WOriginLabel
@@ -700,13 +668,9 @@
             // 
             // WTargetBox
             // 
-            this.WTargetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.WTargetBox, "WTargetBox");
-            this.WTargetBox.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.WTargetBox.FormattingEnabled = true;
             this.WTargetBox.Name = "WTargetBox";
-            this.WTargetBox.Size = new System.Drawing.Size(344, 33);
-            this.WTargetBox.TabIndex = 8;
             this.WTargetBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchSpeakers);
             // 
             // WTargetLabel

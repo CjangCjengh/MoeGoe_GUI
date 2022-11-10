@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Media;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -52,7 +53,9 @@ namespace MoeGoe_GUI
             NOISESCALEW = 0.8M;
             F0SCALE = 1;
 
+            SPEAKERS = new List<string>();
             SYMBOLS = new List<string>();
+            SPEAKERIDDICT = new Dictionary<ComboBox, Dictionary<int, int>>();
             SHOWLOG = true;
             isSeeking = false;
         }
@@ -76,7 +79,11 @@ namespace MoeGoe_GUI
         private decimal NOISESCALEW;
         private decimal F0SCALE;
 
+        private readonly List<string> SPEAKERS;
         private readonly List<string> SYMBOLS;
+        
+        private readonly Dictionary<ComboBox, Dictionary<int, int>> SPEAKERIDDICT;
+        
         private bool USEF0;
         private bool SHOWLOG;
 
@@ -102,15 +109,19 @@ namespace MoeGoe_GUI
         private void ClearMode()
         {
             consoleBox.Clear();
+            SHOWLOG = true;
             textBox.Clear();
             speakerBox.Items.Clear();
+            speakerBox.Text = "";
             LENGTHSCALE = 1;
             NOISESCALE = 0.667M;
             NOISESCALEW = 0.8M;
             originPath.Clear();
             ORIGINPATH = null;
             originBox.Items.Clear();
+            originBox.Text = "";
             targetBox.Items.Clear();
+            targetBox.Text = "";
             modeControl.Enabled = false;
             ClearSavePanel();
         }
@@ -129,17 +140,21 @@ namespace MoeGoe_GUI
         private void ClearHubertMode()
         {
             consoleBox.Clear();
+            SHOWLOG = true;
             HOriginPath.Clear();
             ORIGINPATH = null;
             HOpenOrigin.Enabled = false;
             HOriginPath.Enabled = false;
             HTargetBox.Items.Clear();
+            HTargetBox.Text = "";
             LENGTHSCALE = 1;
             NOISESCALE = 0.1M;
             NOISESCALEW = 0.1M;
             F0SCALE = 1;
             HOriginBox.Items.Clear();
+            HOriginBox.Text = "";
             HTargetBox2.Items.Clear();
+            HTargetBox2.Text = "";
             HVCControl.Enabled = false;
             ClearSavePanel();
         }
@@ -158,17 +173,21 @@ namespace MoeGoe_GUI
         private void ClearW2V2Mode()
         {
             consoleBox.Clear();
+            SHOWLOG = true;
             emotionPath.Clear();
             EMOTIONPATH = null;
             WTextBox.Clear();
             WSpeakerBox.Items.Clear();
+            WSpeakerBox.Text = "";
             LENGTHSCALE = 1;
             NOISESCALE = 0.667M;
             NOISESCALEW = 0.8M;
             WOriginPath.Clear();
             ORIGINPATH = null;
             WOriginBox.Items.Clear();
+            WOriginBox.Text = "";
             WTargetBox.Items.Clear();
+            WTargetBox.Text = "";
             WModeControl.Enabled = false;
             ClearSavePanel();
         }
@@ -190,7 +209,7 @@ namespace MoeGoe_GUI
         {
             OpenFileDialog ofd = new OpenFileDialog
             {
-                Filter = "可执行文件|*.exe"
+                Filter = "|MoeGoe.exe"
             };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -349,6 +368,8 @@ namespace MoeGoe_GUI
                         string speaker = Regex.Unescape(matches[i].Groups[1].Value);
                         action(speaker);
                     }
+                    if (matches.Count > 100)
+                        SHOWLOG = false;
                 }
                 return true;
             }
@@ -365,7 +386,7 @@ namespace MoeGoe_GUI
                 USEF0 = false;
             Match match = Regex.Match(json,
                 "\"speakers\"\\s*:\\s*\\[((?:\\s*\"(?:(?:\\\\.)|[^\\\\\"])*\"\\s*,?\\s*)*)\\]");
-            if (!LoadJsonList(json, "speakers", AddSpeaker))
+            if (!LoadJsonList(json, "speakers", SPEAKERS.Add))
             {
                 match = Regex.Match(json,
                 "\"n_speakers\"\\s*:\\s*(\\d+)");
@@ -373,36 +394,35 @@ namespace MoeGoe_GUI
                 if (match.Success)
                     nspeakers = int.Parse(match.Groups[1].Value);
                 if (nspeakers == 0)
-                    AddSpeaker("0");
+                    SPEAKERS.Add("0");
                 else
                     for (int i = 0; i < nspeakers; i++)
-                        AddSpeaker(i.ToString());
+                        SPEAKERS.Add(i.ToString());
             }
-            if (speakerBox.Items.Count > 100)
-                SHOWLOG = false;
+            AddSpeakers();
             SYMBOLS.Clear();
             LoadJsonList(json, "symbols", SYMBOLS.Add);
             GetStart();
         }
 
-        private void AddSpeaker(string speaker)
+        private void AddSpeakers()
         {
             switch (modelControl.SelectedIndex)
             {
                 case 0:
-                    speakerBox.Items.Add(speaker);
-                    originBox.Items.Add(speaker);
-                    targetBox.Items.Add(speaker);
+                    SelectSpeakers(speakerBox);
+                    SelectSpeakers(originBox);
+                    SelectSpeakers(targetBox);
                     break;
                 case 1:
-                    HTargetBox.Items.Add(speaker);
-                    HTargetBox2.Items.Add(speaker);
-                    HOriginBox.Items.Add(speaker);
+                    SelectSpeakers(HTargetBox);
+                    SelectSpeakers(HTargetBox2);
+                    SelectSpeakers(HOriginBox);
                     break;
                 case 2:
-                    WSpeakerBox.Items.Add(speaker);
-                    WOriginBox.Items.Add(speaker);
-                    WTargetBox.Items.Add(speaker);
+                    SelectSpeakers(WSpeakerBox);
+                    SelectSpeakers(WOriginBox);
+                    SelectSpeakers(WTargetBox);
                     break;
             }
         }
@@ -635,10 +655,10 @@ namespace MoeGoe_GUI
                     switch (modeControl.SelectedIndex)
                     {
                         case 0:
-                            TTS(textBox.Text, speakerBox.SelectedIndex);
+                            TTS(textBox.Text, GetSelectedID(speakerBox));
                             break;
                         case 1:
-                            VC(originBox.SelectedIndex, targetBox.SelectedIndex);
+                            VC(GetSelectedID(originBox), GetSelectedID(targetBox));
                             break;
                     }
                     cmd.Write(SAVEPATH);
@@ -648,7 +668,7 @@ namespace MoeGoe_GUI
                     {
                         case 0:
                             cmd.Write(ORIGINPATH);
-                            cmd.Write(HTargetBox.SelectedIndex.ToString());
+                            cmd.Write(GetSelectedID(HTargetBox).ToString());
                             if (USEF0)
                                 cmd.Write($"[LENGTH={LENGTHSCALE}][NOISE={NOISESCALE}][NOISEW={NOISESCALEW}][F0={F0SCALE}]{SAVEPATH}");
                             else
@@ -657,8 +677,8 @@ namespace MoeGoe_GUI
                         case 1:
                             cmd.Write($"[VC]");
                             cmd.Write(ORIGINPATH);
-                            cmd.Write(HOriginBox.SelectedIndex.ToString());
-                            cmd.Write(HTargetBox2.SelectedIndex.ToString());
+                            cmd.Write(GetSelectedID(HOriginBox).ToString());
+                            cmd.Write(GetSelectedID(HTargetBox2).ToString());
                             cmd.Write(SAVEPATH);
                             break;
                     }
@@ -667,11 +687,11 @@ namespace MoeGoe_GUI
                     switch (WModeControl.SelectedIndex)
                     {
                         case 0:
-                            TTS(WTextBox.Text, WSpeakerBox.SelectedIndex);
+                            TTS(WTextBox.Text, GetSelectedID(WSpeakerBox));
                             cmd.Write(EMOTIONPATH);
                             break;
                         case 1:
-                            VC(WOriginBox.SelectedIndex, WTargetBox.SelectedIndex);
+                            VC(GetSelectedID(WOriginBox), GetSelectedID(WTargetBox));
                             break;
                     }
                     cmd.Write(SAVEPATH);
@@ -700,6 +720,11 @@ namespace MoeGoe_GUI
                     Thread.Sleep(500);
                 }
             });
+        }
+
+        private int GetSelectedID(ComboBox box)
+        {
+            return SPEAKERIDDICT[box][box.SelectedIndex];
         }
 
         private void TTS(string text, int speaker)
@@ -1058,6 +1083,27 @@ namespace MoeGoe_GUI
         private void EmotionPath_KeyDown(object sender, KeyEventArgs e)
         {
             GetHistory(emotionPath, "EMOTIONPATHS", e);
+        }
+
+        private void SearchSpeakers(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+                SelectSpeakers(sender as ComboBox);
+        }
+
+        private void SelectSpeakers(ComboBox box)
+        {
+            box.Items.Clear();
+            if (!SPEAKERIDDICT.ContainsKey(box))
+                SPEAKERIDDICT.Add(box, new Dictionary<int, int>());
+            else
+                SPEAKERIDDICT[box].Clear();
+            for (int i = 0; i < SPEAKERS.Count; i++)
+                if (SPEAKERS[i].Contains(box.Text))
+                {
+                    box.Items.Add(SPEAKERS[i]);
+                    SPEAKERIDDICT[box].Add(box.Items.Count - 1, i);
+                }
         }
     }
 

@@ -117,2657 +117,1328 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;EXEPath.Name" xml:space="preserve">
-    <value>EXEPath</value>
-  </data>
-  <data name="&gt;&gt;EXEPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EXEPath.Parent" xml:space="preserve">
-    <value>EXEPanel</value>
-  </data>
-  <data name="&gt;&gt;EXEPath.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;openEXE.Name" xml:space="preserve">
-    <value>openEXE</value>
-  </data>
-  <data name="&gt;&gt;openEXE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openEXE.Parent" xml:space="preserve">
-    <value>EXEPanel</value>
-  </data>
-  <data name="&gt;&gt;openEXE.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="EXEPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="EXEPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>501, 86</value>
+  <data name="WOpenOrigin.Text" xml:space="preserve">
+    <value>打开原音频</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="EXEPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="WSpeakerLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="EXEPanel.Text" xml:space="preserve">
-    <value>MoeGoe.exe</value>
+  <data name="HOpenOrigin.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;EXEPanel.Name" xml:space="preserve">
-    <value>EXEPanel</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="paramsButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 34</value>
   </data>
-  <data name="&gt;&gt;EXEPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="HVCPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>476, 127</value>
   </data>
-  <data name="&gt;&gt;EXEPanel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>保存</value>
   </data>
-  <data name="&gt;&gt;EXEPanel.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="emotionButton.Text" xml:space="preserve">
+    <value>情感参考</value>
   </data>
-  <data name="EXEPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 32</value>
+  <data name="modelPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 30</value>
   </data>
-  <data name="EXEPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 30</value>
-  </data>
-  <data name="EXEPath.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;EXEPath.Name" xml:space="preserve">
-    <value>EXEPath</value>
-  </data>
-  <data name="&gt;&gt;EXEPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EXEPath.Parent" xml:space="preserve">
-    <value>EXEPanel</value>
-  </data>
-  <data name="&gt;&gt;EXEPath.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="openEXE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 30</value>
-  </data>
-  <data name="openEXE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
-  </data>
-  <data name="openEXE.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="openEXE.Text" xml:space="preserve">
-    <value>打开文件</value>
-  </data>
-  <data name="&gt;&gt;openEXE.Name" xml:space="preserve">
-    <value>openEXE</value>
-  </data>
-  <data name="&gt;&gt;openEXE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openEXE.Parent" xml:space="preserve">
-    <value>EXEPanel</value>
-  </data>
-  <data name="&gt;&gt;openEXE.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;configPath.Name" xml:space="preserve">
-    <value>configPath</value>
-  </data>
-  <data name="&gt;&gt;configPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;configPath.Parent" xml:space="preserve">
-    <value>modelPanel</value>
-  </data>
-  <data name="&gt;&gt;configPath.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;openConfig.Name" xml:space="preserve">
-    <value>openConfig</value>
-  </data>
-  <data name="&gt;&gt;openConfig.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openConfig.Parent" xml:space="preserve">
-    <value>modelPanel</value>
-  </data>
-  <data name="&gt;&gt;openConfig.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;modelPath.Name" xml:space="preserve">
-    <value>modelPath</value>
-  </data>
-  <data name="&gt;&gt;modelPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;modelPath.Parent" xml:space="preserve">
-    <value>modelPanel</value>
-  </data>
-  <data name="&gt;&gt;modelPath.ZOrder" xml:space="preserve">
+  <data name="w2v2Page.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;openModel.Name" xml:space="preserve">
-    <value>openModel</value>
+  <data name="hubertPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
   </data>
-  <data name="&gt;&gt;openModel.Type" xml:space="preserve">
+  <data name="WTargetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 132</value>
+  </data>
+  <data name="targetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="&gt;&gt;stopButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;openModel.Parent" xml:space="preserve">
-    <value>modelPanel</value>
+  <data name="textBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;openModel.ZOrder" xml:space="preserve">
+  <data name="openModel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;WModeControl.Parent" xml:space="preserve">
+    <value>w2v2Page</value>
+  </data>
+  <data name="HOriginBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 33</value>
+  </data>
+  <data name="&gt;&gt;WSpeakerLabel.Name" xml:space="preserve">
+    <value>WSpeakerLabel</value>
+  </data>
+  <data name="&gt;&gt;TTSPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;WConfigPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;paramsButton2.Parent" xml:space="preserve">
+    <value>TTSPage</value>
+  </data>
+  <data name="w2v2Page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="&gt;&gt;modelControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="symbolsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 30</value>
+  </data>
+  <data name="&gt;&gt;WOpenOrigin.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Parent" xml:space="preserve">
+    <value>savePanel</value>
+  </data>
+  <data name="&gt;&gt;WOpenOrigin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resaveButton.Parent" xml:space="preserve">
+    <value>savePanel</value>
+  </data>
+  <data name="WOriginPath.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;originPath.Parent" xml:space="preserve">
+    <value>VCPage</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="HVCPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;HConfigPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TTSPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="WOpenModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="&gt;&gt;WTextBox.Name" xml:space="preserve">
+    <value>WTextBox</value>
+  </data>
+  <data name="WOpenModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="&gt;&gt;VCPage.Name" xml:space="preserve">
+    <value>VCPage</value>
+  </data>
+  <data name="&gt;&gt;savePath.Parent" xml:space="preserve">
+    <value>savePanel</value>
+  </data>
+  <data name="&gt;&gt;modeControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HConfigPath.Name" xml:space="preserve">
+    <value>HConfigPath</value>
+  </data>
+  <data name="&gt;&gt;originPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HOriginLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HTargetBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="WOpenOrigin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 34</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 188</value>
+  </data>
+  <data name="originBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;WOriginPath.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;WModeControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="VCPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="&gt;&gt;vitsPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HModelPanel.Parent" xml:space="preserve">
+    <value>hubertPage</value>
+  </data>
+  <data name="&gt;&gt;WModeControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;targetBox.Name" xml:space="preserve">
+    <value>targetBox</value>
+  </data>
+  <data name="&gt;&gt;emotionButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;W2V2Path.Parent" xml:space="preserve">
+    <value>WModelPanel</value>
+  </data>
+  <data name="&gt;&gt;W2V2Model.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;WOriginLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="modelPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
   </data>
-  <data name="modelPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 124</value>
-  </data>
-  <data name="modelPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="modelPanel.Text" xml:space="preserve">
-    <value>模型文件</value>
-  </data>
-  <data name="&gt;&gt;modelPanel.Name" xml:space="preserve">
-    <value>modelPanel</value>
-  </data>
-  <data name="&gt;&gt;modelPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;modelPanel.Parent" xml:space="preserve">
-    <value>vitsPage</value>
-  </data>
-  <data name="&gt;&gt;modelPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="configPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 74</value>
-  </data>
-  <data name="configPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 30</value>
-  </data>
-  <data name="configPath.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;configPath.Name" xml:space="preserve">
-    <value>configPath</value>
-  </data>
-  <data name="&gt;&gt;configPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;configPath.Parent" xml:space="preserve">
-    <value>modelPanel</value>
-  </data>
-  <data name="&gt;&gt;configPath.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="openConfig.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 70</value>
-  </data>
-  <data name="openConfig.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
-  </data>
-  <data name="openConfig.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;WConfigPath.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="openConfig.Text" xml:space="preserve">
-    <value>打开配置</value>
-  </data>
-  <data name="&gt;&gt;openConfig.Name" xml:space="preserve">
-    <value>openConfig</value>
-  </data>
-  <data name="&gt;&gt;openConfig.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openConfig.Parent" xml:space="preserve">
-    <value>modelPanel</value>
-  </data>
-  <data name="&gt;&gt;openConfig.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="modelPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 32</value>
-  </data>
-  <data name="modelPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 30</value>
-  </data>
-  <data name="modelPath.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;modelPath.Name" xml:space="preserve">
-    <value>modelPath</value>
-  </data>
-  <data name="&gt;&gt;modelPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;modelPath.Parent" xml:space="preserve">
-    <value>modelPanel</value>
-  </data>
-  <data name="&gt;&gt;modelPath.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="openModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 30</value>
-  </data>
-  <data name="openModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
-  </data>
-  <data name="openModel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="openModel.Text" xml:space="preserve">
-    <value>打开模型</value>
-  </data>
-  <data name="&gt;&gt;openModel.Name" xml:space="preserve">
-    <value>openModel</value>
-  </data>
-  <data name="&gt;&gt;openModel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openModel.Parent" xml:space="preserve">
-    <value>modelPanel</value>
-  </data>
-  <data name="&gt;&gt;openModel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cleanButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 138</value>
-  </data>
-  <data name="cleanButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 34</value>
-  </data>
-  <data name="cleanButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="cleanButton2.Text" xml:space="preserve">
-    <value>清理文本</value>
-  </data>
-  <data name="&gt;&gt;cleanButton2.Name" xml:space="preserve">
-    <value>cleanButton2</value>
-  </data>
-  <data name="&gt;&gt;cleanButton2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cleanButton2.Parent" xml:space="preserve">
-    <value>TTSPage</value>
-  </data>
-  <data name="&gt;&gt;cleanButton2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="symbolsButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 138</value>
-  </data>
-  <data name="symbolsButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 34</value>
-  </data>
-  <data name="symbolsButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="symbolsButton2.Text" xml:space="preserve">
-    <value>符号输入</value>
-  </data>
-  <data name="&gt;&gt;symbolsButton2.Name" xml:space="preserve">
-    <value>symbolsButton2</value>
-  </data>
-  <data name="&gt;&gt;symbolsButton2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;symbolsButton2.Parent" xml:space="preserve">
-    <value>TTSPage</value>
-  </data>
-  <data name="&gt;&gt;symbolsButton2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="paramsButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 138</value>
-  </data>
-  <data name="paramsButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 34</value>
-  </data>
-  <data name="paramsButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="paramsButton2.Text" xml:space="preserve">
-    <value>参数设置</value>
-  </data>
-  <data name="&gt;&gt;paramsButton2.Name" xml:space="preserve">
-    <value>paramsButton2</value>
-  </data>
-  <data name="&gt;&gt;paramsButton2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;paramsButton2.Parent" xml:space="preserve">
-    <value>TTSPage</value>
-  </data>
-  <data name="&gt;&gt;paramsButton2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="speakerBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="speakerBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 178</value>
-  </data>
-  <data name="speakerBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 33</value>
-  </data>
-  <data name="speakerBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;speakerBox.Name" xml:space="preserve">
-    <value>speakerBox</value>
-  </data>
-  <data name="&gt;&gt;speakerBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;speakerBox.Parent" xml:space="preserve">
-    <value>TTSPage</value>
-  </data>
-  <data name="&gt;&gt;speakerBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="speakerLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="speakerLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 183</value>
-  </data>
-  <data name="speakerLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 24</value>
-  </data>
-  <data name="speakerLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="speakerLabel.Text" xml:space="preserve">
-    <value>说话人</value>
-  </data>
-  <data name="&gt;&gt;speakerLabel.Name" xml:space="preserve">
-    <value>speakerLabel</value>
-  </data>
-  <data name="&gt;&gt;speakerLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;speakerLabel.Parent" xml:space="preserve">
-    <value>TTSPage</value>
-  </data>
-  <data name="&gt;&gt;speakerLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="textLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 63</value>
   </data>
   <data name="textLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 24</value>
   </data>
-  <data name="textLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="textLabel.Text" xml:space="preserve">
-    <value>文本</value>
-  </data>
-  <data name="&gt;&gt;textLabel.Name" xml:space="preserve">
-    <value>textLabel</value>
-  </data>
-  <data name="&gt;&gt;textLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textLabel.Parent" xml:space="preserve">
-    <value>TTSPage</value>
-  </data>
-  <data name="&gt;&gt;textLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 94</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
-    <value>menuStrip</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="textBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 18</value>
-  </data>
-  <data name="textBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 114</value>
-  </data>
-  <data name="textBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBox.Name" xml:space="preserve">
-    <value>textBox</value>
-  </data>
-  <data name="&gt;&gt;textBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox.Parent" xml:space="preserve">
-    <value>TTSPage</value>
-  </data>
-  <data name="&gt;&gt;textBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="TTSPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TTSPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="TTSPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 230</value>
-  </data>
-  <data name="TTSPage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TTSPage.Text" xml:space="preserve">
-    <value>语音合成</value>
-  </data>
-  <data name="&gt;&gt;TTSPage.Name" xml:space="preserve">
-    <value>TTSPage</value>
-  </data>
-  <data name="&gt;&gt;TTSPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TTSPage.Parent" xml:space="preserve">
-    <value>modeControl</value>
-  </data>
-  <data name="&gt;&gt;TTSPage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;openOrigin.Name" xml:space="preserve">
-    <value>openOrigin</value>
-  </data>
-  <data name="&gt;&gt;openOrigin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openOrigin.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;openOrigin.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;originPath.Name" xml:space="preserve">
-    <value>originPath</value>
-  </data>
-  <data name="&gt;&gt;originPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;originPath.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;originPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;originBox.Name" xml:space="preserve">
-    <value>originBox</value>
-  </data>
-  <data name="&gt;&gt;originBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;originBox.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;originBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;originLabel.Name" xml:space="preserve">
-    <value>originLabel</value>
-  </data>
-  <data name="&gt;&gt;originLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;originLabel.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;originLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;targetBox.Name" xml:space="preserve">
-    <value>targetBox</value>
-  </data>
-  <data name="&gt;&gt;targetBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;targetBox.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;targetBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;targetLabel.Name" xml:space="preserve">
-    <value>targetLabel</value>
-  </data>
-  <data name="&gt;&gt;targetLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;targetLabel.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;targetLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="VCPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <data name="VCPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="VCPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 230</value>
-  </data>
-  <data name="VCPage.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="VCPage.Text" xml:space="preserve">
-    <value>语音转换</value>
-  </data>
-  <data name="&gt;&gt;VCPage.Name" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;VCPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;VCPage.Parent" xml:space="preserve">
-    <value>modeControl</value>
-  </data>
-  <data name="&gt;&gt;VCPage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="modeControl.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="modeControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 136</value>
-  </data>
-  <data name="modeControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 267</value>
-  </data>
-  <data name="modeControl.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;modeControl.Name" xml:space="preserve">
-    <value>modeControl</value>
-  </data>
-  <data name="&gt;&gt;modeControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;modeControl.Parent" xml:space="preserve">
-    <value>vitsPage</value>
-  </data>
-  <data name="&gt;&gt;modeControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cleanButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 30</value>
-  </data>
-  <data name="cleanButton.Text" xml:space="preserve">
-    <value>清理文本</value>
-  </data>
-  <data name="paramsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 30</value>
-  </data>
-  <data name="paramsButton.Text" xml:space="preserve">
-    <value>参数设置</value>
-  </data>
-  <data name="symbolsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 30</value>
-  </data>
-  <data name="symbolsButton.Text" xml:space="preserve">
-    <value>符号输入</value>
-  </data>
-  <data name="openOrigin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 39</value>
-  </data>
-  <data name="openOrigin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 34</value>
-  </data>
-  <data name="openOrigin.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="openOrigin.Text" xml:space="preserve">
-    <value>打开原音频</value>
-  </data>
-  <data name="&gt;&gt;openOrigin.Name" xml:space="preserve">
-    <value>openOrigin</value>
-  </data>
-  <data name="&gt;&gt;openOrigin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openOrigin.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;openOrigin.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="originPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 40</value>
-  </data>
-  <data name="originPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 30</value>
-  </data>
-  <data name="originPath.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;originPath.Name" xml:space="preserve">
-    <value>originPath</value>
-  </data>
-  <data name="&gt;&gt;originPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;originPath.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;originPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="originBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="originBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 106</value>
-  </data>
-  <data name="originBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 33</value>
-  </data>
-  <data name="originBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;originBox.Name" xml:space="preserve">
-    <value>originBox</value>
-  </data>
-  <data name="&gt;&gt;originBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;originBox.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;originBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="originLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="originLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 110</value>
-  </data>
-  <data name="originLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 24</value>
-  </data>
-  <data name="originLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="originLabel.Text" xml:space="preserve">
-    <value>原说话人</value>
-  </data>
-  <data name="&gt;&gt;originLabel.Name" xml:space="preserve">
-    <value>originLabel</value>
-  </data>
-  <data name="&gt;&gt;originLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;originLabel.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;originLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="targetBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="targetBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 156</value>
-  </data>
-  <data name="targetBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 33</value>
-  </data>
-  <data name="targetBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;targetBox.Name" xml:space="preserve">
-    <value>targetBox</value>
-  </data>
-  <data name="&gt;&gt;targetBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;targetBox.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;targetBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="targetLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="targetLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 160</value>
-  </data>
-  <data name="targetLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="targetLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="targetLabel.Text" xml:space="preserve">
-    <value>目标说话人</value>
-  </data>
-  <data name="&gt;&gt;targetLabel.Name" xml:space="preserve">
-    <value>targetLabel</value>
-  </data>
-  <data name="&gt;&gt;targetLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;targetLabel.Parent" xml:space="preserve">
-    <value>VCPage</value>
-  </data>
-  <data name="&gt;&gt;targetLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;deleteButton.Name" xml:space="preserve">
-    <value>deleteButton</value>
-  </data>
-  <data name="&gt;&gt;deleteButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;deleteButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;deleteButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;stopButton.Name" xml:space="preserve">
-    <value>stopButton</value>
-  </data>
-  <data name="&gt;&gt;stopButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;stopButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;stopButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;resaveButton.Name" xml:space="preserve">
-    <value>resaveButton</value>
-  </data>
-  <data name="&gt;&gt;resaveButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resaveButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;resaveButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;playButton.Name" xml:space="preserve">
-    <value>playButton</value>
-  </data>
-  <data name="&gt;&gt;playButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;playButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;savePath.Name" xml:space="preserve">
-    <value>savePath</value>
-  </data>
-  <data name="&gt;&gt;savePath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;savePath.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;savePath.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
-    <value>saveButton</value>
-  </data>
-  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="savePanel.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="savePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 556</value>
-  </data>
-  <data name="savePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>501, 124</value>
-  </data>
-  <data name="savePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="savePanel.Text" xml:space="preserve">
-    <value>保存文件</value>
-  </data>
-  <data name="&gt;&gt;savePanel.Name" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;savePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;savePanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;savePanel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="deleteButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="deleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 70</value>
-  </data>
-  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 34</value>
-  </data>
-  <data name="deleteButton.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="deleteButton.Text" xml:space="preserve">
-    <value>删除</value>
-  </data>
-  <data name="&gt;&gt;deleteButton.Name" xml:space="preserve">
-    <value>deleteButton</value>
-  </data>
-  <data name="&gt;&gt;deleteButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;deleteButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;deleteButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="stopButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="stopButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 70</value>
-  </data>
-  <data name="stopButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 34</value>
-  </data>
-  <data name="stopButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="stopButton.Text" xml:space="preserve">
-    <value>停止</value>
-  </data>
-  <data name="&gt;&gt;stopButton.Name" xml:space="preserve">
-    <value>stopButton</value>
-  </data>
-  <data name="&gt;&gt;stopButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;stopButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;stopButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="resaveButton.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="resaveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 70</value>
-  </data>
-  <data name="resaveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
-  </data>
-  <data name="resaveButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="resaveButton.Text" xml:space="preserve">
-    <value>重新合成</value>
-  </data>
-  <data name="&gt;&gt;resaveButton.Name" xml:space="preserve">
-    <value>resaveButton</value>
-  </data>
-  <data name="&gt;&gt;resaveButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resaveButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;resaveButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="playButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="playButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 70</value>
-  </data>
-  <data name="playButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 34</value>
-  </data>
-  <data name="playButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="playButton.Text" xml:space="preserve">
-    <value>播放</value>
-  </data>
-  <data name="&gt;&gt;playButton.Name" xml:space="preserve">
-    <value>playButton</value>
-  </data>
-  <data name="&gt;&gt;playButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;playButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="savePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 32</value>
-  </data>
-  <data name="savePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 30</value>
-  </data>
-  <data name="savePath.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;savePath.Name" xml:space="preserve">
-    <value>savePath</value>
-  </data>
-  <data name="&gt;&gt;savePath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;savePath.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;savePath.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 30</value>
-  </data>
-  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
-  </data>
-  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="saveButton.Text" xml:space="preserve">
-    <value>保存</value>
-  </data>
-  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
-    <value>saveButton</value>
-  </data>
-  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
-    <value>savePanel</value>
-  </data>
-  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="consoleBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 9pt</value>
-  </data>
-  <data name="consoleBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 24</value>
-  </data>
-  <data name="consoleBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="consoleBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="consoleBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>436, 656</value>
-  </data>
-  <data name="consoleBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;consoleBox.Name" xml:space="preserve">
-    <value>consoleBox</value>
-  </data>
-  <data name="&gt;&gt;consoleBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;consoleBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;consoleBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="vitsPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <data name="vitsPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="vitsPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>498, 410</value>
-  </data>
-  <data name="vitsPage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="vitsPage.Text" xml:space="preserve">
-    <value>VITS</value>
-  </data>
-  <data name="&gt;&gt;vitsPage.Name" xml:space="preserve">
-    <value>vitsPage</value>
-  </data>
-  <data name="&gt;&gt;vitsPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;vitsPage.Parent" xml:space="preserve">
-    <value>modelControl</value>
-  </data>
-  <data name="&gt;&gt;vitsPage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;HOpenOrigin.Name" xml:space="preserve">
-    <value>HOpenOrigin</value>
-  </data>
-  <data name="&gt;&gt;HOpenOrigin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOpenOrigin.Parent" xml:space="preserve">
-    <value>hubertPage</value>
-  </data>
-  <data name="&gt;&gt;HOpenOrigin.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;HVCControl.Name" xml:space="preserve">
-    <value>HVCControl</value>
-  </data>
-  <data name="&gt;&gt;HVCControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HVCControl.Parent" xml:space="preserve">
-    <value>hubertPage</value>
-  </data>
-  <data name="&gt;&gt;HVCControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;HModelPanel.Name" xml:space="preserve">
-    <value>HModelPanel</value>
-  </data>
-  <data name="&gt;&gt;HModelPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HModelPanel.Parent" xml:space="preserve">
-    <value>hubertPage</value>
-  </data>
-  <data name="&gt;&gt;HModelPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;HOriginPath.Name" xml:space="preserve">
-    <value>HOriginPath</value>
-  </data>
-  <data name="&gt;&gt;HOriginPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOriginPath.Parent" xml:space="preserve">
-    <value>hubertPage</value>
-  </data>
-  <data name="&gt;&gt;HOriginPath.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="hubertPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <data name="hubertPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="hubertPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>498, 410</value>
-  </data>
-  <data name="hubertPage.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="hubertPage.Text" xml:space="preserve">
-    <value>HuBERT-VITS</value>
-  </data>
-  <data name="&gt;&gt;hubertPage.Name" xml:space="preserve">
-    <value>hubertPage</value>
-  </data>
-  <data name="&gt;&gt;hubertPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hubertPage.Parent" xml:space="preserve">
-    <value>modelControl</value>
-  </data>
-  <data name="&gt;&gt;hubertPage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;WModeControl.Name" xml:space="preserve">
-    <value>WModeControl</value>
-  </data>
-  <data name="&gt;&gt;WModeControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WModeControl.Parent" xml:space="preserve">
-    <value>w2v2Page</value>
-  </data>
-  <data name="&gt;&gt;WModeControl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;WModelPanel.Name" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;WModelPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WModelPanel.Parent" xml:space="preserve">
-    <value>w2v2Page</value>
-  </data>
-  <data name="&gt;&gt;WModelPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="w2v2Page.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <data name="w2v2Page.Size" type="System.Drawing.Size, System.Drawing">
-    <value>498, 410</value>
-  </data>
-  <data name="w2v2Page.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="w2v2Page.Text" xml:space="preserve">
-    <value>W2V2-VITS</value>
-  </data>
-  <data name="&gt;&gt;w2v2Page.Name" xml:space="preserve">
-    <value>w2v2Page</value>
-  </data>
-  <data name="&gt;&gt;w2v2Page.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;w2v2Page.Parent" xml:space="preserve">
-    <value>modelControl</value>
-  </data>
-  <data name="&gt;&gt;w2v2Page.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="modelControl.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="modelControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 104</value>
-  </data>
-  <data name="modelControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>506, 447</value>
-  </data>
-  <data name="modelControl.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;modelControl.Name" xml:space="preserve">
-    <value>modelControl</value>
-  </data>
-  <data name="&gt;&gt;modelControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;modelControl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;modelControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="HOpenOrigin.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="HOpenOrigin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 189</value>
-  </data>
-  <data name="HOpenOrigin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 34</value>
-  </data>
-  <data name="HOpenOrigin.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="HOpenOrigin.Text" xml:space="preserve">
-    <value>打开原音频</value>
-  </data>
-  <data name="&gt;&gt;HOpenOrigin.Name" xml:space="preserve">
-    <value>HOpenOrigin</value>
-  </data>
-  <data name="&gt;&gt;HOpenOrigin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOpenOrigin.Parent" xml:space="preserve">
-    <value>hubertPage</value>
-  </data>
-  <data name="&gt;&gt;HOpenOrigin.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;HVCPage1.Name" xml:space="preserve">
-    <value>HVCPage1</value>
-  </data>
-  <data name="&gt;&gt;HVCPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HVCPage1.Parent" xml:space="preserve">
-    <value>HVCControl</value>
-  </data>
-  <data name="&gt;&gt;HVCPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;HVCPage2.Name" xml:space="preserve">
-    <value>HVCPage2</value>
-  </data>
-  <data name="&gt;&gt;HVCPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HVCPage2.Parent" xml:space="preserve">
-    <value>HVCControl</value>
-  </data>
-  <data name="&gt;&gt;HVCPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="HVCControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 242</value>
-  </data>
-  <data name="HVCControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 164</value>
-  </data>
-  <data name="HVCControl.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;HVCControl.Name" xml:space="preserve">
-    <value>HVCControl</value>
-  </data>
-  <data name="&gt;&gt;HVCControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HVCControl.Parent" xml:space="preserve">
-    <value>hubertPage</value>
-  </data>
-  <data name="&gt;&gt;HVCControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;HAdvancedControl.Name" xml:space="preserve">
-    <value>HAdvancedControl</value>
-  </data>
-  <data name="&gt;&gt;HAdvancedControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HAdvancedControl.Parent" xml:space="preserve">
-    <value>HVCPage1</value>
-  </data>
-  <data name="&gt;&gt;HAdvancedControl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;HTargetLabel.Name" xml:space="preserve">
-    <value>HTargetLabel</value>
-  </data>
-  <data name="&gt;&gt;HTargetLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HTargetLabel.Parent" xml:space="preserve">
-    <value>HVCPage1</value>
-  </data>
-  <data name="&gt;&gt;HTargetLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox.Name" xml:space="preserve">
-    <value>HTargetBox</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox.Parent" xml:space="preserve">
-    <value>HVCPage1</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="HVCPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <data name="HVCPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="HVCPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>476, 127</value>
-  </data>
-  <data name="HVCPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="HVCPage1.Text" xml:space="preserve">
-    <value>语言转换（模式一）</value>
-  </data>
-  <data name="&gt;&gt;HVCPage1.Name" xml:space="preserve">
-    <value>HVCPage1</value>
-  </data>
-  <data name="&gt;&gt;HVCPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HVCPage1.Parent" xml:space="preserve">
-    <value>HVCControl</value>
-  </data>
-  <data name="&gt;&gt;HVCPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="HAdvancedControl.Location" type="System.Drawing.Point, System.Drawing">
     <value>362, 46</value>
   </data>
-  <data name="HAdvancedControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 34</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 9pt</value>
   </data>
-  <data name="HAdvancedControl.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="&gt;&gt;WOpenOrigin.Name" xml:space="preserve">
+    <value>WOpenOrigin</value>
   </data>
-  <data name="HAdvancedControl.Text" xml:space="preserve">
-    <value>高级设置</value>
-  </data>
-  <data name="&gt;&gt;HAdvancedControl.Name" xml:space="preserve">
-    <value>HAdvancedControl</value>
-  </data>
-  <data name="&gt;&gt;HAdvancedControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HAdvancedControl.Parent" xml:space="preserve">
-    <value>HVCPage1</value>
-  </data>
-  <data name="&gt;&gt;HAdvancedControl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="HTargetLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HTargetLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 52</value>
+  <data name="&gt;&gt;W2V2Path.Name" xml:space="preserve">
+    <value>W2V2Path</value>
   </data>
   <data name="HTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 24</value>
   </data>
-  <data name="HTargetLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="HTargetLabel.Text" xml:space="preserve">
-    <value>目标说话人</value>
-  </data>
-  <data name="&gt;&gt;HTargetLabel.Name" xml:space="preserve">
-    <value>HTargetLabel</value>
-  </data>
-  <data name="&gt;&gt;HTargetLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HTargetLabel.Parent" xml:space="preserve">
-    <value>HVCPage1</value>
-  </data>
-  <data name="&gt;&gt;HTargetLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="HTargetBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="HTargetBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 48</value>
-  </data>
-  <data name="HTargetBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 33</value>
-  </data>
-  <data name="HTargetBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox.Name" xml:space="preserve">
-    <value>HTargetBox</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox.Parent" xml:space="preserve">
-    <value>HVCPage1</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel.Name" xml:space="preserve">
-    <value>HOriginLabel</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel.Parent" xml:space="preserve">
-    <value>HVCPage2</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;HOriginBox.Name" xml:space="preserve">
-    <value>HOriginBox</value>
-  </data>
-  <data name="&gt;&gt;HOriginBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOriginBox.Parent" xml:space="preserve">
-    <value>HVCPage2</value>
-  </data>
-  <data name="&gt;&gt;HOriginBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel2.Name" xml:space="preserve">
-    <value>HOriginLabel2</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel2.Parent" xml:space="preserve">
-    <value>HVCPage2</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox2.Name" xml:space="preserve">
-    <value>HTargetBox2</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox2.Parent" xml:space="preserve">
-    <value>HVCPage2</value>
-  </data>
-  <data name="&gt;&gt;HTargetBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="HVCPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <data name="HVCPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="HVCPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>476, 127</value>
-  </data>
-  <data name="HVCPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="HVCPage2.Text" xml:space="preserve">
-    <value>语音转换（模式二）</value>
-  </data>
-  <data name="&gt;&gt;HVCPage2.Name" xml:space="preserve">
-    <value>HVCPage2</value>
-  </data>
-  <data name="&gt;&gt;HVCPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HVCPage2.Parent" xml:space="preserve">
-    <value>HVCControl</value>
-  </data>
-  <data name="&gt;&gt;HVCPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;WConfigPath.Name" xml:space="preserve">
+    <value>WConfigPath</value>
   </data>
   <data name="HOriginLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="HOriginLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 32</value>
+  <data name="&gt;&gt;w2v2Page.Parent" xml:space="preserve">
+    <value>modelControl</value>
   </data>
-  <data name="HOriginLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 24</value>
+  <data name="modeControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 136</value>
   </data>
-  <data name="HOriginLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>WModeControl</value>
   </data>
-  <data name="HOriginLabel.Text" xml:space="preserve">
-    <value>原说话人</value>
+  <data name="&gt;&gt;HOpenConfig.Name" xml:space="preserve">
+    <value>HOpenConfig</value>
   </data>
-  <data name="&gt;&gt;HOriginLabel.Name" xml:space="preserve">
-    <value>HOriginLabel</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel.Parent" xml:space="preserve">
-    <value>HVCPage2</value>
-  </data>
-  <data name="&gt;&gt;HOriginLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="HOriginBox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="textBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Yu Gothic UI, 9pt</value>
   </data>
-  <data name="HOriginBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 28</value>
+  <data name="openConfig.Text" xml:space="preserve">
+    <value>打开配置</value>
   </data>
-  <data name="HOriginBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 33</value>
+  <data name="&gt;&gt;speakerBox.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="HOriginBox.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="W2V2Path.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;HOriginBox.Name" xml:space="preserve">
-    <value>HOriginBox</value>
+  <data name="WTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 92</value>
   </data>
-  <data name="&gt;&gt;HOriginBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="&gt;&gt;HOriginBox.Parent" xml:space="preserve">
-    <value>HVCPage2</value>
+  <data name="&gt;&gt;HModelPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;HOriginBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HOpenConfig.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HVCControl.Name" xml:space="preserve">
+    <value>HVCControl</value>
+  </data>
+  <data name="WTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="HOriginLabel2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HOriginLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 70</value>
-  </data>
-  <data name="HOriginLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="HOriginLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="HOpenHubert.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="HOriginLabel2.Text" xml:space="preserve">
     <value>目标说话人</value>
   </data>
-  <data name="&gt;&gt;HOriginLabel2.Name" xml:space="preserve">
-    <value>HOriginLabel2</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MoeGoe</value>
   </data>
-  <data name="&gt;&gt;HOriginLabel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;HOriginLabel2.Parent" xml:space="preserve">
-    <value>HVCPage2</value>
+  <data name="HOpenHubert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 112</value>
   </data>
-  <data name="&gt;&gt;HOriginLabel2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;WSpeakerBox.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;openModel.Parent" xml:space="preserve">
+    <value>modelPanel</value>
+  </data>
+  <data name="WConfigPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 74</value>
+  </data>
+  <data name="&gt;&gt;WOriginPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="configPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 74</value>
+  </data>
+  <data name="openEXE.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;HOpenModel.Name" xml:space="preserve">
+    <value>HOpenModel</value>
+  </data>
+  <data name="HOriginLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 32</value>
+  </data>
+  <data name="WOpenModel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;EXEPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w2v2Page.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="openModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="&gt;&gt;WOriginPath.Name" xml:space="preserve">
+    <value>WOriginPath</value>
+  </data>
+  <data name="textLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 63</value>
+  </data>
+  <data name="&gt;&gt;targetBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="resaveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="WSpeakerBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;targetBox.Parent" xml:space="preserve">
+    <value>VCPage</value>
+  </data>
+  <data name="&gt;&gt;WModelPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 18</value>
+  </data>
+  <data name="&gt;&gt;WModelPanel.Name" xml:space="preserve">
+    <value>WModelPanel</value>
+  </data>
+  <data name="&gt;&gt;modelPanel.Name" xml:space="preserve">
+    <value>modelPanel</value>
+  </data>
+  <data name="W2V2Path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 114</value>
+  </data>
+  <data name="&gt;&gt;emotionButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;openModel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WTextLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;savePanel.Name" xml:space="preserve">
+    <value>savePanel</value>
+  </data>
+  <data name="&gt;&gt;cleanButton2.Parent" xml:space="preserve">
+    <value>TTSPage</value>
+  </data>
+  <data name="targetBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;configPath.Parent" xml:space="preserve">
+    <value>modelPanel</value>
+  </data>
+  <data name="&gt;&gt;HVCControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hubertPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WTextLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 81</value>
+  </data>
+  <data name="&gt;&gt;cleanButton2.Name" xml:space="preserve">
+    <value>cleanButton2</value>
+  </data>
+  <data name="&gt;&gt;HOpenModel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="EXEPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="consoleBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;VCPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>语音转换</value>
+  </data>
+  <data name="&gt;&gt;HConfigPath.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="HTargetBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Yu Gothic UI, 9pt</value>
   </data>
-  <data name="HTargetBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 68</value>
+  <data name="&gt;&gt;originLabel.Name" xml:space="preserve">
+    <value>originLabel</value>
   </data>
-  <data name="HTargetBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 33</value>
+  <data name="&gt;&gt;WConfigPath.Parent" xml:space="preserve">
+    <value>WModelPanel</value>
   </data>
-  <data name="HTargetBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="&gt;&gt;HOriginLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;HTargetBox2.Name" xml:space="preserve">
-    <value>HTargetBox2</value>
+  <data name="paramsButton.Text" xml:space="preserve">
+    <value>参数设置</value>
   </data>
-  <data name="&gt;&gt;HTargetBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;modelControl.Name" xml:space="preserve">
+    <value>modelControl</value>
   </data>
-  <data name="&gt;&gt;HTargetBox2.Parent" xml:space="preserve">
-    <value>HVCPage2</value>
+  <data name="&gt;&gt;originBox.Name" xml:space="preserve">
+    <value>originBox</value>
   </data>
-  <data name="&gt;&gt;HTargetBox2.ZOrder" xml:space="preserve">
+  <data name="HVCControl.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="W2V2Model.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 112</value>
+  </data>
+  <data name="targetLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="modelControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 104</value>
+  </data>
+  <data name="configPath.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;hubertPath.Name" xml:space="preserve">
-    <value>hubertPath</value>
+  <data name="HOriginPath.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="&gt;&gt;hubertPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="WTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 46</value>
   </data>
-  <data name="&gt;&gt;hubertPath.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
+  <data name="&gt;&gt;targetLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;hubertPath.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;HOriginLabel2.Parent" xml:space="preserve">
+    <value>HVCPage2</value>
   </data>
-  <data name="&gt;&gt;HOpenHubert.Name" xml:space="preserve">
-    <value>HOpenHubert</value>
+  <data name="&gt;&gt;WTargetLabel.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>976, 700</value>
+  </data>
+  <data name="&gt;&gt;HVCControl.Parent" xml:space="preserve">
+    <value>hubertPage</value>
+  </data>
+  <data name="&gt;&gt;HOriginLabel2.Name" xml:space="preserve">
+    <value>HOriginLabel2</value>
   </data>
   <data name="&gt;&gt;HOpenHubert.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;HOpenHubert.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
+  <data name="openOrigin.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;HOpenHubert.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="WOpenOrigin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 28</value>
   </data>
-  <data name="&gt;&gt;HConfigPath.Name" xml:space="preserve">
-    <value>HConfigPath</value>
+  <data name="speakerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 183</value>
   </data>
-  <data name="&gt;&gt;HConfigPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;HVCPage2.Parent" xml:space="preserve">
+    <value>HVCControl</value>
+  </data>
+  <data name="speakerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="&gt;&gt;textLabel.Parent" xml:space="preserve">
+    <value>TTSPage</value>
+  </data>
+  <data name="WTextLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Name" xml:space="preserve">
+    <value>deleteButton</value>
+  </data>
+  <data name="&gt;&gt;configPath.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="&gt;&gt;symbolsButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WOpenOrigin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;WOpenModel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WTextBox.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;HConfigPath.Parent" xml:space="preserve">
     <value>HModelPanel</value>
   </data>
-  <data name="&gt;&gt;HConfigPath.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="WOpenConfig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 70</value>
   </data>
-  <data name="&gt;&gt;HOpenConfig.Name" xml:space="preserve">
-    <value>HOpenConfig</value>
+  <data name="&gt;&gt;symbolsButton2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;HOpenConfig.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOpenConfig.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
-  </data>
-  <data name="&gt;&gt;HOpenConfig.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;HModelPath.Name" xml:space="preserve">
-    <value>HModelPath</value>
-  </data>
-  <data name="&gt;&gt;HModelPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HModelPath.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
-  </data>
-  <data name="&gt;&gt;HModelPath.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;HOpenModel.Name" xml:space="preserve">
-    <value>HOpenModel</value>
-  </data>
-  <data name="&gt;&gt;HOpenModel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOpenModel.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
-  </data>
-  <data name="&gt;&gt;HOpenModel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="HModelPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="HModelPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 166</value>
-  </data>
-  <data name="HModelPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="HModelPanel.Text" xml:space="preserve">
-    <value>模型文件</value>
-  </data>
-  <data name="&gt;&gt;HModelPanel.Name" xml:space="preserve">
-    <value>HModelPanel</value>
-  </data>
-  <data name="&gt;&gt;HModelPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HModelPanel.Parent" xml:space="preserve">
-    <value>hubertPage</value>
-  </data>
-  <data name="&gt;&gt;HModelPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="hubertPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 114</value>
-  </data>
-  <data name="hubertPath.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="WModelPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>348, 30</value>
   </data>
-  <data name="hubertPath.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;modelPath.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;hubertPath.Name" xml:space="preserve">
-    <value>hubertPath</value>
+  <data name="deleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;hubertPath.Type" xml:space="preserve">
+  <data name="WModeControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 225</value>
+  </data>
+  <data name="originBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 106</value>
+  </data>
+  <data name="WOpenConfig.Text" xml:space="preserve">
+    <value>VITS配置</value>
+  </data>
+  <data name="HOpenModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="WOriginBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 88</value>
+  </data>
+  <data name="W2V2Model.Text" xml:space="preserve">
+    <value>情感识别模型</value>
+  </data>
+  <data name="&gt;&gt;speakerLabel.Name" xml:space="preserve">
+    <value>speakerLabel</value>
+  </data>
+  <data name="&gt;&gt;HOriginPath.Name" xml:space="preserve">
+    <value>HOriginPath</value>
+  </data>
+  <data name="WModeControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 178</value>
+  </data>
+  <data name="emotionPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 30</value>
+  </data>
+  <data name="W2V2Model.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;HTargetBox.Parent" xml:space="preserve">
+    <value>HVCPage1</value>
+  </data>
+  <data name="&gt;&gt;playButton.Name" xml:space="preserve">
+    <value>playButton</value>
+  </data>
+  <data name="EXEPath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="WModelPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 166</value>
+  </data>
+  <data name="playButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;EXEPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HOriginPath.Parent" xml:space="preserve">
+    <value>hubertPage</value>
+  </data>
+  <data name="&gt;&gt;w2v2Page.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;openConfig.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EXEPath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;hubertPath.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
+  <data name="&gt;&gt;modelControl.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;hubertPath.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="WOriginLabel.Text" xml:space="preserve">
+    <value>原说话人</value>
+  </data>
+  <data name="&gt;&gt;HOriginLabel.Name" xml:space="preserve">
+    <value>HOriginLabel</value>
+  </data>
+  <data name="HOriginLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="&gt;&gt;HTargetLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;HVCPage1.Parent" xml:space="preserve">
+    <value>HVCControl</value>
+  </data>
+  <data name="&gt;&gt;openOrigin.Parent" xml:space="preserve">
+    <value>VCPage</value>
+  </data>
+  <data name="savePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="stopButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="openConfig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="emotionPath.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="savePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 30</value>
+  </data>
+  <data name="modelPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 124</value>
+  </data>
+  <data name="WSpeakerBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 33</value>
+  </data>
+  <data name="consoleBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="openOrigin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 34</value>
+  </data>
+  <data name="&gt;&gt;HTargetBox.Name" xml:space="preserve">
+    <value>HTargetBox</value>
+  </data>
+  <data name="&gt;&gt;WTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="HOpenConfig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 70</value>
+  </data>
+  <data name="&gt;&gt;WTargetBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vitsPage.Name" xml:space="preserve">
+    <value>vitsPage</value>
+  </data>
+  <data name="HOpenModel.Text" xml:space="preserve">
+    <value>VITS模型</value>
+  </data>
+  <data name="modelControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 447</value>
+  </data>
+  <data name="WModelPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HOriginLabel.Text" xml:space="preserve">
+    <value>原说话人</value>
+  </data>
+  <data name="HAdvancedControl.Text" xml:space="preserve">
+    <value>高级设置</value>
+  </data>
+  <data name="speakerBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 178</value>
+  </data>
+  <data name="HVCPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hubertPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 410</value>
+  </data>
+  <data name="&gt;&gt;textBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="hubertPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;modelPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="deleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 70</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 94</value>
+  </data>
+  <data name="&gt;&gt;textBox.Parent" xml:space="preserve">
+    <value>TTSPage</value>
+  </data>
+  <data name="HTargetLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="consoleBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>528, 24</value>
+  </data>
+  <data name="&gt;&gt;WOriginBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WModelPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="HVCPage1.Text" xml:space="preserve">
+    <value>语言转换（模式一）</value>
+  </data>
+  <data name="&gt;&gt;WOpenConfig.Name" xml:space="preserve">
+    <value>WOpenConfig</value>
+  </data>
+  <data name="&gt;&gt;openOrigin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WTargetLabel.Name" xml:space="preserve">
+    <value>WTargetLabel</value>
+  </data>
+  <data name="VCPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="consoleBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HOpenOrigin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 189</value>
   </data>
   <data name="HOpenHubert.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 8pt</value>
   </data>
-  <data name="HOpenHubert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 112</value>
+  <data name="WSpeakerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 150</value>
   </data>
-  <data name="HOpenHubert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
+  <data name="TTSPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 230</value>
   </data>
-  <data name="HOpenHubert.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;HOriginPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="HOpenHubert.Text" xml:space="preserve">
-    <value>HuBERT模型</value>
+  <data name="&gt;&gt;openOrigin.Name" xml:space="preserve">
+    <value>openOrigin</value>
   </data>
-  <data name="&gt;&gt;HOpenHubert.Name" xml:space="preserve">
-    <value>HOpenHubert</value>
+  <data name="&gt;&gt;configPath.Name" xml:space="preserve">
+    <value>configPath</value>
   </data>
-  <data name="&gt;&gt;HOpenHubert.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;modelPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;HOpenHubert.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
+  <data name="HOriginLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
   </data>
-  <data name="&gt;&gt;HOpenHubert.ZOrder" xml:space="preserve">
+  <data name="openModel.Text" xml:space="preserve">
+    <value>打开模型</value>
+  </data>
+  <data name="&gt;&gt;WOpenModel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="WTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="hubertPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 114</value>
+  </data>
+  <data name="&gt;&gt;WOriginLabel.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="w2v2Page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 410</value>
+  </data>
+  <data name="&gt;&gt;WOriginBox.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="targetLabel.Text" xml:space="preserve">
+    <value>目标说话人</value>
+  </data>
+  <data name="&gt;&gt;HAdvancedControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w2v2Page.Name" xml:space="preserve">
+    <value>w2v2Page</value>
+  </data>
+  <data name="&gt;&gt;hubertPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WTextLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hubertPage.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="HConfigPath.Location" type="System.Drawing.Point, System.Drawing">
     <value>132, 74</value>
   </data>
-  <data name="HConfigPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 30</value>
+  <data name="speakerLabel.Text" xml:space="preserve">
+    <value>说话人</value>
   </data>
-  <data name="HConfigPath.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;HConfigPath.Name" xml:space="preserve">
-    <value>HConfigPath</value>
-  </data>
-  <data name="&gt;&gt;HConfigPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HConfigPath.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
-  </data>
-  <data name="&gt;&gt;HConfigPath.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="HOpenConfig.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 70</value>
-  </data>
-  <data name="HOpenConfig.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
-  </data>
-  <data name="HOpenConfig.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="HOpenConfig.Text" xml:space="preserve">
-    <value>VITS配置</value>
-  </data>
-  <data name="&gt;&gt;HOpenConfig.Name" xml:space="preserve">
-    <value>HOpenConfig</value>
-  </data>
-  <data name="&gt;&gt;HOpenConfig.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOpenConfig.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
-  </data>
-  <data name="&gt;&gt;HOpenConfig.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="HModelPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 32</value>
-  </data>
-  <data name="HModelPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 30</value>
-  </data>
-  <data name="HModelPath.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;HModelPath.Name" xml:space="preserve">
-    <value>HModelPath</value>
-  </data>
-  <data name="&gt;&gt;HModelPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HModelPath.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
-  </data>
-  <data name="&gt;&gt;HModelPath.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="HOpenModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 30</value>
-  </data>
-  <data name="HOpenModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
-  </data>
-  <data name="HOpenModel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="HOpenModel.Text" xml:space="preserve">
-    <value>VITS模型</value>
-  </data>
-  <data name="&gt;&gt;HOpenModel.Name" xml:space="preserve">
-    <value>HOpenModel</value>
-  </data>
-  <data name="&gt;&gt;HOpenModel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOpenModel.Parent" xml:space="preserve">
-    <value>HModelPanel</value>
-  </data>
-  <data name="&gt;&gt;HOpenModel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="HOriginPath.Enabled" type="System.Boolean, mscorlib">
+  <data name="deleteButton.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="HOriginPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 190</value>
+  <data name="openOrigin.Text" xml:space="preserve">
+    <value>打开原音频</value>
   </data>
-  <data name="HOriginPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 30</value>
-  </data>
-  <data name="HOriginPath.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;HOriginPath.Name" xml:space="preserve">
-    <value>HOriginPath</value>
-  </data>
-  <data name="&gt;&gt;HOriginPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HOriginPath.Parent" xml:space="preserve">
-    <value>hubertPage</value>
-  </data>
-  <data name="&gt;&gt;HOriginPath.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>WModeControl</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="configPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 30</value>
   </data>
   <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>WModeControl</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="consoleBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>436, 656</value>
+  </data>
+  <data name="&gt;&gt;speakerBox.Parent" xml:space="preserve">
+    <value>TTSPage</value>
   </data>
   <data name="WModeControl.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="WModeControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 178</value>
-  </data>
-  <data name="WModeControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 225</value>
-  </data>
-  <data name="WModeControl.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;WModeControl.Name" xml:space="preserve">
-    <value>WModeControl</value>
-  </data>
-  <data name="&gt;&gt;WModeControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WModeControl.Parent" xml:space="preserve">
-    <value>w2v2Page</value>
-  </data>
-  <data name="&gt;&gt;WModeControl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;emotionButton.Name" xml:space="preserve">
-    <value>emotionButton</value>
-  </data>
-  <data name="&gt;&gt;emotionButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emotionButton.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;emotionButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;emotionPath.Name" xml:space="preserve">
-    <value>emotionPath</value>
-  </data>
-  <data name="&gt;&gt;emotionPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emotionPath.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;emotionPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerBox.Name" xml:space="preserve">
-    <value>WSpeakerBox</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerBox.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerLabel.Name" xml:space="preserve">
-    <value>WSpeakerLabel</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerLabel.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;WTextLabel.Name" xml:space="preserve">
-    <value>WTextLabel</value>
-  </data>
-  <data name="&gt;&gt;WTextLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WTextLabel.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
   <data name="&gt;&gt;WTextLabel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;WTextBox.Name" xml:space="preserve">
-    <value>WTextBox</value>
+  <data name="HOriginPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 190</value>
   </data>
-  <data name="&gt;&gt;WTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WTextBox.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;WTextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 188</value>
+  <data name="stopButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 70</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>语音合成</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>WModeControl</value>
+  <data name="&gt;&gt;openOrigin.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="emotionButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+  <data name="WOriginLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="emotionButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 34</value>
+  <data name="WTextLabel.Text" xml:space="preserve">
+    <value>文本</value>
   </data>
-  <data name="emotionButton.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="W2V2Model.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 8pt</value>
   </data>
-  <data name="emotionButton.Text" xml:space="preserve">
-    <value>情感参考</value>
+  <data name="EXEPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 32</value>
   </data>
-  <data name="&gt;&gt;emotionButton.Name" xml:space="preserve">
-    <value>emotionButton</value>
+  <data name="&gt;&gt;HOpenOrigin.Name" xml:space="preserve">
+    <value>HOpenOrigin</value>
   </data>
-  <data name="&gt;&gt;emotionButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="HTargetLabel.Text" xml:space="preserve">
+    <value>目标说话人</value>
   </data>
-  <data name="&gt;&gt;emotionButton.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;WSpeakerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;emotionButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;HOpenConfig.Parent" xml:space="preserve">
+    <value>HModelPanel</value>
+  </data>
+  <data name="originLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
+    <value>menuStrip</value>
+  </data>
+  <data name="HVCPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;speakerLabel.Parent" xml:space="preserve">
+    <value>TTSPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainWin</value>
+  </data>
+  <data name="&gt;&gt;HModelPanel.Name" xml:space="preserve">
+    <value>HModelPanel</value>
+  </data>
+  <data name="hubertPage.Text" xml:space="preserve">
+    <value>HuBERT-VITS</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WOriginPath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;HOriginLabel.Parent" xml:space="preserve">
+    <value>HVCPage2</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="originLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
+  </data>
+  <data name="&gt;&gt;HOpenOrigin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;WTargetBox.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="HTargetBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 33</value>
+  </data>
+  <data name="VCPage.Text" xml:space="preserve">
+    <value>语音转换</value>
+  </data>
+  <data name="HConfigPath.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="speakerLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HOriginBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="vitsPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="HTargetBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;openEXE.Name" xml:space="preserve">
+    <value>openEXE</value>
+  </data>
+  <data name="&gt;&gt;targetBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;HOriginPath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;HOriginBox.Parent" xml:space="preserve">
+    <value>HVCPage2</value>
+  </data>
+  <data name="&gt;&gt;originBox.Parent" xml:space="preserve">
+    <value>VCPage</value>
+  </data>
+  <data name="&gt;&gt;modeControl.Name" xml:space="preserve">
+    <value>modeControl</value>
+  </data>
+  <data name="HOriginLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 70</value>
+  </data>
+  <data name="&gt;&gt;VCPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;HModelPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;symbolsButton2.Parent" xml:space="preserve">
+    <value>TTSPage</value>
+  </data>
+  <data name="&gt;&gt;TTSPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HTargetBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 48</value>
+  </data>
+  <data name="&gt;&gt;modeControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;HAdvancedControl.Name" xml:space="preserve">
+    <value>HAdvancedControl</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>WModeControl</value>
+  </data>
+  <data name="originLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 110</value>
+  </data>
+  <data name="&gt;&gt;originPath.Name" xml:space="preserve">
+    <value>originPath</value>
+  </data>
+  <data name="&gt;&gt;speakerBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hubertPath.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;paramsButton2.Name" xml:space="preserve">
+    <value>paramsButton2</value>
+  </data>
+  <data name="&gt;&gt;HAdvancedControl.Parent" xml:space="preserve">
+    <value>HVCPage1</value>
+  </data>
+  <data name="&gt;&gt;consoleBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="W2V2Model.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="&gt;&gt;WSpeakerBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TTSPage.Text" xml:space="preserve">
+    <value>语音合成</value>
+  </data>
+  <data name="&gt;&gt;savePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;paramsButton.Name" xml:space="preserve">
+    <value>paramsButton</value>
+  </data>
+  <data name="WTargetBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 128</value>
+  </data>
+  <data name="&gt;&gt;HTargetBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="modelControl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;HOriginBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="symbolsButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 34</value>
+  </data>
+  <data name="&gt;&gt;TTSPage.Name" xml:space="preserve">
+    <value>TTSPage</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HOpenModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 34</value>
+  </data>
+  <data name="&gt;&gt;W2V2Path.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="emotionPath.Location" type="System.Drawing.Point, System.Drawing">
     <value>128, 8</value>
   </data>
-  <data name="emotionPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 30</value>
-  </data>
-  <data name="emotionPath.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;emotionPath.Name" xml:space="preserve">
-    <value>emotionPath</value>
-  </data>
-  <data name="&gt;&gt;emotionPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emotionPath.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;emotionPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="WSpeakerBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="WSpeakerBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 146</value>
-  </data>
-  <data name="WSpeakerBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 33</value>
-  </data>
-  <data name="WSpeakerBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerBox.Name" xml:space="preserve">
-    <value>WSpeakerBox</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerBox.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="WSpeakerLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="WSpeakerLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 150</value>
-  </data>
-  <data name="WSpeakerLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 24</value>
-  </data>
-  <data name="WSpeakerLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="WSpeakerLabel.Text" xml:space="preserve">
-    <value>说话人</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerLabel.Name" xml:space="preserve">
-    <value>WSpeakerLabel</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerLabel.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;WSpeakerLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="WTextLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="WTextLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 81</value>
-  </data>
-  <data name="WTextLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 24</value>
-  </data>
-  <data name="WTextLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;cleanButton2.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="WTextLabel.Text" xml:space="preserve">
-    <value>文本</value>
-  </data>
-  <data name="&gt;&gt;WTextLabel.Name" xml:space="preserve">
-    <value>WTextLabel</value>
-  </data>
-  <data name="&gt;&gt;WTextLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WTextLabel.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;WTextLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="WTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="WTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 46</value>
-  </data>
-  <data name="WTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="WTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 92</value>
-  </data>
-  <data name="WTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;WTextBox.Name" xml:space="preserve">
-    <value>WTextBox</value>
-  </data>
-  <data name="&gt;&gt;WTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WTextBox.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;WTextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;WOpenOrigin.Name" xml:space="preserve">
-    <value>WOpenOrigin</value>
-  </data>
-  <data name="&gt;&gt;WOpenOrigin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOpenOrigin.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WOpenOrigin.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;WOriginPath.Name" xml:space="preserve">
-    <value>WOriginPath</value>
-  </data>
-  <data name="&gt;&gt;WOriginPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOriginPath.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WOriginPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;WOriginBox.Name" xml:space="preserve">
-    <value>WOriginBox</value>
-  </data>
-  <data name="&gt;&gt;WOriginBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOriginBox.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WOriginBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;WOriginLabel.Name" xml:space="preserve">
-    <value>WOriginLabel</value>
-  </data>
-  <data name="&gt;&gt;WOriginLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOriginLabel.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WOriginLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;WTargetBox.Name" xml:space="preserve">
-    <value>WTargetBox</value>
-  </data>
-  <data name="&gt;&gt;WTargetBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WTargetBox.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WTargetBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;WTargetLabel.Name" xml:space="preserve">
-    <value>WTargetLabel</value>
-  </data>
-  <data name="&gt;&gt;WTargetLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WTargetLabel.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WTargetLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 33</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 188</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>语音转换</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>WModeControl</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="WOpenOrigin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 28</value>
-  </data>
-  <data name="WOpenOrigin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 34</value>
-  </data>
-  <data name="WOpenOrigin.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="WOpenOrigin.Text" xml:space="preserve">
-    <value>打开原音频</value>
-  </data>
-  <data name="&gt;&gt;WOpenOrigin.Name" xml:space="preserve">
-    <value>WOpenOrigin</value>
-  </data>
-  <data name="&gt;&gt;WOpenOrigin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOpenOrigin.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WOpenOrigin.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="WOriginPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 30</value>
-  </data>
-  <data name="WOriginPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 30</value>
-  </data>
-  <data name="WOriginPath.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;WOriginPath.Name" xml:space="preserve">
-    <value>WOriginPath</value>
-  </data>
-  <data name="&gt;&gt;WOriginPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOriginPath.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WOriginPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="WOriginBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="WOriginBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 88</value>
-  </data>
-  <data name="WOriginBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 33</value>
-  </data>
-  <data name="WOriginBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;WOriginBox.Name" xml:space="preserve">
-    <value>WOriginBox</value>
-  </data>
-  <data name="&gt;&gt;WOriginBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOriginBox.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WOriginBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="WOriginLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="WOriginLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 93</value>
-  </data>
-  <data name="WOriginLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 24</value>
-  </data>
-  <data name="WOriginLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="WOriginLabel.Text" xml:space="preserve">
-    <value>原说话人</value>
-  </data>
-  <data name="&gt;&gt;WOriginLabel.Name" xml:space="preserve">
-    <value>WOriginLabel</value>
-  </data>
-  <data name="&gt;&gt;WOriginLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOriginLabel.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WOriginLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="WTargetBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Yu Gothic UI, 9pt</value>
-  </data>
-  <data name="WTargetBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 128</value>
-  </data>
-  <data name="WTargetBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 33</value>
-  </data>
-  <data name="WTargetBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;WTargetBox.Name" xml:space="preserve">
-    <value>WTargetBox</value>
-  </data>
-  <data name="&gt;&gt;WTargetBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WTargetBox.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WTargetBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="WTargetLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="WTargetLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 132</value>
-  </data>
-  <data name="WTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="WTargetLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="WTargetLabel.Text" xml:space="preserve">
-    <value>目标说话人</value>
-  </data>
-  <data name="&gt;&gt;WTargetLabel.Name" xml:space="preserve">
-    <value>WTargetLabel</value>
-  </data>
-  <data name="&gt;&gt;WTargetLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WTargetLabel.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;WTargetLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;W2V2Path.Name" xml:space="preserve">
-    <value>W2V2Path</value>
-  </data>
-  <data name="&gt;&gt;W2V2Path.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;W2V2Path.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;W2V2Path.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;W2V2Model.Name" xml:space="preserve">
-    <value>W2V2Model</value>
-  </data>
-  <data name="&gt;&gt;W2V2Model.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;W2V2Model.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;W2V2Model.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;WConfigPath.Name" xml:space="preserve">
-    <value>WConfigPath</value>
-  </data>
-  <data name="&gt;&gt;WConfigPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WConfigPath.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;WConfigPath.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;WOpenConfig.Name" xml:space="preserve">
-    <value>WOpenConfig</value>
-  </data>
-  <data name="&gt;&gt;WOpenConfig.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOpenConfig.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;WOpenConfig.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;WModelPath.Name" xml:space="preserve">
-    <value>WModelPath</value>
-  </data>
-  <data name="&gt;&gt;WModelPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WModelPath.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;WModelPath.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;WOpenModel.Name" xml:space="preserve">
-    <value>WOpenModel</value>
-  </data>
-  <data name="&gt;&gt;WOpenModel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WOpenModel.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;WOpenModel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="WModelPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="WModelPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 166</value>
-  </data>
-  <data name="WModelPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="WModelPanel.Text" xml:space="preserve">
-    <value>模型文件</value>
-  </data>
-  <data name="&gt;&gt;WModelPanel.Name" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;WModelPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WModelPanel.Parent" xml:space="preserve">
-    <value>w2v2Page</value>
-  </data>
-  <data name="&gt;&gt;WModelPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="W2V2Path.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 114</value>
-  </data>
-  <data name="W2V2Path.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 30</value>
-  </data>
-  <data name="W2V2Path.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;W2V2Path.Name" xml:space="preserve">
-    <value>W2V2Path</value>
-  </data>
-  <data name="&gt;&gt;W2V2Path.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;W2V2Path.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;W2V2Path.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="W2V2Model.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 8pt</value>
-  </data>
-  <data name="W2V2Model.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 112</value>
-  </data>
-  <data name="W2V2Model.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 34</value>
-  </data>
-  <data name="W2V2Model.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="W2V2Model.Text" xml:space="preserve">
-    <value>情感识别模型</value>
-  </data>
-  <data name="&gt;&gt;W2V2Model.Name" xml:space="preserve">
-    <value>W2V2Model</value>
-  </data>
-  <data name="&gt;&gt;W2V2Model.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;W2V2Model.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;W2V2Model.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="WConfigPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 74</value>
-  </data>
-  <data name="WConfigPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 30</value>
   </data>
   <data name="WConfigPath.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;WConfigPath.Name" xml:space="preserve">
-    <value>WConfigPath</value>
-  </data>
-  <data name="&gt;&gt;WConfigPath.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;WConfigPath.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
+  <data name="&gt;&gt;emotionButton.Name" xml:space="preserve">
+    <value>emotionButton</value>
   </data>
-  <data name="&gt;&gt;WConfigPath.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBox.Name" xml:space="preserve">
+    <value>textBox</value>
+  </data>
+  <data name="&gt;&gt;HOriginLabel2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="WOpenConfig.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 70</value>
+  <data name="HVCControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 242</value>
   </data>
-  <data name="WOpenConfig.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;hubertPath.Name" xml:space="preserve">
+    <value>hubertPath</value>
+  </data>
+  <data name="vitsPage.Text" xml:space="preserve">
+    <value>VITS</value>
+  </data>
+  <data name="HOpenConfig.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 34</value>
   </data>
-  <data name="WOpenConfig.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;stopButton.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="WOpenConfig.Text" xml:space="preserve">
-    <value>VITS配置</value>
+  <data name="&gt;&gt;modelPath.Parent" xml:space="preserve">
+    <value>modelPanel</value>
   </data>
-  <data name="&gt;&gt;WOpenConfig.Name" xml:space="preserve">
-    <value>WOpenConfig</value>
-  </data>
-  <data name="&gt;&gt;WOpenConfig.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;openConfig.Name" xml:space="preserve">
+    <value>openConfig</value>
   </data>
   <data name="&gt;&gt;WOpenConfig.Parent" xml:space="preserve">
     <value>WModelPanel</value>
   </data>
-  <data name="&gt;&gt;WOpenConfig.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="WOriginBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 33</value>
   </data>
-  <data name="WModelPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 32</value>
+  <data name="WOriginLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="WModelPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 30</value>
+  <data name="WTargetBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="WModelPath.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="WTargetBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;WModelPath.Name" xml:space="preserve">
-    <value>WModelPath</value>
+  <data name="&gt;&gt;resaveButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;WModelPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WModelPath.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
-  </data>
-  <data name="&gt;&gt;WModelPath.ZOrder" xml:space="preserve">
+  <data name="playButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="WOpenModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 30</value>
+  <data name="targetBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 156</value>
   </data>
-  <data name="WOpenModel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="WOpenConfig.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 34</value>
   </data>
-  <data name="WOpenModel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="WOriginLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
   </data>
-  <data name="WOpenModel.Text" xml:space="preserve">
-    <value>VITS模型</value>
+  <data name="&gt;&gt;HOpenModel.Parent" xml:space="preserve">
+    <value>HModelPanel</value>
   </data>
-  <data name="&gt;&gt;WOpenModel.Name" xml:space="preserve">
-    <value>WOpenModel</value>
+  <data name="savePath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;WOpenModel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;speakerLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;WOpenModel.Parent" xml:space="preserve">
-    <value>WModelPanel</value>
+  <data name="&gt;&gt;openModel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;WOpenModel.ZOrder" xml:space="preserve">
+  <data name="WOriginBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;WSpeakerBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;HOpenOrigin.Parent" xml:space="preserve">
+    <value>hubertPage</value>
+  </data>
+  <data name="HVCPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>476, 127</value>
+  </data>
+  <data name="&gt;&gt;emotionPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="resaveButton.Text" xml:space="preserve">
+    <value>重新合成</value>
+  </data>
+  <data name="originPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 30</value>
+  </data>
+  <data name="targetLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w2v2Page.Text" xml:space="preserve">
+    <value>W2V2-VITS</value>
+  </data>
+  <data name="&gt;&gt;WTextLabel.Name" xml:space="preserve">
+    <value>WTextLabel</value>
+  </data>
+  <data name="&gt;&gt;WTargetLabel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>144, 144</value>
+  <data name="&gt;&gt;configPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>976, 700</value>
+  <data name="WOriginLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 93</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 9pt</value>
+  <data name="&gt;&gt;HOpenConfig.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;originBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HOriginBox.Name" xml:space="preserve">
+    <value>HOriginBox</value>
+  </data>
+  <data name="&gt;&gt;speakerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 114</value>
+  </data>
+  <data name="symbolsButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 138</value>
+  </data>
+  <data name="modelPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="HTargetBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 33</value>
+  </data>
+  <data name="resaveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 70</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
+    <value>saveButton</value>
+  </data>
+  <data name="&gt;&gt;W2V2Model.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HOriginLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;resaveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stopButton.Parent" xml:space="preserve">
+    <value>savePanel</value>
+  </data>
+  <data name="&gt;&gt;HOpenHubert.Parent" xml:space="preserve">
+    <value>HModelPanel</value>
+  </data>
+  <data name="&gt;&gt;HTargetLabel.Parent" xml:space="preserve">
+    <value>HVCPage1</value>
+  </data>
+  <data name="VCPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 230</value>
+  </data>
+  <data name="W2V2Path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 30</value>
+  </data>
+  <data name="paramsButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;WSpeakerBox.Name" xml:space="preserve">
+    <value>WSpeakerBox</value>
+  </data>
+  <data name="paramsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 30</value>
+  </data>
+  <data name="&gt;&gt;WSpeakerLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 188</value>
+  </data>
+  <data name="savePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 556</value>
+  </data>
+  <data name="&gt;&gt;savePanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="emotionButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 34</value>
+  </data>
+  <data name="HOriginPath.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="targetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 160</value>
+  </data>
+  <data name="HOriginLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;modeControl.Parent" xml:space="preserve">
+    <value>vitsPage</value>
+  </data>
+  <data name="modeControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 267</value>
+  </data>
+  <data name="&gt;&gt;resaveButton.Name" xml:space="preserve">
+    <value>resaveButton</value>
+  </data>
+  <data name="&gt;&gt;W2V2Model.Parent" xml:space="preserve">
+    <value>WModelPanel</value>
+  </data>
+  <data name="modelControl.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;modelPath.Name" xml:space="preserve">
+    <value>modelPath</value>
+  </data>
+  <data name="HAdvancedControl.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="cleanButton.Text" xml:space="preserve">
+    <value>清理文本</value>
+  </data>
+  <data name="vitsPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 410</value>
+  </data>
+  <data name="HOpenOrigin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 34</value>
+  </data>
+  <data name="&gt;&gt;HVCPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="WConfigPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 30</value>
+  </data>
+  <data name="WSpeakerBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 146</value>
+  </data>
+  <data name="symbolsButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="openEXE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="&gt;&gt;W2V2Model.Name" xml:space="preserve">
+    <value>W2V2Model</value>
+  </data>
+  <data name="&gt;&gt;symbolsButton2.Name" xml:space="preserve">
+    <value>symbolsButton2</value>
+  </data>
+  <data name="modeControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="WOriginPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 30</value>
+  </data>
+  <data name="&gt;&gt;EXEPath.Parent" xml:space="preserve">
+    <value>EXEPanel</value>
+  </data>
+  <data name="&gt;&gt;WTextLabel.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="WSpeakerLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;openEXE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="playButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 70</value>
+  </data>
+  <data name="&gt;&gt;HModelPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2806,37 +1477,661 @@
         658f/HA/cBIYFlUVEVEgBPLczwPyP0UU24q1G5UbY0DyD3v09pgP+K7BAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>MoeGoe</value>
-  </data>
-  <data name="&gt;&gt;cleanButton.Name" xml:space="preserve">
-    <value>cleanButton</value>
-  </data>
-  <data name="&gt;&gt;cleanButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;paramsButton.Name" xml:space="preserve">
-    <value>paramsButton</value>
-  </data>
-  <data name="&gt;&gt;paramsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="openConfig.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;symbolsButton.Name" xml:space="preserve">
     <value>symbolsButton</value>
   </data>
+  <data name="&gt;&gt;playButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="resaveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;playButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="WModelPanel.Text" xml:space="preserve">
+    <value>模型文件</value>
+  </data>
+  <data name="&gt;&gt;WModelPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;WSpeakerLabel.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="targetBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;openConfig.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;playButton.Parent" xml:space="preserve">
+    <value>savePanel</value>
+  </data>
+  <data name="HTargetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 52</value>
+  </data>
+  <data name="cleanButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 138</value>
+  </data>
+  <data name="&gt;&gt;HVCPage2.Name" xml:space="preserve">
+    <value>HVCPage2</value>
+  </data>
+  <data name="cleanButton2.Text" xml:space="preserve">
+    <value>清理文本</value>
+  </data>
+  <data name="HTargetBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 68</value>
+  </data>
+  <data name="&gt;&gt;modelPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HVCPage2.Text" xml:space="preserve">
+    <value>语音转换（模式二）</value>
+  </data>
+  <data name="&gt;&gt;HVCPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="HVCPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="WTargetBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 33</value>
+  </data>
+  <data name="&gt;&gt;HAdvancedControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openEXE.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;vitsPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;vitsPage.Parent" xml:space="preserve">
+    <value>modelControl</value>
+  </data>
+  <data name="WSpeakerBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="WSpeakerLabel.Text" xml:space="preserve">
+    <value>说话人</value>
+  </data>
+  <data name="&gt;&gt;HTargetBox2.Parent" xml:space="preserve">
+    <value>HVCPage2</value>
+  </data>
+  <data name="WOpenModel.Text" xml:space="preserve">
+    <value>VITS模型</value>
+  </data>
+  <data name="stopButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 34</value>
+  </data>
+  <data name="EXEPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>501, 86</value>
+  </data>
+  <data name="WTargetLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cleanButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textLabel.Name" xml:space="preserve">
+    <value>textLabel</value>
+  </data>
+  <data name="&gt;&gt;WModelPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="emotionButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;HOpenOrigin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;symbolsButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainWin</value>
+  <data name="&gt;&gt;stopButton.Name" xml:space="preserve">
+    <value>stopButton</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;originBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
+  <data name="&gt;&gt;textLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="TTSPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="modeControl.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;HTargetBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="EXEPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;HTargetBox2.Name" xml:space="preserve">
+    <value>HTargetBox2</value>
+  </data>
+  <data name="&gt;&gt;consoleBox.Name" xml:space="preserve">
+    <value>consoleBox</value>
+  </data>
+  <data name="&gt;&gt;consoleBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="originBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 33</value>
+  </data>
+  <data name="&gt;&gt;WModelPath.Parent" xml:space="preserve">
+    <value>WModelPanel</value>
+  </data>
+  <data name="WSpeakerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="textBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;originLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;emotionPath.Name" xml:space="preserve">
+    <value>emotionPath</value>
+  </data>
+  <data name="playButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 34</value>
+  </data>
+  <data name="&gt;&gt;hubertPath.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="openOrigin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 39</value>
+  </data>
+  <data name="&gt;&gt;originLabel.Parent" xml:space="preserve">
+    <value>VCPage</value>
+  </data>
+  <data name="HOpenOrigin.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;W2V2Path.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WOpenModel.Parent" xml:space="preserve">
+    <value>WModelPanel</value>
+  </data>
+  <data name="&gt;&gt;HModelPath.Name" xml:space="preserve">
+    <value>HModelPath</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="hubertPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="WTargetLabel.Text" xml:space="preserve">
+    <value>目标说话人</value>
+  </data>
+  <data name="&gt;&gt;WTargetBox.Name" xml:space="preserve">
+    <value>WTargetBox</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>语音合成</value>
+  </data>
+  <data name="HTargetBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="HModelPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 30</value>
+  </data>
+  <data name="openEXE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="speakerBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="speakerBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="openEXE.Text" xml:space="preserve">
+    <value>打开文件</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
+    <value>savePanel</value>
+  </data>
+  <data name="&gt;&gt;WOriginLabel.Name" xml:space="preserve">
+    <value>WOriginLabel</value>
+  </data>
+  <data name="&gt;&gt;WModelPath.Name" xml:space="preserve">
+    <value>WModelPath</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;openEXE.Parent" xml:space="preserve">
+    <value>EXEPanel</value>
+  </data>
+  <data name="HConfigPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 30</value>
+  </data>
+  <data name="hubertPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 30</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;paramsButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WTargetLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HOriginBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="modelPath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;HTargetBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="savePanel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="emotionButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;originLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="targetBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 33</value>
+  </data>
+  <data name="&gt;&gt;hubertPage.Name" xml:space="preserve">
+    <value>hubertPage</value>
+  </data>
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="&gt;&gt;hubertPath.Parent" xml:space="preserve">
+    <value>HModelPanel</value>
+  </data>
+  <data name="openModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="&gt;&gt;WOpenModel.Name" xml:space="preserve">
+    <value>WOpenModel</value>
+  </data>
+  <data name="HOriginLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;HModelPath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;originPath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;WModelPath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="HModelPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 32</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HOriginLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;HOriginBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;WModelPanel.Parent" xml:space="preserve">
+    <value>w2v2Page</value>
+  </data>
+  <data name="&gt;&gt;HVCControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;paramsButton2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;emotionPath.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="cleanButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 34</value>
+  </data>
+  <data name="WTextLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 24</value>
+  </data>
+  <data name="&gt;&gt;HTargetLabel.Name" xml:space="preserve">
+    <value>HTargetLabel</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.Parent" xml:space="preserve">
+    <value>VCPage</value>
+  </data>
+  <data name="WOriginPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 30</value>
+  </data>
+  <data name="HOpenHubert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="&gt;&gt;openModel.Name" xml:space="preserve">
+    <value>openModel</value>
+  </data>
+  <data name="&gt;&gt;WOriginBox.Name" xml:space="preserve">
+    <value>WOriginBox</value>
+  </data>
+  <data name="&gt;&gt;textLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="originPath.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="HOriginPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 30</value>
+  </data>
+  <data name="&gt;&gt;speakerBox.Name" xml:space="preserve">
+    <value>speakerBox</value>
+  </data>
+  <data name="&gt;&gt;paramsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="originBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Yu Gothic UI, 9pt</value>
+  </data>
+  <data name="modelPanel.Text" xml:space="preserve">
+    <value>模型文件</value>
+  </data>
+  <data name="textLabel.Text" xml:space="preserve">
+    <value>文本</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.Name" xml:space="preserve">
+    <value>targetLabel</value>
+  </data>
+  <data name="HModelPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;EXEPanel.Name" xml:space="preserve">
+    <value>EXEPanel</value>
+  </data>
+  <data name="speakerLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;HTargetBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="paramsButton2.Text" xml:space="preserve">
+    <value>参数设置</value>
+  </data>
+  <data name="&gt;&gt;TTSPage.Parent" xml:space="preserve">
+    <value>modeControl</value>
+  </data>
+  <data name="&gt;&gt;EXEPath.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>144, 144</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="HModelPanel.Text" xml:space="preserve">
+    <value>模型文件</value>
+  </data>
+  <data name="symbolsButton.Text" xml:space="preserve">
+    <value>符号输入</value>
+  </data>
+  <data name="modelPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 32</value>
+  </data>
+  <data name="&gt;&gt;savePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="HVCControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 164</value>
+  </data>
+  <data name="openConfig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 70</value>
+  </data>
+  <data name="HModelPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;hubertPage.Parent" xml:space="preserve">
+    <value>modelControl</value>
+  </data>
+  <data name="&gt;&gt;modelPanel.Parent" xml:space="preserve">
+    <value>vitsPage</value>
+  </data>
+  <data name="consoleBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="HOpenOrigin.Text" xml:space="preserve">
+    <value>打开原音频</value>
+  </data>
+  <data name="vitsPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cleanButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;savePath.Name" xml:space="preserve">
+    <value>savePath</value>
+  </data>
+  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="savePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 32</value>
+  </data>
+  <data name="HModelPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 166</value>
+  </data>
+  <data name="WModeControl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;consoleBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WOriginBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;HVCPage1.Name" xml:space="preserve">
+    <value>HVCPage1</value>
+  </data>
+  <data name="WOpenConfig.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="HAdvancedControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 34</value>
+  </data>
+  <data name="speakerBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 33</value>
+  </data>
+  <data name="&gt;&gt;WModeControl.Name" xml:space="preserve">
+    <value>WModeControl</value>
+  </data>
+  <data name="&gt;&gt;emotionPath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="stopButton.Text" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="&gt;&gt;HOpenHubert.Name" xml:space="preserve">
+    <value>HOpenHubert</value>
+  </data>
+  <data name="HOpenConfig.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="originPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 40</value>
+  </data>
+  <data name="&gt;&gt;cleanButton.Name" xml:space="preserve">
+    <value>cleanButton</value>
+  </data>
+  <data name="HModelPath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="originLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="HOpenConfig.Text" xml:space="preserve">
+    <value>VITS配置</value>
+  </data>
+  <data name="&gt;&gt;savePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HOriginBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 28</value>
+  </data>
+  <data name="HVCPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="symbolsButton2.Text" xml:space="preserve">
+    <value>符号输入</value>
+  </data>
+  <data name="WTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="&gt;&gt;WTargetBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="WTargetLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="savePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>501, 124</value>
+  </data>
+  <data name="HOpenModel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;WOriginLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="vitsPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="EXEPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 30</value>
+  </data>
+  <data name="&gt;&gt;HTargetLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;WOpenConfig.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="playButton.Text" xml:space="preserve">
+    <value>播放</value>
+  </data>
+  <data name="&gt;&gt;savePath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cleanButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WOpenOrigin.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="VCPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;emotionButton.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="TTSPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="&gt;&gt;openConfig.Parent" xml:space="preserve">
+    <value>modelPanel</value>
+  </data>
+  <data name="HTargetLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;HVCPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="paramsButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 138</value>
+  </data>
+  <data name="originLabel.Text" xml:space="preserve">
+    <value>原说话人</value>
+  </data>
+  <data name="&gt;&gt;WOpenConfig.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HVCPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stopButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="HVCPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;HOpenHubert.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cleanButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 30</value>
+  </data>
+  <data name="WModelPath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="EXEPanel.Text" xml:space="preserve">
+    <value>MoeGoe.exe</value>
+  </data>
+  <data name="&gt;&gt;WOriginBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;EXEPath.Name" xml:space="preserve">
+    <value>EXEPath</value>
+  </data>
+  <data name="&gt;&gt;modelControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;HOpenModel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HModelPath.Parent" xml:space="preserve">
+    <value>HModelPanel</value>
+  </data>
+  <data name="&gt;&gt;VCPage.Parent" xml:space="preserve">
+    <value>modeControl</value>
+  </data>
+  <data name="&gt;&gt;EXEPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="HOpenHubert.Text" xml:space="preserve">
+    <value>HuBERT模型</value>
+  </data>
+  <data name="WModelPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 32</value>
+  </data>
+  <data name="savePanel.Text" xml:space="preserve">
+    <value>保存文件</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja-JP</value>
+  </metadata>
 </root>

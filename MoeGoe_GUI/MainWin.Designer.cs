@@ -134,9 +134,9 @@
             // 
             // EXEPanel
             // 
+            resources.ApplyResources(this.EXEPanel, "EXEPanel");
             this.EXEPanel.Controls.Add(this.EXEPath);
             this.EXEPanel.Controls.Add(this.openEXE);
-            resources.ApplyResources(this.EXEPanel, "EXEPanel");
             this.EXEPanel.Name = "EXEPanel";
             this.EXEPanel.TabStop = false;
             // 
@@ -156,11 +156,11 @@
             // 
             // modelPanel
             // 
+            resources.ApplyResources(this.modelPanel, "modelPanel");
             this.modelPanel.Controls.Add(this.configPath);
             this.modelPanel.Controls.Add(this.openConfig);
             this.modelPanel.Controls.Add(this.modelPath);
             this.modelPanel.Controls.Add(this.openModel);
-            resources.ApplyResources(this.modelPanel, "modelPanel");
             this.modelPanel.Name = "modelPanel";
             this.modelPanel.TabStop = false;
             // 
@@ -194,14 +194,15 @@
             // 
             // modeControl
             // 
+            resources.ApplyResources(this.modeControl, "modeControl");
             this.modeControl.Controls.Add(this.TTSPage);
             this.modeControl.Controls.Add(this.VCPage);
-            resources.ApplyResources(this.modeControl, "modeControl");
             this.modeControl.Name = "modeControl";
             this.modeControl.SelectedIndex = 0;
             // 
             // TTSPage
             // 
+            resources.ApplyResources(this.TTSPage, "TTSPage");
             this.TTSPage.Controls.Add(this.cleanButton2);
             this.TTSPage.Controls.Add(this.symbolsButton2);
             this.TTSPage.Controls.Add(this.paramsButton2);
@@ -209,7 +210,6 @@
             this.TTSPage.Controls.Add(this.speakerLabel);
             this.TTSPage.Controls.Add(this.textLabel);
             this.TTSPage.Controls.Add(this.textBox);
-            resources.ApplyResources(this.TTSPage, "TTSPage");
             this.TTSPage.Name = "TTSPage";
             this.TTSPage.UseVisualStyleBackColor = true;
             // 
@@ -253,48 +253,48 @@
             // 
             // textBox
             // 
-            this.textBox.ContextMenuStrip = this.menuStrip;
             resources.ApplyResources(this.textBox, "textBox");
+            this.textBox.ContextMenuStrip = this.menuStrip;
             this.textBox.Name = "textBox";
             this.textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox_KeyDown);
             // 
             // menuStrip
             // 
+            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cleanButton,
             this.paramsButton,
             this.symbolsButton});
             this.menuStrip.Name = "menuStrip";
-            resources.ApplyResources(this.menuStrip, "menuStrip");
             // 
             // cleanButton
             // 
-            this.cleanButton.Name = "cleanButton";
             resources.ApplyResources(this.cleanButton, "cleanButton");
+            this.cleanButton.Name = "cleanButton";
             this.cleanButton.Click += new System.EventHandler(this.CleanButton_Click);
             // 
             // paramsButton
             // 
-            this.paramsButton.Name = "paramsButton";
             resources.ApplyResources(this.paramsButton, "paramsButton");
+            this.paramsButton.Name = "paramsButton";
             this.paramsButton.Click += new System.EventHandler(this.AdvancedButton_Click);
             // 
             // symbolsButton
             // 
-            this.symbolsButton.Name = "symbolsButton";
             resources.ApplyResources(this.symbolsButton, "symbolsButton");
+            this.symbolsButton.Name = "symbolsButton";
             this.symbolsButton.Click += new System.EventHandler(this.SymbolsButton_Click);
             // 
             // VCPage
             // 
+            resources.ApplyResources(this.VCPage, "VCPage");
             this.VCPage.Controls.Add(this.openOrigin);
             this.VCPage.Controls.Add(this.originPath);
             this.VCPage.Controls.Add(this.originBox);
             this.VCPage.Controls.Add(this.originLabel);
             this.VCPage.Controls.Add(this.targetBox);
             this.VCPage.Controls.Add(this.targetLabel);
-            resources.ApplyResources(this.VCPage, "VCPage");
             this.VCPage.Name = "VCPage";
             this.VCPage.UseVisualStyleBackColor = true;
             // 
@@ -338,13 +338,13 @@
             // 
             // savePanel
             // 
+            resources.ApplyResources(this.savePanel, "savePanel");
             this.savePanel.Controls.Add(this.deleteButton);
             this.savePanel.Controls.Add(this.stopButton);
             this.savePanel.Controls.Add(this.resaveButton);
             this.savePanel.Controls.Add(this.playButton);
             this.savePanel.Controls.Add(this.savePath);
             this.savePanel.Controls.Add(this.saveButton);
-            resources.ApplyResources(this.savePanel, "savePanel");
             this.savePanel.Name = "savePanel";
             this.savePanel.TabStop = false;
             // 
@@ -398,29 +398,29 @@
             // 
             // modelControl
             // 
+            resources.ApplyResources(this.modelControl, "modelControl");
             this.modelControl.Controls.Add(this.vitsPage);
             this.modelControl.Controls.Add(this.hubertPage);
             this.modelControl.Controls.Add(this.w2v2Page);
-            resources.ApplyResources(this.modelControl, "modelControl");
             this.modelControl.Name = "modelControl";
             this.modelControl.SelectedIndex = 0;
             this.modelControl.SelectedIndexChanged += new System.EventHandler(this.ModelControl_SelectedIndexChanged);
             // 
             // vitsPage
             // 
+            resources.ApplyResources(this.vitsPage, "vitsPage");
             this.vitsPage.Controls.Add(this.modelPanel);
             this.vitsPage.Controls.Add(this.modeControl);
-            resources.ApplyResources(this.vitsPage, "vitsPage");
             this.vitsPage.Name = "vitsPage";
             this.vitsPage.UseVisualStyleBackColor = true;
             // 
             // hubertPage
             // 
+            resources.ApplyResources(this.hubertPage, "hubertPage");
             this.hubertPage.Controls.Add(this.HOpenOrigin);
             this.hubertPage.Controls.Add(this.HVCControl);
             this.hubertPage.Controls.Add(this.HModelPanel);
             this.hubertPage.Controls.Add(this.HOriginPath);
-            resources.ApplyResources(this.hubertPage, "hubertPage");
             this.hubertPage.Name = "hubertPage";
             this.hubertPage.UseVisualStyleBackColor = true;
             // 
@@ -433,18 +433,18 @@
             // 
             // HVCControl
             // 
+            resources.ApplyResources(this.HVCControl, "HVCControl");
             this.HVCControl.Controls.Add(this.HVCPage1);
             this.HVCControl.Controls.Add(this.HVCPage2);
-            resources.ApplyResources(this.HVCControl, "HVCControl");
             this.HVCControl.Name = "HVCControl";
             this.HVCControl.SelectedIndex = 0;
             // 
             // HVCPage1
             // 
+            resources.ApplyResources(this.HVCPage1, "HVCPage1");
             this.HVCPage1.Controls.Add(this.HAdvancedControl);
             this.HVCPage1.Controls.Add(this.HTargetLabel);
             this.HVCPage1.Controls.Add(this.HTargetBox);
-            resources.ApplyResources(this.HVCPage1, "HVCPage1");
             this.HVCPage1.Name = "HVCPage1";
             this.HVCPage1.UseVisualStyleBackColor = true;
             // 
@@ -469,11 +469,11 @@
             // 
             // HVCPage2
             // 
+            resources.ApplyResources(this.HVCPage2, "HVCPage2");
             this.HVCPage2.Controls.Add(this.HOriginLabel);
             this.HVCPage2.Controls.Add(this.HOriginBox);
             this.HVCPage2.Controls.Add(this.HOriginLabel2);
             this.HVCPage2.Controls.Add(this.HTargetBox2);
-            resources.ApplyResources(this.HVCPage2, "HVCPage2");
             this.HVCPage2.Name = "HVCPage2";
             this.HVCPage2.UseVisualStyleBackColor = true;
             // 
@@ -503,13 +503,13 @@
             // 
             // HModelPanel
             // 
+            resources.ApplyResources(this.HModelPanel, "HModelPanel");
             this.HModelPanel.Controls.Add(this.hubertPath);
             this.HModelPanel.Controls.Add(this.HOpenHubert);
             this.HModelPanel.Controls.Add(this.HConfigPath);
             this.HModelPanel.Controls.Add(this.HOpenConfig);
             this.HModelPanel.Controls.Add(this.HModelPath);
             this.HModelPanel.Controls.Add(this.HOpenModel);
-            resources.ApplyResources(this.HModelPanel, "HModelPanel");
             this.HModelPanel.Name = "HModelPanel";
             this.HModelPanel.TabStop = false;
             // 
@@ -564,29 +564,29 @@
             // 
             // w2v2Page
             // 
+            resources.ApplyResources(this.w2v2Page, "w2v2Page");
             this.w2v2Page.Controls.Add(this.WModeControl);
             this.w2v2Page.Controls.Add(this.WModelPanel);
-            resources.ApplyResources(this.w2v2Page, "w2v2Page");
             this.w2v2Page.Name = "w2v2Page";
             this.w2v2Page.UseVisualStyleBackColor = true;
             // 
             // WModeControl
             // 
+            resources.ApplyResources(this.WModeControl, "WModeControl");
             this.WModeControl.Controls.Add(this.tabPage1);
             this.WModeControl.Controls.Add(this.tabPage2);
-            resources.ApplyResources(this.WModeControl, "WModeControl");
             this.WModeControl.Name = "WModeControl";
             this.WModeControl.SelectedIndex = 0;
             // 
             // tabPage1
             // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.emotionButton);
             this.tabPage1.Controls.Add(this.emotionPath);
             this.tabPage1.Controls.Add(this.WSpeakerBox);
             this.tabPage1.Controls.Add(this.WSpeakerLabel);
             this.tabPage1.Controls.Add(this.WTextLabel);
             this.tabPage1.Controls.Add(this.WTextBox);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
@@ -623,20 +623,20 @@
             // 
             // WTextBox
             // 
-            this.WTextBox.ContextMenuStrip = this.menuStrip;
             resources.ApplyResources(this.WTextBox, "WTextBox");
+            this.WTextBox.ContextMenuStrip = this.menuStrip;
             this.WTextBox.Name = "WTextBox";
             this.WTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox_KeyDown);
             // 
             // tabPage2
             // 
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Controls.Add(this.WOpenOrigin);
             this.tabPage2.Controls.Add(this.WOriginPath);
             this.tabPage2.Controls.Add(this.WOriginBox);
             this.tabPage2.Controls.Add(this.WOriginLabel);
             this.tabPage2.Controls.Add(this.WTargetBox);
             this.tabPage2.Controls.Add(this.WTargetLabel);
-            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
@@ -680,13 +680,13 @@
             // 
             // WModelPanel
             // 
+            resources.ApplyResources(this.WModelPanel, "WModelPanel");
             this.WModelPanel.Controls.Add(this.W2V2Path);
             this.WModelPanel.Controls.Add(this.W2V2Model);
             this.WModelPanel.Controls.Add(this.WConfigPath);
             this.WModelPanel.Controls.Add(this.WOpenConfig);
             this.WModelPanel.Controls.Add(this.WModelPath);
             this.WModelPanel.Controls.Add(this.WOpenModel);
-            resources.ApplyResources(this.WModelPanel, "WModelPanel");
             this.WModelPanel.Name = "WModelPanel";
             this.WModelPanel.TabStop = false;
             // 

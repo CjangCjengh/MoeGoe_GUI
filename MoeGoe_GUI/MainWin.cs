@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Media;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -81,9 +80,9 @@ namespace MoeGoe_GUI
 
         private readonly List<string> SPEAKERS;
         private readonly List<string> SYMBOLS;
-        
+
         private readonly Dictionary<ComboBox, Dictionary<int, int>> SPEAKERIDDICT;
-        
+
         private bool USEF0;
         private bool SHOWLOG;
 

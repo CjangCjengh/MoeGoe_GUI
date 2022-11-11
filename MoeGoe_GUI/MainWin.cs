@@ -385,6 +385,7 @@ namespace MoeGoe_GUI
                 USEF0 = false;
             Match match = Regex.Match(json,
                 "\"speakers\"\\s*:\\s*\\[((?:\\s*\"(?:(?:\\\\.)|[^\\\\\"])*\"\\s*,?\\s*)*)\\]");
+            SPEAKERS.Clear();
             if (!LoadJsonList(json, "speakers", SPEAKERS.Add))
             {
                 match = Regex.Match(json,

@@ -55,8 +55,13 @@ namespace MoeGoe_GUI
             SPEAKERS = new List<string>();
             SYMBOLS = new List<string>();
             SPEAKERIDDICT = new Dictionary<ComboBox, Dictionary<int, int>>();
-            SHOWLOG = true;
             isSeeking = false;
+
+            if (DEFAULTS.ContainsKey("EXEPATHS"))
+            {
+                EXEPATH = EXEPath.Text = DEFAULTS["EXEPATHS"].Next();
+                modelControl.Enabled = true;
+            }
         }
 
         private CommandLine cmd;
@@ -84,7 +89,6 @@ namespace MoeGoe_GUI
         private readonly Dictionary<ComboBox, Dictionary<int, int>> SPEAKERIDDICT;
 
         private bool USEF0;
-        private bool SHOWLOG;
 
         private bool isSeeking;
         private SoundPlayer player;
@@ -108,7 +112,6 @@ namespace MoeGoe_GUI
         private void ClearMode()
         {
             consoleBox.Clear();
-            SHOWLOG = true;
             textBox.Clear();
             speakerBox.Items.Clear();
             speakerBox.Text = "";
@@ -139,7 +142,6 @@ namespace MoeGoe_GUI
         private void ClearHubertMode()
         {
             consoleBox.Clear();
-            SHOWLOG = true;
             HOriginPath.Clear();
             ORIGINPATH = null;
             HOpenOrigin.Enabled = false;
@@ -172,7 +174,6 @@ namespace MoeGoe_GUI
         private void ClearW2V2Mode()
         {
             consoleBox.Clear();
-            SHOWLOG = true;
             emotionPath.Clear();
             EMOTIONPATH = null;
             WTextBox.Clear();
@@ -367,8 +368,6 @@ namespace MoeGoe_GUI
                         string speaker = Regex.Unescape(matches[i].Groups[1].Value);
                         action(speaker);
                     }
-                    if (matches.Count > 100)
-                        SHOWLOG = false;
                 }
                 return true;
             }
@@ -430,8 +429,7 @@ namespace MoeGoe_GUI
         private void GetStart()
         {
             cmd = new CommandLine();
-            if (SHOWLOG)
-                cmd.OutputHandler += Cmd_OutputHandler;
+            cmd.OutputHandler += Cmd_OutputHandler;
             cmd.Write($"\"{EXEPATH}\" --escape");
             cmd.Write(MODELPATH);
             cmd.Write(CONFIGPATH);
@@ -761,8 +759,7 @@ namespace MoeGoe_GUI
             CleanWin win = new CleanWin(box, cmd);
             cmd.OutputHandler -= Cmd_OutputHandler;
             win.ShowDialog();
-            if (SHOWLOG)
-                cmd.OutputHandler += Cmd_OutputHandler;
+            cmd.OutputHandler += Cmd_OutputHandler;
             win.Dispose();
         }
 
